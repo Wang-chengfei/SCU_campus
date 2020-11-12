@@ -1,33 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>四川大学</title>
     <style>
-        body{
+        body {
             background-color: rgb(27, 27, 27);
         }
 
-        *{
-    margin: 0;
-    padding: 0;
+        * {
+            margin: 0;
+            padding: 0;
+            text-align: none;
         }
 
         a {
             text-decoration: none;
-            color: white;
-            font-size: large;
-            font-weight: bold;
         }
 
         .com {
-            position:absolute;
+            position: absolute;
             width: 200px;
             height: 500px;
-            background-color: red;
             top: 0px;
+        }
+
+        .com a img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .com a span {
+            position: absolute;
+            top: 150px;
+            left: 80px;
+            height: 400px;
+            width: 40px;
+            font-size: 30px;
+            line-height: 50px;
+            font-weight: bold;
+            color: white;
         }
 
         .big {
@@ -108,30 +122,45 @@
 
 <body>
     <div class="big">
-        <div class="com jian"><a href="./江安校区.html">江安校区</a></div>
-        <div class="com wang"><a href="./望江校区.html">望江校区</a></div>
-        <div class="com hua"><a href="./华西校区.html">华西校区</a></div>
-        <div class="com chuan"><a href="./川大校史.html">川大校史</a></div>
-        <div class="com jie"><a href="./杰出校友.html">杰出校友</a></div>
+        <div class="com jian"><a href="./jiangan.html">
+                <span>江安校区</span>
+                <img src="./img/jiangan/index.jpg" alt="">
+            </a></div>
+        <div class="com wang"><a href="./wangjiang.html">
+                <span>望江校区</span>
+                <img src="./img/wangjiang/index.jpg" alt="">
+            </a></div>
+        <div class="com hua"><a href="./huaxi.html">
+                <span>华西校区</span>
+                <img src="./img/huaxi/index.jpg" alt="">
+            </a></div>
+        <div class="com chuan"><a href="./history.html">
+                <span>川大校史</span>
+                <img src="./img/wangjiang/index.jpg" alt="">
+            </a></div>
+        <div class="com jie"><a href="./fellow.html">
+                <span>杰出校友</span>
+                <img src="./img/huaxi/index.jpg" alt="">
+            </a></div>
     </div>
 </body>
-<script>
+<!-- <script>
     var div = document.querySelectorAll("div");
     div[0].addEventListener("click", function () {
-        location.href = "./江安校区.html";
+        location.href = "./jiangan.html";
     })
     div[1].addEventListener("click", function () {
-        location.href = "./望江校区.html";
+        location.href = "./wangjiang.html";
     })
     div[2].addEventListener("click", function () {
-        location.href = "./华西校区.html";
+        location.href = "./huaxi.html";
     })
     div[3].addEventListener("click", function () {
-        location.href = "./川大校史.html";
+        location.href = "./history.html";
     })
     div[4].addEventListener("click", function () {
-        location.href = "./杰出校友.html";
+        location.href = "./fellow.html";
     })
-</script>
+</script> -->
 
 </html>

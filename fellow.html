@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>杰出校友</title>
+	<link rel="stylesheet" href="./css/nav.css">
+	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/swiper.css">
+	<style>
+		/* 向右划通用样式******************************************** */
+		.slide-right {
+			position: absolute;
+			width: 500px;
+			height: 500px;
+			background-color: red;
+			left: -500px;
+			z-index: 2;
+			animation: slide-rightplus 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+		}
+
+		.slide1-rightenter {
+			position: absolute;
+			width: 500px;
+			height: 500px;
+			background-color: green;
+			left: 550px;
+			z-index: 2;
+			animation: slide-rightenter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+		}
+
+		/* 向左划通用样式**************************************************** */
+		.slide-left {
+			position: absolute;
+			width: 500px;
+			height: 500px;
+			background-color: green;
+			left: 1100px;
+			z-index: 2;
+			animation: slide-leftplus 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+		}
+
+		.slide1-leftenter {
+			position: absolute;
+			width: 500px;
+			height: 500px;
+			background-color: red;
+			left: 50px;
+			z-index: 2;
+			animation: slide-leftenter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+		}
+
+		/* 盒子************************************* */
+		#bplus1 {
+			position: absolute;
+			top: 0px;
+		}
+
+		#bplus1 {
+			position: absolute;
+			top: 0px;
+		}
+
+		#bplus2 {
+			position: absolute;
+			top: 510px;
+		}
+
+		#splus2 {
+			position: absolute;
+			top: 510px;
+		}
+
+		#bplus3 {
+			position: absolute;
+			top: 1020px;
+		}
+
+		#splus3 {
+			position: absolute;
+			top: 1020px;
+		}
+
+		/* 向右划动效**************************************************** */
+		@keyframes slide-rightplus {
+			0% {
+				transform: translateX(0);
+				opacity: 0;
+			}
+
+			100% {
+				transform: translateX(550px);
+				opacity: 1;
+			}
+		}
+
+		/* @keyframes plus {
+  0% {
+            transform: translateX(0);
+            opacity: 0;
+  }
+  100% {
+            transform: translateX(1000px);
+            opacity: 1;
+  } 
+} */
+		/* 向左划动效**************************************************** */
+		@keyframes slide-leftplus {
+			0% {
+				transform: translateX(0);
+				opacity: 0;
+			}
+
+			100% {
+				transform: translateX(-550px);
+				opacity: 1;
+			}
+		}
+
+		/* 向右划入动效**************************************************** */
+		@keyframes slide-rightenter {
+			0% {
+				transform: translateX(0);
+				opacity: 1;
+			}
+
+			100% {
+				transform: translateX(550px);
+				opacity: 0;
+			}
+		}
+
+		/* 向左划入动效**************************************************** */
+		@keyframes slide-leftenter {
+			0% {
+				transform: translateX(0);
+				opacity: 1;
+			}
+
+			100% {
+				transform: translateX(-550px);
+				opacity: 0;
+			}
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="nav">
+		<span class="com"><a href="./jiangan.html">江安校区</a></span>
+		<span class="com"><a href="./wangjiang.html">望江校区</a></span>
+		<span class="com"><a href="./huaxi.html">华西校区</a></span>
+		<span class="com"><a href="./history.html">川大校史</a></span>
+		<span class="com"><a href="">杰出校友</a></span>
+		<img src="./img/logo.png" alt="" class="belowimg">
+	</div>
+
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide"><img src="./img/jiangan/bg1.jpg" alt=""></div>
+			<div class="swiper-slide"><img src="./img/jiangan/bg2.jpg" alt=""></div>
+			<div class="swiper-slide"><img src="./img/jiangan/bg3.jpg" alt=""></div>
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+
+	<div class="big">
+		<div id="bplus1" class="slide-right"></div>
+		<div id="bplus1" class="slide-left"></div>
+		<div id="bplus2" class=" com1"></div>
+		<div id="splus2" class=" com2"></div>
+		<div id="bplus3" class=" com1"></div>
+		<div id="splus3" class=" com2"></div>
+	</div>
+
+	<script>
+		var a = 0;
+		var c = document.querySelector(".big");
+		var Bcom = document.querySelectorAll(".com1");
+		var Scom = document.querySelectorAll(".com2");
+		var belowimg = document.querySelector(".belowimg");
+
+		document.addEventListener("scroll", function () {
+			for (var i = 0; i < Bcom.length; i++) {
+				if (window.pageYOffset >= c.offsetTop - 10 + i * 500) {
+					a = 1;
+					Bcom[i].className = "slide-right";
+					Scom[i].className = "slide-left";
+				}
+
+				if (window.pageYOffset < c.offsetTop - 10 + i * 500 && window.pageYOffset >= c.offsetTop - 450 + i * 500 && a > 0) {
+					Bcom[i].className = "slide1-rightenter";
+					Scom[i].className = "slide1-leftenter";
+				}
+
+			}
+		})
+
+		belowimg.addEventListener("click", function () {
+			location.href = "./index.html"
+		})
+	</script>
+	<script src="./js/swiper-bundle.min.js"></script>
+	<script src="./js/swiper.js"></script>
+</body>
+
+</html>
