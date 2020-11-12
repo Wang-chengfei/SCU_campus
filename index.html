@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(27, 27, 27);
+        }
+
+        *{
+    margin: 0;
+    padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        .com {
+            position:absolute;
+            width: 200px;
+            height: 500px;
+            background-color: red;
+            top: 0px;
+        }
+
+        .big {
+            position: relative;
+            height: 500px;
+            width: 1200px;
+            margin: 100px auto;
+
+        }
+
+        .jian {
+            top: -100px;
+            left: 0px;
+            animation: up 2.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+
+        .wang {
+            top: -100px;
+            left: 240px;
+            animation: up 2.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+
+        .hua {
+
+            left: 480px;
+            animation: dis 2.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+
+        .chuan {
+            top: 100px;
+            left: 720px;
+            animation: down 2.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+
+        .jie {
+            top: 100px;
+            left: 960px;
+            animation: down 2.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+
+        @keyframes up {
+            0% {
+                transform: translateY(0);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(100px);
+                opacity: 1;
+            }
+        }
+
+        @keyframes down {
+            0% {
+                transform: translateY(0);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(-100px);
+                opacity: 1;
+            }
+        }
+
+        @keyframes dis {
+            0% {
+
+                opacity: 0;
+            }
+
+            100% {
+
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="big">
+        <div class="com jian"><a href="./江安校区.html">江安校区</a></div>
+        <div class="com wang"><a href="./望江校区.html">望江校区</a></div>
+        <div class="com hua"><a href="./华西校区.html">华西校区</a></div>
+        <div class="com chuan"><a href="./川大校史.html">川大校史</a></div>
+        <div class="com jie"><a href="./杰出校友.html">杰出校友</a></div>
+    </div>
+</body>
+<script>
+    var div = document.querySelectorAll("div");
+    div[0].addEventListener("click", function () {
+        location.href = "./江安校区.html";
+    })
+    div[1].addEventListener("click", function () {
+        location.href = "./望江校区.html";
+    })
+    div[2].addEventListener("click", function () {
+        location.href = "./华西校区.html";
+    })
+    div[3].addEventListener("click", function () {
+        location.href = "./川大校史.html";
+    })
+    div[4].addEventListener("click", function () {
+        location.href = "./杰出校友.html";
+    })
+</script>
+
+</html>
