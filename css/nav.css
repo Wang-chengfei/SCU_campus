@@ -28,7 +28,11 @@ span:first-child {
 }
 
 .com a:hover {
-   color: red;
+   color: rgb(231, 1, 28);
+}
+
+.nav .selected a {
+    color: rgb(231, 1, 28);
 }
 
 * {

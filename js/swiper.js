@@ -1,10 +1,23 @@
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.big-swiper .swiper-container', {
     pagination: {
-        el: '.swiper-pagination',
+        el: '.big-swiper .swiper-pagination',
         clickable: true,
     },
     autoplay: {
-        delay: 5000
+        delay: 4000
+    },
+    speed: 800,
+    loop: true
+});
+
+
+var swiper = new Swiper('.small-swiper .swiper-container', {
+    pagination: {
+        el: '.small-swiper .swiper-pagination',
+        clickable: true,
+    },
+    autoplay: {
+        delay: 3000
     },
     speed: 800,
     loop: true

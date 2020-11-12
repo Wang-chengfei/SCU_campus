@@ -1,201 +1,220 @@
     /* 向右划通用样式******************************************** */
-.slide1-right{
-    position: absolute;
-           width: 900px;
-           height: 650px;
-           background-color: red;
-           left: -900px;
-           z-index: 2;
-           animation: slide-rightplus 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
- }     
+    
+    .slide1-right {
+        position: absolute;
+        width: 900px;
+        height: 650px;
+        /* background-color: red; */
+        left: -900px;
+        z-index: 2;
+        animation: slide-rightplus 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    
+    .slide2-right {
+        position: absolute;
+        width: 400px;
+        height: 650px;
+        /* background-color: green; */
+        left: -400px;
+        z-index: 1;
+        animation: plus 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    
+    .slide1-rightenter {
+        position: absolute;
+        width: 900px;
+        height: 650px;
+        /* background-color: red; */
+        left: 450px;
+        z-index: 2;
+        animation: slide-rightenter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    
+    .slide2-rightenter {
+        position: absolute;
+        width: 400px;
+        height: 500px;
+        /* background-color: green; */
+        left: 50px;
+        z-index: 1;
+        animation: enter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    /* 向左划通用样式**************************************************** */
+    
+    .slide1-left {
+        position: absolute;
+        width: 900px;
+        height: 650px;
+        /* background-color: red; */
+        left: 1350px;
+        z-index: 2;
+        animation: slide-leftplus 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    
+    .slide2-left {
+        position: absolute;
+        width: 400px;
+        height: 650px;
+        /* background-color: green; */
+        left: 1350px;
+        z-index: 1;
+        animation: lplus 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    
+    .slide1-leftenter {
+        position: absolute;
+        width: 900px;
+        height: 650px;
+        /* background-color: red; */
+        left: 0px;
+        z-index: 2;
+        animation: slide-leftenter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    
+    .slide2-leftenter {
+        position: absolute;
+        width: 400px;
+        height: 650px;
+        /* background-color: green; */
+        left: 900px;
+        z-index: 1;
+        animation: lenter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    /* 盒子************************************* */
+    
+    #bplus1 {
+        position: absolute;
+        top: 0px;
+    }
+    
+    #bplus1 {
+        position: absolute;
+        top: 0px;
+    }
+    
+    #bplus2 {
+        position: absolute;
+        top: 660px;
+    }
+    
+    #splus2 {
+        position: absolute;
+        top: 660px;
+    }
+    
+    #bplus3 {
+        position: absolute;
+        top: 1320px;
+    }
+    
+    #splus3 {
+        position: absolute;
+        top: 1320px;
+    }
+    /*盒子内容*/
+    .spot {
+        margin: 20px 40px;
+    }
 
- .slide2-right{
-    position: absolute;
-           width: 400px;
-           height: 650px;
-           background-color: green;
-           left: -400px;
-           z-index: 1;
-           animation: plus 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
- } 
+    .title {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
 
- .slide1-rightenter{
-    position: absolute;
-           width: 900px;
-           height: 650px;
-           background-color: red;
-           left: 450px;
-           z-index: 2;
-           animation: slide-rightenter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
- }     
+    .content {
+        font-size: 18px;
+    }
 
- .slide2-rightenter{
-    position: absolute;
-          width: 400px;
-           height: 500px;
-           background-color: green;
-           left: 50px;
-           z-index: 1;
-           animation: enter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
- } 
-
-/* 向左划通用样式**************************************************** */
- .slide1-left{
-    position: absolute;
-           width: 900px;
-           height: 650px;
-           background-color: red;
-           left: 1350px;
-           z-index: 2;
-           animation: slide-leftplus 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
- }     
-
- .slide2-left{
-    position: absolute;
-          width: 400px;
-           height: 650px;
-           background-color: green;
-           left: 1350px;
-           z-index: 1;
-           animation: lplus 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
- }     
-
- .slide1-leftenter{
-    position: absolute;
-           width: 900px;
-           height: 650px;
-           background-color: red;
-           left: 0px;
-           z-index: 2;
-           animation: slide-leftenter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
- }     
-
- .slide2-leftenter{
-         position: absolute;
-         width: 400px;
-         height: 650px;
-         background-color: green;
-         left: 900px;
-         z-index: 1;
-           animation: lenter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
- }     
-/* 盒子************************************* */
-       #bplus1{
-         position: absolute;
-         top: 0px;
-       }
-
-       #bplus1{
-         position: absolute;
-         top: 0px;
-       }
-
-       #bplus2{
-         position: absolute;
-         top: 660px;
-       }
-
-       #splus2{
-         position: absolute;
-         top: 660px;
-       }
-
-       #bplus3{
-         position: absolute;
-         top: 1320px;
-       }
-
-       #splus3{
-         position: absolute;
-         top: 1320px;
-       }
-
-/* 向右划动效**************************************************** */
-@keyframes slide-rightplus {
- 0% {
-           transform: translateX(0);
-           opacity: 0;
- }
- 100% {
-           transform: translateX(900px);
-           opacity: 1;
- } 
-}
-
-@keyframes plus {
- 0% {
-           transform: translateX(0);
-           opacity: 0;
- }
- 100% {
-           transform: translateX(1300px);
-           opacity: 1;
- } 
-}
-/* 向左划出动效**************************************************** */
-@keyframes slide-leftplus {
- 0% {
-           transform: translateX(0);
-           opacity: 0;
- }
- 100% {
-           transform: translateX(-900px);
-           opacity: 1;
- } 
-}
-
-@keyframes lplus {
- 0% {
-           transform: translateX(0);
-           opacity: 0;
- }
- 100% {
-           transform: translateX(-1300px);
-           opacity: 1;
- } 
-}
-
-/* 向右划入动效**************************************************** */
-@keyframes slide-rightenter {
- 0% {
-           transform: translateX(0);
-           opacity: 1;
- }
- 100% {
-           transform: translateX(900px);
-           opacity: 0;
- } 
-}
-
-@keyframes enter {
- 0% {
-           transform: translateX(0);
-           opacity: 1;
- }
- 100% {
-           transform: translateX(1300px);
-           opacity: 0;
- } 
-}
-/* 向左划入动效**************************************************** */
-@keyframes slide-leftenter {
- 0% {
-           transform: translateX(0);
-           opacity: 1;
- }
- 100% {
-           transform: translateX(-900px);
-           opacity: 0;
- } 
-}
-
-@keyframes lenter {
- 0% {
-           transform: translateX(0);
-           opacity: 1;
- }
- 100% {
-           transform: translateX(-1300px);
-           opacity: 0;
- } 
-}
+    /* 向右划动效**************************************************** */
+    
+    @keyframes slide-rightplus {
+        0% {
+            transform: translateX(0);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(900px);
+            opacity: 1;
+        }
+    }
+    
+    @keyframes plus {
+        0% {
+            transform: translateX(0);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(1300px);
+            opacity: 1;
+        }
+    }
+    /* 向左划出动效**************************************************** */
+    
+    @keyframes slide-leftplus {
+        0% {
+            transform: translateX(0);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(-900px);
+            opacity: 1;
+        }
+    }
+    
+    @keyframes lplus {
+        0% {
+            transform: translateX(0);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(-1300px);
+            opacity: 1;
+        }
+    }
+    /* 向右划入动效**************************************************** */
+    
+    @keyframes slide-rightenter {
+        0% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        100% {
+            transform: translateX(900px);
+            opacity: 0;
+        }
+    }
+    
+    @keyframes enter {
+        0% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        100% {
+            transform: translateX(1300px);
+            opacity: 0;
+        }
+    }
+    /* 向左划入动效**************************************************** */
+    
+    @keyframes slide-leftenter {
+        0% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        100% {
+            transform: translateX(-900px);
+            opacity: 0;
+        }
+    }
+    
+    @keyframes lenter {
+        0% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        100% {
+            transform: translateX(-1300px);
+            opacity: 0;
+        }
+    }
