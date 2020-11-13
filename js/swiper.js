@@ -17,7 +17,7 @@ var swiper = new Swiper('.small-swiper .swiper-container', {
         clickable: true,
     },
     autoplay: {
-        delay: 3000
+        delay: 2000
     },
     speed: 800,
     loop: true

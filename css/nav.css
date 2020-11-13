@@ -1,25 +1,77 @@
 body {
     overflow-x: hidden;
+    background-color: rgb(238, 235, 234);
 }
 
-.nav {
+.comnav{
+    position: fixed;
+    top: -70px;
+    left: 0px;
+}
+/* 不透明导航栏************* */
+.rnav-out {
     position: fixed;
     width:100%;
-    height: 80px;
+    height: 70px;
+    top: -70px;
+    left: 0px;
+    z-index: 999;
+    background-color: rgb(179, 176, 194);
+    animation: slide-out 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    box-shadow: 1px 1px 10px rgb(89, 88, 92);
+}
+
+.rnav-enter {
+    position: fixed;
+    width:100%;
+    height: 70px;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    background-color: rgb(89, 88, 92);
+    animation: slide-enter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+#nav2 a {
+    text-decoration: none;
+    color: black;
+}
+
+#nav2 .selected a {
+     color: rgb(231, 1, 28);
+ }
+/* 透明导航栏******************************************************* */
+.nav-out {
+    position: fixed;
+    width:100%;
+    height: 70px;
+    top: -70px;
+    left: 0px;
+    z-index: 999;
+    background: -webkit-linear-gradient(
+        top, rgba(0, 0, 0, 0.65),  rgba(0, 0, 0, 0.25),  rgba(0, 0, 0, 0.00001)
+    );
+    animation: slide-out 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.nav-enter {
+    position: fixed;
+    width:100%;
+    height: 70px;
     top: 0px;
     left: 0px;
     z-index: 999;
     background: -webkit-linear-gradient(
         top, rgba(0, 0, 0, 0.65),  rgba(0, 0, 0, 0.25),  rgba(0, 0, 0, 0.00001)
     );
-
+    animation: slide-enter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .com {
     display: inline-block;
-    height: 80px;
+    height: 70px;
     font-size: 18px;
-    line-height: 80px;
+    line-height: 70px;
     margin-left: 40px;
 }
 
@@ -27,12 +79,20 @@ span:first-child {
     margin-left: 300px;
 }
 
-.com a:hover {
+#nav1 .com a:hover {
    color: rgb(231, 1, 28);
 }
-
-.nav .selected a {
+#nav2 .com a:hover {
     color: rgb(231, 1, 28);
+ }
+
+#nav1 .selected a {
+    color: rgb(231, 1, 28);
+}
+
+#nav1 a {
+    text-decoration: none;
+    color: white;
 }
 
 * {
@@ -41,25 +101,42 @@ span:first-child {
     text-align: none;
 }
 
-.nav a {
-    text-decoration: none;
-    color: white;
-}
-
 .big {
     /* overflow: hidden; */
     position: relative;
     width: 1350px;
     height: 3000px;
-    margin:60px auto;
+    margin:20px auto;
     /* background-color: blue; */
 }
 
 .belowimg {
     position: fixed;
     left: 40px;
-    top: -35px;
+    top: -40px;
     height: 150px;
     cursor: pointer;
+    /* animation: slide-nav 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
 }
 
+@keyframes slide-out {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(70px);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-enter {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-70px);
+        opacity: 0;
+    }
+}

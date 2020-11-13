@@ -10,23 +10,22 @@
 	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
 	<link rel="stylesheet" href="./css/swiper.css">
 	<style>
-		/* 向右划通用样式******************************************** */
 		.slide1-right {
 			position: absolute;
-			width: 1000px;
-			height: 500px;
+			width: 1300px;
+			height: 650px;
 			background-color: red;
-			left: -1000px;
+			left: -1300px;
 			z-index: 2;
 			animation: slide-rightplus 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 		}
 
 		.slide1-rightenter {
 			position: absolute;
-			width: 700px;
-			height: 500px;
+			width: 1300px;
+			height: 650px;
 			background-color: red;
-			left: 400px;
+			left: 50px;
 			z-index: 2;
 			animation: slide-rightenter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 		}
@@ -34,10 +33,10 @@
 		/* 向左划通用样式**************************************************** */
 		.slide1-left {
 			position: absolute;
-			width: 1000px;
-			height: 500px;
+			width: 1300px;
+			height: 650px;
 			background-color: red;
-			left: 1100px;
+			left: 1350px;
 			z-index: 2;
 			animation: slide-leftplus 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 		}
@@ -45,7 +44,7 @@
 		.slide1-leftenter {
 			position: absolute;
 			width: 700px;
-			height: 500px;
+			height: 650px;
 			background-color: red;
 			left: 0px;
 			z-index: 2;
@@ -60,12 +59,12 @@
 
 		#bplus2 {
 			position: absolute;
-			top: 510px;
+			top: 660px;
 		}
 
 		#bplus3 {
 			position: absolute;
-			top: 1020px;
+			top: 1320px;
 		}
 
 		/* 向右划动效**************************************************** */
@@ -76,7 +75,7 @@
 			}
 
 			100% {
-				transform: translateX(1000px);
+				transform: translateX(1300px);
 				opacity: 1;
 			}
 		}
@@ -89,7 +88,7 @@
 			}
 
 			100% {
-				transform: translateX(-1000px);
+				transform: translateX(-1300px);
 				opacity: 1;
 			}
 		}
@@ -102,7 +101,7 @@
 			}
 
 			100% {
-				transform: translateX(1000px);
+				transform: translateX(1300px);
 				opacity: 0;
 			}
 		}
@@ -115,7 +114,7 @@
 			}
 
 			100% {
-				transform: translateX(-1000px);
+				transform: translateX(-1300px);
 				opacity: 0;
 			}
 		}
@@ -125,7 +124,7 @@
 
 <body>
 	<!-- 导航栏 -->
-	<div class="nav">
+	<div id="nav1" class="nav-out">
 		<span class="com"><a href="./jiangan.html">江安校区</a></span>
 		<span class="com"><a href="./wangjiang.html">望江校区</a></span>
 		<span class="com"><a href="./huaxi.html">华西校区</a></span>
@@ -134,6 +133,14 @@
 		<img src="./img/logo.png" alt="" class="belowimg">
 	</div>
 
+	<div id="nav2" class="comnav">
+		<span class="com"><a href="./jiangan.html">江安校区</a></span>
+		<span class="com"><a href="./wangjiang.html">望江校区</a></span>
+		<span class="com"><a href="./huaxi.html">华西校区</a></span>
+		<span class="com selected"><a href="">川大校史</a></span>
+		<span class="com"><a href="./fellow.html">杰出校友</a></span>
+		<img src="./img/logo.png" alt="" class="belowimg">
+	</div>
 	<!-- 大轮播图 -->
 	<div class="swiper-container">
 		<div class="swiper-wrapper">
@@ -146,7 +153,7 @@
 
 	<!-- 具体介绍 -->
 	<div class="big">
-		<div id="bplus1" class="slide1-right"></div>
+		<div id="bplus1" class="com1"></div>
 		<div id="bplus2" class=" com1"></div>
 		<div id="bplus3" class=" com1"></div>
 	</div>
@@ -160,17 +167,17 @@
 
 		document.addEventListener("scroll", function () {
 			for (var i = 0; i < Bcom.length; i++) {
-				if (window.pageYOffset >= c.offsetTop - 10 + i * 500) {
+				if (window.pageYOffset >= c.offsetTop - 600 + i * 650) {
 					a = 1;
-					if (i % 2 == 0) {
+					if (i % 2 == 1) {
 						Bcom[i].className = "slide1-left";
 					} else {
 						Bcom[i].className = "slide1-right";
 					}
 				}
 
-				if (window.pageYOffset < c.offsetTop - 10 + i * 500 && window.pageYOffset >= c.offsetTop - 450 + i * 500 && a > 0) {
-					if (i % 2 == 0) {
+				if (window.pageYOffset < c.offsetTop - 600 + i * 650 && window.pageYOffset >= c.offsetTop - 1050 + i * 650 && a > 0) {
+					if (i % 2 == 1) {
 						Bcom[i].className = "slide1-rightenter";
 					} else {
 						Bcom[i].className = "slide1-leftenter";
@@ -185,6 +192,7 @@
 	</script>
 	<script src="./js/swiper-bundle.min.js"></script>
 	<script src="./js/swiper.js"></script>
+	<script src="./js/nav.js"></script>
 </body>
 
 </html>

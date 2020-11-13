@@ -1,40 +1,44 @@
     /* 向右划通用样式******************************************** */
     
     .slide1-right {
+        box-shadow: 2px 2px 5px rgb(56, 56, 56);
         position: absolute;
         width: 900px;
         height: 650px;
-        /* background-color: red; */
+        background-color: black;
         left: -900px;
         z-index: 2;
         animation: slide-rightplus 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
     
     .slide2-right {
+        box-shadow: 2px 2px 5px rgb(56, 56, 56);
         position: absolute;
         width: 400px;
         height: 650px;
-        /* background-color: green; */
+        background-color: rgb(210, 210, 210);
         left: -400px;
         z-index: 1;
         animation: plus 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
     
     .slide1-rightenter {
+        box-shadow: 2px 2px 5px rgb(56, 56, 56);
         position: absolute;
         width: 900px;
         height: 650px;
-        /* background-color: red; */
+        background-color: black;
         left: 450px;
         z-index: 2;
         animation: slide-rightenter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
     
     .slide2-rightenter {
+        box-shadow: 2px 2px 5px rgb(56, 56, 56);
         position: absolute;
         width: 400px;
         height: 500px;
-        /* background-color: green; */
+        background-color: rgb(210, 210, 210);
         left: 50px;
         z-index: 1;
         animation: enter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -42,52 +46,55 @@
     /* 向左划通用样式**************************************************** */
     
     .slide1-left {
+        box-shadow: 2px 2px 5px rgb(56, 56, 56);
         position: absolute;
         width: 900px;
         height: 650px;
-        /* background-color: red; */
+        background-color: black;
         left: 1350px;
         z-index: 2;
         animation: slide-leftplus 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
     
     .slide2-left {
+        box-shadow: 2px 2px 5px rgb(56, 56, 56);
         position: absolute;
         width: 400px;
         height: 650px;
-        /* background-color: green; */
+        background-color: rgb(210, 210, 210);
         left: 1350px;
         z-index: 1;
         animation: lplus 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
     
     .slide1-leftenter {
+        box-shadow: 2px 2px 5px rgb(56, 56, 56);
         position: absolute;
         width: 900px;
         height: 650px;
-        /* background-color: red; */
+        background-color: black;
         left: 0px;
         z-index: 2;
         animation: slide-leftenter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
     
     .slide2-leftenter {
+        box-shadow: 2px 2px 5px rgb(56, 56, 56);
         position: absolute;
         width: 400px;
         height: 650px;
-        /* background-color: green; */
-        left: 900px;
+        background-color: rgb(210, 210, 210);
         z-index: 1;
         animation: lenter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
     /* 盒子************************************* */
-    
+
     #bplus1 {
         position: absolute;
         top: 0px;
     }
     
-    #bplus1 {
+    #splus1 {
         position: absolute;
         top: 0px;
     }

@@ -13,20 +13,20 @@
 		/* 向右划通用样式******************************************** */
 		.slide-right {
 			position: absolute;
-			width: 500px;
-			height: 500px;
+			width: 650px;
+			height: 650px;
 			background-color: red;
-			left: -500px;
+			left: -650px;
 			z-index: 2;
 			animation: slide-rightplus 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 		}
 
 		.slide1-rightenter {
 			position: absolute;
-			width: 500px;
-			height: 500px;
+			width: 650px;
+			height: 650px;
 			background-color: green;
-			left: 550px;
+			left: 675px;
 			z-index: 2;
 			animation: slide-rightenter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 		}
@@ -34,20 +34,20 @@
 		/* 向左划通用样式**************************************************** */
 		.slide-left {
 			position: absolute;
-			width: 500px;
-			height: 500px;
+			width: 650px;
+			height: 650px;
 			background-color: green;
-			left: 1100px;
+			left: 1350px;
 			z-index: 2;
 			animation: slide-leftplus 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 		}
 
 		.slide1-leftenter {
 			position: absolute;
-			width: 500px;
-			height: 500px;
+			width: 650px;
+			height: 650px;
 			background-color: red;
-			left: 50px;
+			left: 25px;
 			z-index: 2;
 			animation: slide-leftenter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 		}
@@ -65,22 +65,22 @@
 
 		#bplus2 {
 			position: absolute;
-			top: 510px;
+			top: 660px;
 		}
 
 		#splus2 {
 			position: absolute;
-			top: 510px;
+			top: 660px;
 		}
 
 		#bplus3 {
 			position: absolute;
-			top: 1020px;
+			top: 1320px;
 		}
 
 		#splus3 {
 			position: absolute;
-			top: 1020px;
+			top: 1320px;
 		}
 
 		/* 向右划动效**************************************************** */
@@ -91,7 +91,7 @@
 			}
 
 			100% {
-				transform: translateX(550px);
+				transform: translateX(675px);
 				opacity: 1;
 			}
 		}
@@ -114,7 +114,7 @@
 			}
 
 			100% {
-				transform: translateX(-550px);
+				transform: translateX(-675px);
 				opacity: 1;
 			}
 		}
@@ -127,7 +127,7 @@
 			}
 
 			100% {
-				transform: translateX(550px);
+				transform: translateX(675px);
 				opacity: 0;
 			}
 		}
@@ -140,7 +140,7 @@
 			}
 
 			100% {
-				transform: translateX(-550px);
+				transform: translateX(-675px);
 				opacity: 0;
 			}
 		}
@@ -150,7 +150,8 @@
 
 <body>
 	<!-- 导航栏 -->
-	<div class="nav">
+
+	<div id="nav1" class="nav-out">
 		<span class="com"><a href="./jiangan.html">江安校区</a></span>
 		<span class="com"><a href="./wangjiang.html">望江校区</a></span>
 		<span class="com"><a href="./huaxi.html">华西校区</a></span>
@@ -159,6 +160,14 @@
 		<img src="./img/logo.png" alt="" class="belowimg">
 	</div>
 
+	<div id="nav2" class="comnav">
+		<span class="com"><a href="./jiangan.html">江安校区</a></span>
+		<span class="com"><a href="./wangjiang.html">望江校区</a></span>
+		<span class="com"><a href="./huaxi.html">华西校区</a></span>
+		<span class="com"><a href="./history.html">川大校史</a></span>
+		<span class="com selected"><a href="">杰出校友</a></span>
+		<img src="./img/logo.png" alt="" class="belowimg">
+	</div>
 	<!-- 大轮播图 -->
 	<div class="swiper-container">
 		<div class="swiper-wrapper">
@@ -171,8 +180,8 @@
 
 	<!-- 具体介绍 -->
 	<div class="big">
-		<div id="bplus1" class="slide-right"></div>
-		<div id="bplus1" class="slide-left"></div>
+		<div id="bplus1" class="com1"></div>
+		<div id="bplus1" class="com2"></div>
 		<div id="bplus2" class=" com1"></div>
 		<div id="splus2" class=" com2"></div>
 		<div id="bplus3" class=" com1"></div>
@@ -188,17 +197,16 @@
 
 		document.addEventListener("scroll", function () {
 			for (var i = 0; i < Bcom.length; i++) {
-				if (window.pageYOffset >= c.offsetTop - 10 + i * 500) {
+				if (window.pageYOffset >= c.offsetTop - 600 + i * 650) {
 					a = 1;
 					Bcom[i].className = "slide-right";
 					Scom[i].className = "slide-left";
 				}
 
-				if (window.pageYOffset < c.offsetTop - 10 + i * 500 && window.pageYOffset >= c.offsetTop - 450 + i * 500 && a > 0) {
+				if (window.pageYOffset < c.offsetTop - 600 + i * 650 && window.pageYOffset >= c.offsetTop - 1050 + i * 650 && a > 0) {
 					Bcom[i].className = "slide1-rightenter";
 					Scom[i].className = "slide1-leftenter";
 				}
-
 			}
 		})
 
@@ -208,6 +216,7 @@
 	</script>
 	<script src="./js/swiper-bundle.min.js"></script>
 	<script src="./js/swiper.js"></script>
+	<script src="./js/nav.js"></script>
 </body>
 
 </html>
