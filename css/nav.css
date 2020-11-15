@@ -3,15 +3,17 @@ body {
     background-color: rgb(238, 235, 234);
 }
 
-.comnav{
+.comnav {
     position: fixed;
     top: -70px;
     left: 0px;
 }
+
 /* 不透明导航栏************* */
+
 .rnav-out {
     position: fixed;
-    width:100%;
+    width: 100%;
     height: 70px;
     top: -70px;
     left: 0px;
@@ -23,7 +25,7 @@ body {
 
 .rnav-enter {
     position: fixed;
-    width:100%;
+    width: 100%;
     height: 70px;
     top: 0px;
     left: 0px;
@@ -38,32 +40,30 @@ body {
 }
 
 #nav2 .selected a {
-     color: rgb(231, 1, 28);
- }
+    color: rgb(231, 1, 28);
+}
+
 /* 透明导航栏******************************************************* */
+
 .nav-out {
     position: fixed;
-    width:100%;
+    width: 100%;
     height: 70px;
     top: -70px;
     left: 0px;
     z-index: 999;
-    background: -webkit-linear-gradient(
-        top, rgba(0, 0, 0, 0.65),  rgba(0, 0, 0, 0.25),  rgba(0, 0, 0, 0.00001)
-    );
+    background: -webkit-linear-gradient( top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.00001));
     animation: slide-out 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .nav-enter {
     position: fixed;
-    width:100%;
+    width: 100%;
     height: 70px;
     top: 0px;
     left: 0px;
     z-index: 999;
-    background: -webkit-linear-gradient(
-        top, rgba(0, 0, 0, 0.65),  rgba(0, 0, 0, 0.25),  rgba(0, 0, 0, 0.00001)
-    );
+    background: -webkit-linear-gradient( top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.00001));
     animation: slide-enter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
@@ -80,11 +80,12 @@ span:first-child {
 }
 
 #nav1 .com a:hover {
-   color: rgb(231, 1, 28);
+    color: rgb(231, 1, 28);
 }
+
 #nav2 .com a:hover {
     color: rgb(231, 1, 28);
- }
+}
 
 #nav1 .selected a {
     color: rgb(231, 1, 28);
@@ -106,14 +107,14 @@ span:first-child {
     position: relative;
     width: 1350px;
     height: 3000px;
-    margin:20px auto;
+    margin: 20px auto;
     /* background-color: blue; */
 }
 
 .belowimg {
     position: fixed;
     left: 40px;
-    top: -40px;
+    top: -42px;
     height: 150px;
     cursor: pointer;
     /* animation: slide-nav 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
@@ -138,5 +139,47 @@ span:first-child {
     100% {
         transform: translateY(-70px);
         opacity: 0;
+    }
+}
+
+.bigBox {
+    padding-top: 220px;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(238, 235, 234);
+    z-index: 1;
+    overflow: auto;
+}
+
+
+.up {
+    animation: up 0.8s cubic-bezier(0.250, 0.780, 0.450, 0.940) both;
+}
+
+.dowm {
+    top: 0px;
+    animation: dowm 0.8s cubic-bezier(0.250, 0.780, 0.450, 0.940) both;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+body {
+    overflow-y: scroll;
+}
+
+@keyframes up {
+    100% {
+        transform: translateY(-800px);
+        opacity: 1;
+    }
+}
+
+@keyframes dowm {
+    100% {
+        transform: translateY(800px);
+        opacity: 1;
     }
 }

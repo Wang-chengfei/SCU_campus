@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="big">
+        <div class="box"></div>
+    </div>
+    <style>
+        .big {
+            height: 2000px;
+        }
+
+        .box {
+            position: absolute;
+            top: 500px;
+            left: 400px;
+            height: 200px;
+            width: 200px;
+            background-color: pink;
+        }
+
+        .up {
+            animation: down 2.0s cubic-bezier(0.250, 0.660, 0.450, 0.940) both;
+        }
+
+        .dowm {
+            animation: down 2.0s cubic-bezier(0.250, 0.660, 0.450, 0.940) both;
+        }
+
+        @keyframes up {
+            100% {
+                transform: translateY(-400px);
+                opacity: 1;
+            }
+        }
+
+        @keyframes dowm {
+            100% {
+                transform: translateY(-400px);
+                opacity: 1;
+            }
+        }
+    </style>
+    <script>
+        
+    </script>
+</body>
+
+</html>
