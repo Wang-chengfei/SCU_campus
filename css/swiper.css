@@ -39,20 +39,22 @@ html, body {
     width: 16px;
     height: 16px;
     opacity: 1;
-    background: rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    background: rgba(0, 0, 0, 0.25);
 }
 
 .small-swiper .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
+    width: 13px;
+    height: 13px;
     opacity: 1;
-    background: rgba(0, 0, 0, 0.2);
+    border: 1.5px solid rgba(255, 255, 255, 0.25);
+    background: rgba(0, 0, 0, 0.25);
 }
 
 .big-swiper .swiper-pagination-bullet-active {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.85);
 }
 
 .small-swiper .swiper-pagination-bullet-active {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.85);
 }

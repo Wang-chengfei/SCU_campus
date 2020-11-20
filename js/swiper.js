@@ -4,7 +4,7 @@ var swiper = new Swiper('.big-swiper .swiper-container', {
         clickable: true,
     },
     autoplay: {
-        delay: 4000
+        delay: 5000
     },
     speed: 800,
     loop: true
@@ -17,7 +17,7 @@ var swiper = new Swiper('.small-swiper .swiper-container', {
         clickable: true,
     },
     autoplay: {
-        delay: 2000
+        delay: 3000
     },
     speed: 800,
     loop: true

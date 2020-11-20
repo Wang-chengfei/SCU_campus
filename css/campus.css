@@ -1,7 +1,7 @@
     /* 向右划通用样式******************************************** */
     
     .slide1-right {
-        box-shadow: 2px 2px 5px rgb(56, 56, 56);
+        box-shadow: 3px 3px 15px #909090;
         position: absolute;
         width: 900px;
         height: 650px;
@@ -12,18 +12,19 @@
     }
     
     .slide2-right {
-        box-shadow: 2px 2px 5px rgb(56, 56, 56);
+        color:white;
+        box-shadow: 3px 3px 15px #909090;
         position: absolute;
         width: 400px;
         height: 650px;
-        background-color: rgb(210, 210, 210);
+        background-color: rgb(46, 46, 46);
         left: -400px;
         z-index: 1;
         animation: plus 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
     
     .slide1-rightenter {
-        box-shadow: 2px 2px 5px rgb(56, 56, 56);
+        box-shadow: 3px 3px 15px #909090;
         position: absolute;
         width: 900px;
         height: 650px;
@@ -34,11 +35,12 @@
     }
     
     .slide2-rightenter {
-        box-shadow: 2px 2px 5px rgb(56, 56, 56);
+        color:white;
+        box-shadow: 3px 3px 15px #909090;
         position: absolute;
         width: 400px;
         height: 650px;
-        background-color: rgb(210, 210, 210);
+        background-color: rgb(46, 46, 46);
         left: 50px;
         z-index: 1;
         animation: enter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -46,7 +48,7 @@
     /* 向左划通用样式**************************************************** */
     
     .slide1-left {
-        box-shadow: 2px 2px 5px rgb(56, 56, 56);
+        box-shadow: 3px 3px 15px #909090;
         position: absolute;
         width: 900px;
         height: 650px;
@@ -57,18 +59,19 @@
     }
     
     .slide2-left {
-        box-shadow: 2px 2px 5px rgb(56, 56, 56);
+        color:white;
+        box-shadow: 3px 3px 15px #909090;
         position: absolute;
         width: 400px;
         height: 650px;
-        background-color: rgb(210, 210, 210);
+        background-color:rgb(46, 46, 46);
         left: 1350px;
         z-index: 1;
         animation: lplus 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
     
     .slide1-leftenter {
-        box-shadow: 2px 2px 5px rgb(56, 56, 56);
+        box-shadow: 3px 3px 15px #909090;
         position: absolute;
         width: 900px;
         height: 650px;
@@ -79,15 +82,17 @@
     }
     
     .slide2-leftenter {
-        box-shadow: 2px 2px 5px rgb(56, 56, 56);
+        color:white;
+        box-shadow: 3px 3px 15px #909090;
         position: absolute;
         width: 400px;
         height: 650px;
-        background-color: rgb(210, 210, 210);
+        left: 900px;
+        background-color:rgb(46, 46, 46);
         z-index: 1;
         animation: lenter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
-    /* 盒子************************************* */
+    /* 盒子**************************************/
 
     #bplus1 {
         position: absolute;
@@ -101,26 +106,36 @@
     
     #bplus2 {
         position: absolute;
-        top: 660px;
+        top: 670px;
     }
     
     #splus2 {
         position: absolute;
-        top: 660px;
+        top: 670px;
     }
     
     #bplus3 {
         position: absolute;
-        top: 1320px;
+        top: 1340px;
     }
     
     #splus3 {
         position: absolute;
-        top: 1320px;
+        top: 1340px;
+    }
+    
+    #bplus4 {
+        position: absolute;
+        top: 2010px;
+    }
+    
+    #splus4 {
+        position: absolute;
+        top: 2010px;
     }
     /*盒子内容*/
     .spot {
-        margin: 20px 40px;
+        margin: 40px 40px 20px 40px;
     }
 
     .title {
@@ -225,3 +240,12 @@
             opacity: 0;
         }
     }
+
+    .com1{
+        visibility: hidden;
+    }
+
+    .com2{
+        visibility: hidden;
+    }
+    
