@@ -7,192 +7,202 @@
 	<title>川大校史</title>
 	<link rel="icon" href="./img/badge.ico" type="image/x-icon">
 	<link rel="stylesheet" href="./css/nav.css">
+	<link rel="stylesheet" href="./css/campus.css">
 	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
 	<link rel="stylesheet" href="./css/swiper.css">
-	<style>
-		.slide1-right {
-			position: absolute;
-			width: 1300px;
-			height: 650px;
-			background-color: red;
-			left: -1300px;
-			z-index: 2;
-			animation: slide-rightplus 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-		}
-
-		.slide1-rightenter {
-			position: absolute;
-			width: 1300px;
-			height: 650px;
-			background-color: red;
-			left: 50px;
-			z-index: 2;
-			animation: slide-rightenter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-		}
-
-		/* 向左划通用样式**************************************************** */
-		.slide1-left {
-			position: absolute;
-			width: 1300px;
-			height: 650px;
-			background-color: red;
-			left: 1350px;
-			z-index: 2;
-			animation: slide-leftplus 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-		}
-
-		.slide1-leftenter {
-			position: absolute;
-			width: 700px;
-			height: 650px;
-			background-color: red;
-			left: 0px;
-			z-index: 2;
-			animation: slide-leftenter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-		}
-
-		/* 盒子************************************* */
-		#bplus1 {
-			position: absolute;
-			top: 0px;
-		}
-
-		#bplus2 {
-			position: absolute;
-			top: 660px;
-		}
-
-		#bplus3 {
-			position: absolute;
-			top: 1320px;
-		}
-
-		/* 向右划动效**************************************************** */
-		@keyframes slide-rightplus {
-			0% {
-				transform: translateX(0);
-				opacity: 0;
-			}
-
-			100% {
-				transform: translateX(1300px);
-				opacity: 1;
-			}
-		}
-
-		/* 向左划动效**************************************************** */
-		@keyframes slide-leftplus {
-			0% {
-				transform: translateX(0);
-				opacity: 0;
-			}
-
-			100% {
-				transform: translateX(-1300px);
-				opacity: 1;
-			}
-		}
-
-		/* 向右划入动效**************************************************** */
-		@keyframes slide-rightenter {
-			0% {
-				transform: translateX(0);
-				opacity: 1;
-			}
-
-			100% {
-				transform: translateX(1300px);
-				opacity: 0;
-			}
-		}
-
-		/* 向左划入动效**************************************************** */
-		@keyframes slide-leftenter {
-			0% {
-				transform: translateX(0);
-				opacity: 1;
-			}
-
-			100% {
-				transform: translateX(-1300px);
-				opacity: 0;
-			}
-		}
-	</style>
-
 </head>
 
 <body>
+
 	<!-- 导航栏 -->
 	<div id="nav1" class="nav-out">
 		<span class="com"><a href="./jiangan.html">江安校区</a></span>
 		<span class="com"><a href="./wangjiang.html">望江校区</a></span>
 		<span class="com"><a href="./huaxi.html">华西校区</a></span>
-		<span class="com selected"><a href="">川大校史</a></span>
 		<span class="com"><a href="./fellow.html">杰出校友</a></span>
-		<img src="./img/logo.png" alt="" class="belowimg">
+		<span class="com selected"><a href="javascript:;">川大校史</a></span>
+		<a href="./index.html"><img src="./img/logo.png" alt="" class="belowimg"></a>
 	</div>
 
 	<div id="nav2" class="comnav">
 		<span class="com"><a href="./jiangan.html">江安校区</a></span>
 		<span class="com"><a href="./wangjiang.html">望江校区</a></span>
 		<span class="com"><a href="./huaxi.html">华西校区</a></span>
-		<span class="com selected"><a href="">川大校史</a></span>
 		<span class="com"><a href="./fellow.html">杰出校友</a></span>
-		<img src="./img/logo.png" alt="" class="belowimg">
+		<span class="com selected"><a href=".javascript:;">川大校史</a></span>
+		<a href="./index.html"><img src="./img/logo.png" alt="" class="belowimg"></a>
 	</div>
+
+
+	<!-- 侧边导航栏 -->
+	<ul class="side-nav">
+		<li class="side-nav-slide">不高山</li>
+		<li class="side-nav-slide">文化长廊</li>
+		<li class="side-nav-slide">江安图书馆</li>
+		<li class="side-nav-slide">长桥</li>
+	</ul>
+
+
 	<!-- 大轮播图 -->
-	<div class="swiper-container">
-		<div class="swiper-wrapper">
-			<div class="swiper-slide"><img src="./img/jiangan/bg1.jpg" alt=""></div>
-			<div class="swiper-slide"><img src="./img/jiangan/bg2.jpg" alt=""></div>
-			<div class="swiper-slide"><img src="./img/jiangan/bg3.jpg" alt=""></div>
+	<div class='big-swiper'>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="./img/history/bg1.jpg" alt=""></div>
+				<div class="swiper-slide"><img src="./img/history/bg2.jpg" alt=""></div>
+				<div class="swiper-slide"><img src="./img/history/bg3.jpg" alt=""></div>
+			</div>
+			<div class="swiper-pagination"></div>
 		</div>
-		<div class="swiper-pagination"></div>
 	</div>
 
 	<!-- 具体介绍 -->
-	<div class="big">
-		<div id="bplus1" class="com1"></div>
-		<div id="bplus2" class=" com1"></div>
-		<div id="bplus3" class=" com1"></div>
+	<div class="bigBox">
+		<div class="big">
+			<!-- 具体景点 -->
+			<div id="bplus1" class="com1 slide1-leftenter">
+				<div class="small-swiper">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="./img/jiangan/spot1_1.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="./img/jiangan/spot1_2.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="./img/jiangan/spot1_3.jpg" alt=""></div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+			<div id="splus1" class="com2 slide2-leftenter">
+				<div class="spot">
+					<div class="title">不高山</div>
+					<div class="content">
+						&emsp;&emsp;“不高山”位于川大江安校区西北角的一个小丘，江安河以一道优美的曲线划过此处，据说由校内明远湖修建时挖出的湖泥积成。不高山是江安校区的标志景点之一。山不在高，有仙则名。这座山真的只是个小丘，无名地藏在川大，命名者以“不高”名之，或许正是以此寓“求学者”，要追求山的稳重，而不是自高自大。不高山附近的河，名为“不深河”，有“水不在深，有龙则灵”之意。不去讲究山水的风光如何，仅其独特的名字，就够让人回味了。
+					</div>
+					<div class="like">
+						<img class="like_img" src='http://wcfun.top/images/aixin0.png' alt="">
+						<div class="like_num">
+							<div class="like_number">0</div>&nbsp;点赞
+						</div>
+						<div class="comment">评论&nbsp;></div>
+					</div>
+				</div>
+			</div>
+
+			<div id="bplus2" class="com1">
+				<div class="small-swiper">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="./img/jiangan/spot2_1.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="./img/jiangan/spot2_2.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="./img/jiangan/bg3.jpeg" alt=""></div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+			<div id="splus2" class="com2">
+				<div class="spot">
+					<div class="title">文化长廊</div>
+					<div class="content">
+						&emsp;&emsp;当您走进四川大学江安校区的东大门，在近一千米长的景观水道两侧，七十多幅日历造型的雕塑作品群会立刻映入您的眼帘。这些雕塑作品大气精致，韵意无穷，艺术化地呈现了四川大学自成立以来的风雨历程和辉煌成就。这就是2006年金秋落成的四川大学历史文化长廊。<br>
+						&emsp;&emsp;四川大学历史文化长廊主要分为源头活水、治校方略、群贤毕至、勇立潮头和春华秋实等五个部分，已经成为见证悠久的发展历史、彰显一流的办学成就、传承深厚的文化底蕴和展现辉煌的远景蓝图的标志性景观。<br>
+						&emsp;&emsp;今天，当人们驻足于景观水道两侧，徜徉于栩栩如生的历史人物和历史场景中，无一不会感受到世纪名校的人文底蕴，感动于百年不绝的科学薪火，感怀于前贤多士的殷殷情怀；更能真切地感受到四川大学深厚的人文底蕴。
+					</div>
+					<div class="like">
+						<img class="like_img" src='http://wcfun.top/images/aixin0.png' alt="">
+						<div class="like_num">
+							<div class="like_number">0</div>&nbsp;点赞
+						</div>
+						<div state="0" class="comment">评论&nbsp;></div>
+					</div>
+				</div>
+			</div>
+
+			<div id="bplus3" class="com1">
+				<div class="small-swiper">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="./img/jiangan/spot3_1.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="./img/jiangan/spot3_2.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="./img/jiangan/spot3_3.jpg" alt=""></div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+			<div id="splus3" class="com2">
+				<div class="spot">
+					<div class="title">江安图书馆</div>
+					<div class="content">
+						&emsp;&emsp;江安图书馆：位于江安校区，馆舍面积25300平方米，由加拿大著名设计师阿穆莱德设计。收藏以综合性、基础性文献为主，同时兼收人文社科研究型文献。<br>
+						&emsp;&emsp;四川大学图书馆是国务院命名的“全国古籍重点保护单位”，拥有珍贵的古籍特藏文献26.8万册，其中包括唐代以来的各种稿本和抄本以及相当数量的宋、元刻本；收藏大量中华人民共和国成立之前的中外文图书和报刊，其中抗战时期的出版物尤为丰富。近年来，通过加强“国家级古籍修复技艺传习中心四川修复中心传习所”建设，加大馆藏特色文献资源的修复保护和整理开发。
+					</div>
+					<div class="like">
+						<img class="like_img" src='http://wcfun.top/images/aixin0.png' alt="">
+						<div class="like_num">
+							<div class="like_number">0</div>&nbsp;点赞
+						</div>
+						<div state="0" class="comment">评论&nbsp;></div>
+					</div>
+				</div>
+			</div>
+
+			<div id="bplus4" class="com1">
+				<div class="small-swiper">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="./img/jiangan/spot4_1.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="./img/jiangan/spot4_2.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="./img/jiangan/spot4_3.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="./img/jiangan/spot4_4.jpg" alt=""></div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+			<div id="splus4" class="com2">
+				<div class="spot">
+					<div class="title">长桥</div>
+					<div class="content">
+						&emsp;&emsp;江安校区内，一座目前中国高校最长的步行桥（418米）——长桥，横跨江安河和明远湖上，连接着知识广场和青春广场。<br>
+						&emsp;&emsp;在四川大学江安校区，流传着关于“建环小哥”和“文新靓女”的故事。并未真实发生却略带凄美的爱情化作江安长桥上的100个英文字母，长久地镌刻在人们的记忆里。其中寄托情感的信物正是著名的十四行诗《当你老了》。当年男主威廉·巴特勒·叶芝这样描写第一次见到女主茅德·冈的情形：“她伫立窗畔，身旁盛开着一大团苹果花；她光彩夺目，仿佛自身就是洒满了阳光的花瓣。”或许，这正好可以用来表达对绝美的江安河畔的“一见钟情”，对绝美的四川大学的“相知相许”。“江安长桥”故事中“建环小哥”纯真的爱情一如他的执着和坚守，将永远成为关于四川大学“美丽的谈资”。
+					</div>
+					<div class="like">
+						<img class="like_img" src='http://wcfun.top/images/aixin0.png' alt="">
+						<div class="like_num">
+							<div class="like_number">0</div>&nbsp;点赞
+						</div>
+						<div state="0" class="comment">评论&nbsp;></div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
+	<!-- 底边栏 -->
+	<div class="footer">
+		<div class="footer-logo"><img src="./img/footer-logo.png" alt=""></div>
+		<div class="address">
+			<div class="address-title">&nbsp;学校地址</div>
+			<div class="address-detail">（江安校区）成都市双流县川大路 川大行政楼一楼 邮编：610207</div>
+			<div class="address-detail">（望江校区）成都市一环路南一段24号 川大行政楼219、220办公室 邮编：610065</div>
+			<div class="address-detail">（华西校区）成都市人民南路三段17号 华西行政楼232 邮编：610041</div>
+		</div>
+		<div class="link">
+			<div class="link-title">学校网站</div>
+			<div class="link-detail"><a href="http://jwc.scu.edu.cn/">教务处</a></div>
+			<div class="link-detail"><a href="http://scufd.scu.edu.cn/">财务处</a></div>
+			<div class="link-detail"><a href="http://xsc.scu.edu.cn/WEBSITE/XG">学工部</a></div>
+		</div>
+	</div>
 
-	<script>
-		var a = 0;
-		var c = document.querySelector(".big");
-		var Bcom = document.querySelectorAll(".com1");
-		var belowimg = document.querySelector(".belowimg");
+	<!-- 返回顶部 -->
+	<div class="return-top">返回顶部</div>
 
-		document.addEventListener("scroll", function () {
-			for (var i = 0; i < Bcom.length; i++) {
-				if (window.pageYOffset >= c.offsetTop - 600 + i * 650) {
-					a = 1;
-					if (i % 2 == 1) {
-						Bcom[i].className = "slide1-left";
-					} else {
-						Bcom[i].className = "slide1-right";
-					}
-				}
-
-				if (window.pageYOffset < c.offsetTop - 600 + i * 650 && window.pageYOffset >= c.offsetTop - 1050 + i * 650 && a > 0) {
-					if (i % 2 == 1) {
-						Bcom[i].className = "slide1-rightenter";
-					} else {
-						Bcom[i].className = "slide1-leftenter";
-					}
-				}
-			}
-		})
-
-		belowimg.addEventListener("click", function () {
-			location.href = "./index.html"
-		})
-	</script>
+	<script src="./js/campus.js"></script>
 	<script src="./js/swiper-bundle.min.js"></script>
 	<script src="./js/swiper.js"></script>
 	<script src="./js/nav.js"></script>
+
 </body>
 
 </html>

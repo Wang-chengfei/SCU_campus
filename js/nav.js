@@ -94,4 +94,13 @@ window.onbeforeunload = function () {
     document.body.scrollTop = 0;  //非ie
 }
 
+//返回顶部
+var footer_nav = document.querySelector(".return-top")
+footer_nav.addEventListener("click", function () {
+    window.scrollTo({ 
+        top: 0, 
+        behavior: "smooth" 
+    });	
+})
+
 

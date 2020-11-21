@@ -58,3 +58,42 @@ html, body {
 .small-swiper .swiper-pagination-bullet-active {
     background: rgba(0, 0, 0, 0.85);
 }
+
+.w1{
+    position: absolute;
+    left:50px;
+    top:600px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    height: 100px;
+    width: 600px;
+}
+
+.w2{
+    position: absolute;
+    left:950px;
+    top:600px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    height: 100px;
+    width: 600px;
+}
+
+.w3{
+    position: absolute;
+    left:1050px;
+    top:600px;
+    color: white;
+    font-weight: bold;
+    font-size: 34px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    height: 100px;
+    width: 600px;
+}

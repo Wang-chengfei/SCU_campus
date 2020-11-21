@@ -7,216 +7,212 @@
 	<title>杰出校友</title>
 	<link rel="icon" href="./img/badge.ico" type="image/x-icon">
 	<link rel="stylesheet" href="./css/nav.css">
+	<link rel="stylesheet" href="./css/campus.css">
 	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
 	<link rel="stylesheet" href="./css/swiper.css">
-	<style>
-		/* 向右划通用样式******************************************** */
-		.slide-right {
-			position: absolute;
-			width: 650px;
-			height: 650px;
-			background-color: red;
-			left: -650px;
-			z-index: 2;
-			animation: slide-rightplus 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-		}
-
-		.slide1-rightenter {
-			position: absolute;
-			width: 650px;
-			height: 650px;
-			background-color: green;
-			left: 675px;
-			z-index: 2;
-			animation: slide-rightenter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-		}
-
-		/* 向左划通用样式**************************************************** */
-		.slide-left {
-			position: absolute;
-			width: 650px;
-			height: 650px;
-			background-color: green;
-			left: 1350px;
-			z-index: 2;
-			animation: slide-leftplus 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-		}
-
-		.slide1-leftenter {
-			position: absolute;
-			width: 650px;
-			height: 650px;
-			background-color: red;
-			left: 25px;
-			z-index: 2;
-			animation: slide-leftenter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-		}
-
-		/* 盒子************************************* */
-		#bplus1 {
-			position: absolute;
-			top: 0px;
-		}
-
-		#bplus1 {
-			position: absolute;
-			top: 0px;
-		}
-
-		#bplus2 {
-			position: absolute;
-			top: 660px;
-		}
-
-		#splus2 {
-			position: absolute;
-			top: 660px;
-		}
-
-		#bplus3 {
-			position: absolute;
-			top: 1320px;
-		}
-
-		#splus3 {
-			position: absolute;
-			top: 1320px;
-		}
-
-		/* 向右划动效**************************************************** */
-		@keyframes slide-rightplus {
-			0% {
-				transform: translateX(0);
-				opacity: 0;
-			}
-
-			100% {
-				transform: translateX(675px);
-				opacity: 1;
-			}
-		}
-
-		/* @keyframes plus {
-  0% {
-            transform: translateX(0);
-            opacity: 0;
-  }
-  100% {
-            transform: translateX(1000px);
-            opacity: 1;
-  } 
-} */
-		/* 向左划动效**************************************************** */
-		@keyframes slide-leftplus {
-			0% {
-				transform: translateX(0);
-				opacity: 0;
-			}
-
-			100% {
-				transform: translateX(-675px);
-				opacity: 1;
-			}
-		}
-
-		/* 向右划入动效**************************************************** */
-		@keyframes slide-rightenter {
-			0% {
-				transform: translateX(0);
-				opacity: 1;
-			}
-
-			100% {
-				transform: translateX(675px);
-				opacity: 0;
-			}
-		}
-
-		/* 向左划入动效**************************************************** */
-		@keyframes slide-leftenter {
-			0% {
-				transform: translateX(0);
-				opacity: 1;
-			}
-
-			100% {
-				transform: translateX(-675px);
-				opacity: 0;
-			}
-		}
-	</style>
-
 </head>
 
 <body>
-	<!-- 导航栏 -->
 
+	<!-- 导航栏 -->
 	<div id="nav1" class="nav-out">
 		<span class="com"><a href="./jiangan.html">江安校区</a></span>
 		<span class="com"><a href="./wangjiang.html">望江校区</a></span>
 		<span class="com"><a href="./huaxi.html">华西校区</a></span>
+		<span class="com selected"><a href="javascript:;">杰出校友</a></span>
 		<span class="com"><a href="./history.html">川大校史</a></span>
-		<span class="com selected"><a href="">杰出校友</a></span>
-		<img src="./img/logo.png" alt="" class="belowimg">
+		<a href="./index.html"><img src="./img/logo.png" alt="" class="belowimg"></a>
 	</div>
 
 	<div id="nav2" class="comnav">
 		<span class="com"><a href="./jiangan.html">江安校区</a></span>
 		<span class="com"><a href="./wangjiang.html">望江校区</a></span>
 		<span class="com"><a href="./huaxi.html">华西校区</a></span>
+		<span class="com selected"><a href="javascript:;">杰出校友</a></span>
 		<span class="com"><a href="./history.html">川大校史</a></span>
-		<span class="com selected"><a href="">杰出校友</a></span>
-		<img src="./img/logo.png" alt="" class="belowimg">
+		<a href="./index.html"><img src="./img/logo.png" alt="" class="belowimg"></a>
 	</div>
+
+
+	<!-- 侧边导航栏 -->
+	<ul class="side-nav">
+		<li class="side-nav-slide">巴金</li>
+		<li class="side-nav-slide">郭沫若</li>
+		<li class="side-nav-slide">江姐</li>
+		<li class="side-nav-slide">熊复</li>
+		<li class="side-nav-slide">朱德</li>
+	</ul>
+
+
 	<!-- 大轮播图 -->
-	<div class="swiper-container">
-		<div class="swiper-wrapper">
-			<div class="swiper-slide"><img src="./img/jiangan/bg1.jpg" alt=""></div>
-			<div class="swiper-slide"><img src="./img/jiangan/bg2.jpg" alt=""></div>
-			<div class="swiper-slide"><img src="./img/jiangan/bg3.jpg" alt=""></div>
+	<div class='big-swiper'>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="./img/fellow/bg1.jpg" alt=""></div>
+				<div class="swiper-slide"><img src="./img/fellow/bg2.jpg" alt=""></div>
+				<div class="swiper-slide"><img src="./img/fellow/bg3.jpg" alt=""></div>
+			</div>
+			<div class="swiper-pagination"></div>
 		</div>
-		<div class="swiper-pagination"></div>
 	</div>
 
 	<!-- 具体介绍 -->
-	<div class="big">
-		<div id="bplus1" class="com1"></div>
-		<div id="bplus1" class="com2"></div>
-		<div id="bplus2" class=" com1"></div>
-		<div id="splus2" class=" com2"></div>
-		<div id="bplus3" class=" com1"></div>
-		<div id="splus3" class=" com2"></div>
+	<div class="bigBox">
+		<div class="big">
+			<!-- 具体景点 -->
+			<div id="bplus1" class="com1 slide1-leftenter">
+				<div class="small-swiper">
+					<div class="swiper-container">
+						<div class="swiper-slide"><img src="./img/fellow/spot1.jpg" alt=""></div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+			<div id="splus1" class="com2 slide2-leftenter">
+				<div class="spot">
+					<div class="title">巴金</div>
+					<div class="content">
+						&emsp;&emsp;朱德（1886年12月1日-1976年7月6日），字玉阶，原名朱代珍，曾用名朱建德，伟大的马克思主义者，伟大的无产阶级革命家、政治家、军事家，中国人民解放军的主要缔造者之一，中华人民共和国的开国元勋，是以毛泽东同志为核心的党的第一代中央领导集体的重要成员<br>
+						&emsp;&emsp;建国初期，兼任中共中央纪律检查委员会书记，为加强执政党的建设，维护党的组织纪律，克服党内各种不良倾向，保持党的优良作风，进行了大量卓有成效的工作。他还多次出国访问、会见外国领导人，增进了中国人民和各国人民的友谊。
+					</div>
+					<div class="like">
+						<img class="like_img" src='http://wcfun.top/images/aixin0.png' alt="">
+						<div class="like_num">
+							<div class="like_number">0</div>&nbsp;点赞
+						</div>
+						<div class="comment">评论&nbsp;></div>
+					</div>
+				</div>
+			</div>
+
+			<div id="bplus2" class="com1">
+				<div class="small-swiper">
+					<div class="swiper-container">
+						<div class="swiper-slide"><img src="./img/fellow/spot2.jpg" alt=""></div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+			<div id="splus2" class="com2">
+				<div class="spot">
+					<div class="title">郭沫若</div>
+					<div class="content">
+						&emsp;&emsp;郭沫若（1892年11月16日—1978年6月12日），原名郭开贞，字鼎堂，号尚武。中国现代作家、历史学家、考古学家。<br>
+						 &emsp;&emsp;1892年11月16日，出生于四川乐山沙湾。1914年1月，赴日本留学。1915年，进入冈山第六高等学校。1918年，升入九州帝国大学医学部。1919年，组织抵日爱国社团夏社；同年，创作诗歌《抱和儿浴博多湾中》《凤凰涅磐》等。1921年8月，诗集《女神》出版。1923年，完成历史剧《卓文君》、诗歌戏曲散文集《星空》。1924年，完成历史剧《王昭君》。1927年，加入中国共产党。1931年，完成论著《甲骨文字研究》《殷周青铜器铭文研究》等。1937年，归国参加抗战，在上海主办《救亡日报》。<!--1938年4月，任国民政府军委会政治部第三厅厅长。1941年12月，写成五幕历史剧《棠棣之花》。1942年，完成历史剧《屈原》《虎符》《高渐离》《孔雀胆》。1943年，完成历史剧《南冠草》。1948年，当选为第一届中央研究院院士。1949年10月，任政务院副总理、文化教育委员会主任；10月19日，任中国科学院院长。1953年，当选第二届中国文联主席。1958年，任中国科学技术大学校长。1959年，完成历史剧《蔡文姬》。1960年1月，完成历史剧《武则天》；同年，当选第三届中国文联主席。1969年，完成论著《李白与杜甫》。1973年，论著《出土文物二三事》出版。1978年，当选第四届文联主席；6月12日，因病医治无效，在北京逝世。 -->
+					</div>
+					<div class="like">
+						<img class="like_img" src='http://wcfun.top/images/aixin0.png' alt="">
+						<div class="like_num">
+							<div class="like_number">0</div>&nbsp;点赞
+						</div>
+						<div state="0" class="comment">评论&nbsp;></div>
+					</div>
+				</div>
+			</div>
+
+			<div id="bplus3" class="com1">
+				<div class="small-swiper">
+					<div class="swiper-container">
+						<div class="swiper-slide"><img src="./img/fellow/spot3.jpg" alt=""></div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+			<div id="splus3" class="com2">
+				<div class="spot">
+					<div class="title">江姐</div>
+					<div class="content">
+						&emsp;&emsp;江竹筠（1920年8月20日——1949年11月14日），四川省自贡市大山铺镇江家湾人，中国共产党地下时期重庆地区组织的重要人物，为中国共产党追认的女烈士。<br>
+						&emsp;&emsp;1939年加入中国共产党。1940年任重庆新市区区委委员。1945年与彭咏梧结婚，婚后负责中共重庆市委地下刊物《挺进报》的组织发行工作。1948年，彭咏梧在中共川东临时委员会委员兼下川东地委副书记任上战死，江竹筠接任其工作。<br>
+						&emsp;&emsp;1948年6月14日，江竹筠在万县被捕，被关押于位于重庆的国民政府军统渣滓洞集中营，遭酷刑仍拒屈、拒不交出军统所要的中共地下党情报；1949年11月14日，江竹筠壮烈牺牲于歌乐山电台岚垭刑场，牺牲时年仅29岁。
+					</div>
+					<div class="like">
+						<img class="like_img" src='http://wcfun.top/images/aixin0.png' alt="">
+						<div class="like_num">
+							<div class="like_number">0</div>&nbsp;点赞
+						</div>
+						<div state="0" class="comment">评论&nbsp;></div>
+					</div>
+				</div>
+			</div>
+
+			<div id="bplus4" class="com1">
+				<div class="small-swiper">
+					<div class="swiper-container">
+							<div class="swiper-slide"><img src="./img/fellow/spot4.jpg" alt=""></div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+			<div id="splus4" class="com2">
+				<div class="spot">
+					<div class="title">熊复</div>
+					<div class="content">
+						&emsp;&emsp;熊复（1915-1995
+						 ），男，四川邻水坛同镇陡水坡村人。笔名清水、庭钧、曼丝、茹纯、傅容等。中国共产党新闻宣传活动家早年求学于邻水二中，四川大学肄业。1936年参加中华民族解放先锋队。次年加入中国共产党。全国第四届政协委员、第五届政协常委，全国第五届人大代表及第六、七届人大常委，北京新闻学会副会长。历任民先队成都地方部队委员，延安抗大第三大队政治处宣传股长、政治部编辑组长，重庆《新华日报》编辑部主任、总编辑，中共四川省委候补委员，《晋绥日报》副总编，中央城工部四川干部工作队教育长，中央中原局、华中局和中南局宣传部副部长，中共郑州、武汉市委宣传部长，中原日报社社长，新华社中原、华中、中南总分社社长，中南文联主席，中南新闻出版局局长，中央宣传部秘书长，<!--中央联络部秘书长、副部长，中央宣传部副部长，新华总社社长，中共中央毛泽东著作编委会办公室副主任，《红旗》杂志总编辑。 -->
+					</div>
+					<div class="like">
+						<img class="like_img" src='http://wcfun.top/images/aixin0.png' alt="">
+						<div class="like_num">
+							<div class="like_number">0</div>&nbsp;点赞
+						</div>
+						<div state="0" class="comment">评论&nbsp;></div>
+					</div>
+				</div>
+			</div>
+
+			<div id="bplus5" class="com1">
+				<div class="small-swiper">
+					<div class="swiper-container">
+							<div class="swiper-slide"><img src="./img/fellow/spot5.jpg" alt=""></div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+			<div id="splus5" class="com2">
+				<div class="spot">
+					<div class="title">朱德</div>
+					<div class="content">
+						&emsp;&emsp;朱德（1886年12月1日-1976年7月6日），字玉阶，原名朱代珍，曾用名朱建德，伟大的马克思主义者，伟大的无产阶级革命家、政治家、军事家，中国人民解放军的主要缔造者之一，中华人民共和国的开国元勋，是以毛泽东同志为核心的党的第一代中央领导集体的重要成员<br>
+						&emsp;&emsp;建国初期，兼任中共中央纪律检查委员会书记，为加强执政党的建设，维护党的组织纪律，克服党内各种不良倾向，保持党的优良作风，进行了大量卓有成效的工作。他还多次出国访问、会见外国领导人，增进了中国人民和各国人民的友谊。
+					</div>
+					<div class="like">
+						<img class="like_img" src='http://wcfun.top/images/aixin0.png' alt="">
+						<div class="like_num">
+							<div class="like_number">0</div>&nbsp;点赞
+						</div>
+						<div state="0" class="comment">评论&nbsp;></div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
-	<script>
-		var a = 0;
-		var c = document.querySelector(".big");
-		var Bcom = document.querySelectorAll(".com1");
-		var Scom = document.querySelectorAll(".com2");
-		var belowimg = document.querySelector(".belowimg");
+	<!-- 底边栏 -->
+	<div class="footer">
+		<div class="footer-logo"><img src="./img/footer-logo.png" alt=""></div>
+		<div class="address">
+			<div class="address-title">&nbsp;学校地址</div>
+			<div class="address-detail">（江安校区）成都市双流县川大路 川大行政楼一楼 邮编：610207</div>
+			<div class="address-detail">（望江校区）成都市一环路南一段24号 川大行政楼219、220办公室 邮编：610065</div>
+			<div class="address-detail">（华西校区）成都市人民南路三段17号 华西行政楼232 邮编：610041</div>
+		</div>
+		<div class="link">
+			<div class="link-title">学校网站</div>
+			<div class="link-detail"><a href="http://jwc.scu.edu.cn/">教务处</a></div>
+			<div class="link-detail"><a href="http://scufd.scu.edu.cn/">财务处</a></div>
+			<div class="link-detail"><a href="http://xsc.scu.edu.cn/WEBSITE/XG">学工部</a></div>
+		</div>
+	</div>
 
-		document.addEventListener("scroll", function () {
-			for (var i = 0; i < Bcom.length; i++) {
-				if (window.pageYOffset >= c.offsetTop - 600 + i * 650) {
-					a = 1;
-					Bcom[i].className = "slide-right";
-					Scom[i].className = "slide-left";
-				}
+	<!-- 返回顶部 -->
+	<div class="return-top">返回顶部</div>
 
-				if (window.pageYOffset < c.offsetTop - 600 + i * 650 && window.pageYOffset >= c.offsetTop - 1050 + i * 650 && a > 0) {
-					Bcom[i].className = "slide1-rightenter";
-					Scom[i].className = "slide1-leftenter";
-				}
-			}
-		})
-
-		belowimg.addEventListener("click", function () {
-			location.href = "./index.html"
-		})
-	</script>
+	<script src="./js/campus.js"></script>
 	<script src="./js/swiper-bundle.min.js"></script>
 	<script src="./js/swiper.js"></script>
 	<script src="./js/nav.js"></script>
+
 </body>
 
 </html>
