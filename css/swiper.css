@@ -25,6 +25,48 @@ html, body {
     border-bottom: 0.5px solid rgb(30, 2, 97);
 }
 
+
+/*大轮播图按钮*/
+.big-swiper .swiper-pagination-bullet {
+
+    width: 16px;
+    height: 16px;
+    opacity: 1;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/*大轮播图按钮选中样式*/
+.big-swiper .swiper-pagination-bullet-active {
+    background: rgba(0, 0, 0, 0.95);
+}
+
+.big-swiper .swiper-pagination {
+    position: relative;
+    left: 640px;
+    top: -88px;
+}
+
+.small-swiper .swiper-pagination {
+    position: relative;
+    left: 340px;
+    top: -40px;
+}
+
+/*小轮播图按钮*/
+.small-swiper .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    opacity: 1;
+    border: 1.5px solid rgba(255, 255, 255, 0.6);
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/*小轮播图按钮选中样式*/
+.small-swiper .swiper-pagination-bullet-active {
+    background: rgba(0, 0, 0, 0.95);
+}
+
 .small-swiper .swiper-container {
     width: 900px;
     height: 650px;
@@ -35,29 +77,48 @@ html, body {
     height: 650px;
 }
 
-.big-swiper .swiper-pagination-bullet {
-    width: 16px;
-    height: 16px;
-    opacity: 1;
-    border: 2px solid rgba(255, 255, 255, 0.25);
-    background: rgba(0, 0, 0, 0.25);
+
+/*大轮播图上向下滑动提示样式*/
+.godown {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background: -webkit-linear-gradient( top, rgba(0, 0, 0, 0.001), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.65));
+    z-index: 2;
 }
 
-.small-swiper .swiper-pagination-bullet {
-    width: 13px;
-    height: 13px;
-    opacity: 1;
-    border: 1.5px solid rgba(255, 255, 255, 0.25);
-    background: rgba(0, 0, 0, 0.25);
+.godown .jian {
+    cursor: pointer;
+    position: relative;
+    height: 60px;
+    width: 60px;
+    margin: 11px auto;
+    animation: godown1 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite;
 }
 
-.big-swiper .swiper-pagination-bullet-active {
-    background: rgba(0, 0, 0, 0.85);
+.godown .jian:hover {
+    animation-play-state:paused;
 }
 
-.small-swiper .swiper-pagination-bullet-active {
-    background: rgba(0, 0, 0, 0.85);
+.godown .jian img {
+    height: 100%;
+    width: 100%;
 }
+
+@keyframes godown1 {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(10px);
+    }
+}
+
 
 .w1{
     position: absolute;

@@ -41,6 +41,8 @@ document.addEventListener("scroll", function () {
 	}
 })
 
+
+//侧边导航栏点击事件
 for (let i = 0; i < nav_lis.length; i++) {
 	nav_lis[i].addEventListener("click", function () {
 		window.scrollTo({ 
@@ -53,6 +55,4 @@ for (let i = 0; i < nav_lis.length; i++) {
 		this.className = 'side-nav-slide side-nav-select'
 	})
 }
-
- 
 

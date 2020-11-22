@@ -12,24 +12,26 @@
 	<link rel="stylesheet" href="./css/swiper.css">
 </head>
 
+<script src="./js/axios.js"></script>
+
 <body>
 
 	<!-- 导航栏 -->
 	<div id="nav1" class="nav-out">
-		<span class="com selected"><a href="javascript:;">江安校区</a></span>
-		<span class="com"><a href="./wangjiang.html">望江校区</a></span>
-		<span class="com"><a href="./huaxi.html">华西校区</a></span>
-		<span class="com"><a href="./fellow.html">杰出校友</a></span>
-		<span class="com"><a href="./history.html">川大校史</a></span>
+		<span class="com selected"><a href="javascript:;" class="super-link center">江安校区</a></span>
+		<span class="com"><a href="./wangjiang.html" class="super-link center">望江校区</a></span>
+		<span class="com"><a href="./huaxi.html" class="super-link center">华西校区</a></span>
+		<span class="com"><a href="./fellow.html" class="super-link center">杰出校友</a></span>
+		<span class="com"><a href="./history.html" class="super-link center">川大校史</a></span>
 		<a href="./index.html"><img src="./img/logo.png" alt="" class="belowimg"></a>
 	</div>
 
 	<div id="nav2" class="comnav">
-		<span class="com selected"><a href="javascript:;">江安校区</a></span>
-		<span class="com"><a href="./wangjiang.html">望江校区</a></span>
-		<span class="com"><a href="./huaxi.html">华西校区</a></span>
-		<span class="com"><a href="./fellow.html">杰出校友</a></span>
-		<span class="com"><a href="./history.html">川大校史</a></span>
+		<span class="com selected"><a href="javascript:;" class="super-link center">江安校区</a></span>
+		<span class="com"><a href="./wangjiang.html" class="super-link center">望江校区</a></span>
+		<span class="com"><a href="./huaxi.html" class="super-link center">华西校区</a></span>
+		<span class="com"><a href="./fellow.html" class="super-link center">杰出校友</a></span>
+		<span class="com"><a href="./history.html" class="super-link center">川大校史</a></span>
 		<a href="./index.html"><img src="./img/logo.png" alt="" class="belowimg"></a>
 	</div>
 
@@ -49,11 +51,13 @@
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">
-					<div class="w2">四川大学江安校区为川大的本科教育基地，主要为四川大学大一、大二同学学习的地方，校区总占地3000亩，另有教师住宅区240余亩。校区地处成都市双流航空港经济开发区。</div>
+					<div class="w2">四川大学江安校区为川大的本科教育基地，主要为四川大学大一、大二同学学习的地方，校区总占地3000亩，另有教师住宅区240余亩。校区地处成都市双流航空港经济开发区。
+					</div>
 					<img src="./img/jiangan/bg1.jpg" alt="">
 				</div>
 				<div class="swiper-slide">
-					<div class="w1">江安校区是环境生态化、景观园林化、校园信息化的新型大学校园。校区总实行功能分区，将教学、实验、图书、管理类建筑集中在一条全长2.2公里、宽24米的环道以内，成为校区的腹地。</div>
+					<div class="w1">
+						江安校区是环境生态化、景观园林化、校园信息化的新型大学校园。校区总实行功能分区，将教学、实验、图书、管理类建筑集中在一条全长2.2公里、宽24米的环道以内，成为校区的腹地。</div>
 					<img src="./img/jiangan/bg2.jpg" alt="">
 				</div>
 				<div class="swiper-slide">
@@ -62,6 +66,9 @@
 				</div>
 			</div>
 			<div class="swiper-pagination"></div>
+		</div>
+		<div class="godown">
+			<div class="jian"><img src="./img/jian_red.png" alt=""></div>
 		</div>
 	</div>
 
@@ -82,7 +89,7 @@
 				</div>
 			</div>
 			<div id="splus1" class="com2 slide2-leftenter">
-				<div class="spot">
+				<div class="spot comeup">
 					<div class="title">不高山</div>
 					<div class="content">
 						&emsp;&emsp;“不高山”位于川大江安校区西北角的一个小丘，江安河以一道优美的曲线划过此处，据说由校内明远湖修建时挖出的湖泥积成。不高山是江安校区的标志景点之一。山不在高，有仙则名。这座山真的只是个小丘，无名地藏在川大，命名者以“不高”名之，或许正是以此寓“求学者”，要追求山的稳重，而不是自高自大。不高山附近的河，名为“不深河”，有“水不在深，有龙则灵”之意。不去讲究山水的风光如何，仅其独特的名字，就够让人回味了。
@@ -95,6 +102,15 @@
 						<div class="comment">评论&nbsp;></div>
 					</div>
 				</div>
+				<div class="discuss comeout">
+					<div class="return-back">返回</div>
+					<div class="discuss-container">
+					</div>
+					<div class="publish">
+						<textarea placeholder="发表评论"></textarea>
+						<div class="bnt">发表</div>
+					</div>
+				</div>
 			</div>
 
 			<div id="bplus2" class="com1">
@@ -103,14 +119,14 @@
 						<div class="swiper-wrapper">
 							<div class="swiper-slide"><img src="./img/jiangan/spot2_1.jpg" alt=""></div>
 							<div class="swiper-slide"><img src="./img/jiangan/spot2_2.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="./img/jiangan/bg3.jpeg" alt=""></div>
+							<div class="swiper-slide"><img src="./img/jiangan/spot3_3.jpg" alt=""></div>
 						</div>
 						<div class="swiper-pagination"></div>
 					</div>
 				</div>
 			</div>
 			<div id="splus2" class="com2">
-				<div class="spot">
+				<div class="spot comeup">
 					<div class="title">文化长廊</div>
 					<div class="content">
 						&emsp;&emsp;当您走进四川大学江安校区的东大门，在近一千米长的景观水道两侧，七十多幅日历造型的雕塑作品群会立刻映入您的眼帘。这些雕塑作品大气精致，韵意无穷，艺术化地呈现了四川大学自成立以来的风雨历程和辉煌成就。这就是2006年金秋落成的四川大学历史文化长廊。<br>
@@ -123,6 +139,15 @@
 							<div class="like_number">0</div>&nbsp;点赞
 						</div>
 						<div state="0" class="comment">评论&nbsp;></div>
+					</div>
+				</div>
+				<div class="discuss comeout">
+					<div class="return-back">返回</div>
+					<div class="discuss-container">
+					</div>
+					<div class="publish">
+						<textarea placeholder="发表评论"></textarea>
+						<div class="bnt">发表</div>
 					</div>
 				</div>
 			</div>
@@ -140,7 +165,7 @@
 				</div>
 			</div>
 			<div id="splus3" class="com2">
-				<div class="spot">
+				<div class="spot comeup">
 					<div class="title">江安图书馆</div>
 					<div class="content">
 						&emsp;&emsp;江安图书馆：位于江安校区，馆舍面积25300平方米，由加拿大著名设计师阿穆莱德设计。收藏以综合性、基础性文献为主，同时兼收人文社科研究型文献。<br>
@@ -152,6 +177,15 @@
 							<div class="like_number">0</div>&nbsp;点赞
 						</div>
 						<div state="0" class="comment">评论&nbsp;></div>
+					</div>
+				</div>
+				<div class="discuss comeout">
+					<div class="return-back">返回</div>
+					<div class="discuss-container">
+					</div>
+					<div class="publish">
+						<textarea placeholder="发表评论"></textarea>
+						<div class="bnt">发表</div>
 					</div>
 				</div>
 			</div>
@@ -170,7 +204,7 @@
 				</div>
 			</div>
 			<div id="splus4" class="com2">
-				<div class="spot">
+				<div class="spot comeup">
 					<div class="title">长桥</div>
 					<div class="content">
 						&emsp;&emsp;江安校区内，一座目前中国高校最长的步行桥（418米）——长桥，横跨江安河和明远湖上，连接着知识广场和青春广场。<br>
@@ -182,6 +216,16 @@
 							<div class="like_number">0</div>&nbsp;点赞
 						</div>
 						<div state="0" class="comment">评论&nbsp;></div>
+					</div>
+				</div>
+				<div class="discuss comeout">
+					<div class="return-back">返回</div>
+					<div class="discuss-container">
+						
+					</div>
+					<div class="publish">
+						<textarea placeholder="发表评论"></textarea>
+						<div class="bnt">发表</div>
 					</div>
 				</div>
 			</div>
@@ -200,10 +244,10 @@
 				</div>
 			</div>
 			<div id="splus5" class="com2 slide2-leftenter">
-				<div class="spot">
+				<div class="spot comeup">
 					<div class="title">明远湖</div>
 					<div class="content">
-						&emsp;&emsp;“不高山”位于川大江安校区西北角的一个小丘，江安河以一道优美的曲线划过此处，据说由校内明远湖修建时挖出的湖泥积成。不高山是江安校区的标志景点之一。山不在高，有仙则名。这座山真的只是个小丘，无名地藏在川大，命名者以“不高”名之，或许正是以此寓“求学者”，要追求山的稳重，而不是自高自大。不高山附近的河，名为“不深河”，有“水不在深，有龙则灵”之意。不去讲究山水的风光如何，仅其独特的名字，就够让人回味了。
+						&emsp;&emsp;美哉明远！渌水荡漾，秋波相连。菡萏轻舞，水光潋滟。喜洛水之女神，惊蓬莱之散仙。无洞庭之淼茫，有天池之浩然。银汉横而有畔，水波兴而无边，辉映日月，浩含云天。春秋过而有意，乾坤藏而无言。乃有川流入海，海纳百川，桃李天下，豪杰千万。镜游子之白发，照佳人之朱颜。至若翠竹舞韵，杨柳弄烟。秋月徘徊，春风缠绵。白鹭群飞，蛟龙独潜。日升之湖东，月落之西园。风起于山侧，云生于水端。晨有疏星之晦明，暮有晚霞之绚烂。繁花笑波，芳草依岸。聚华夏之奇才，汇巴蜀之俊彦。
 					</div>
 					<div class="like">
 						<img class="like_img" src='http://wcfun.top/images/aixin0.png' alt="">
@@ -211,6 +255,15 @@
 							<div class="like_number">0</div>&nbsp;点赞
 						</div>
 						<div class="comment">评论&nbsp;></div>
+					</div>
+				</div>
+				<div class="discuss comeout">
+					<div class="return-back">返回</div>
+					<div class="discuss-container">
+					</div>
+					<div class="publish">
+						<textarea placeholder="发表评论"></textarea>
+						<div class="bnt">发表</div>
 					</div>
 				</div>
 			</div>
@@ -236,12 +289,16 @@
 	</div>
 
 	<!-- 返回顶部 -->
-	<div class="return-top">返回顶部</div>
+	<div class="return-top">
+		<div class="return-top-img"><img src="./img/jian1_red.png" alt=""></div>
+		<div class="return-top-text">返回顶部</div>
+	</div>
 
+
+	<script src="./js/nav.js"></script>
 	<script src="./js/campus.js"></script>
 	<script src="./js/swiper-bundle.min.js"></script>
 	<script src="./js/swiper.js"></script>
-	<script src="./js/nav.js"></script>
 
 </body>
 

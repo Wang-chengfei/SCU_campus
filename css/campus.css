@@ -1,5 +1,5 @@
     /* 向右划通用样式******************************************** */
-    
+
     .slide1-right {
         box-shadow: 0px 3px 15px #909090;
         position: absolute;
@@ -10,9 +10,9 @@
         z-index: 2;
         animation: slide-rightplus 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
-    
+
     .slide2-right {
-        color:white;
+        color: white;
         box-shadow: 3px 3px 15px #909090;
         position: absolute;
         width: 400px;
@@ -25,7 +25,7 @@
         background-position: right;
         background-repeat: repeat-y;
     }
-    
+
     .slide1-rightenter {
         box-shadow: 3px 3px 15px #909090;
         position: absolute;
@@ -36,14 +36,15 @@
         z-index: 2;
         animation: slide-rightenter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
-    
+
     .slide2-rightenter {
-        color:white;
+        color: white;
         box-shadow: 3px 3px 15px #909090;
         position: absolute;
         width: 400px;
         height: 650px;
-        background-color:rgb(180, 16, 10);;
+        background-color: rgb(180, 16, 10);
+        ;
         left: 50px;
         z-index: 1;
         animation: enter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -51,8 +52,9 @@
         background-position: right;
         background-repeat: repeat-y;
     }
+
     /* 向左划通用样式**************************************************** */
-    
+
     .slide1-left {
         box-shadow: 3px 3px 15px #909090;
         position: absolute;
@@ -63,14 +65,15 @@
         z-index: 2;
         animation: slide-leftplus 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
-    
+
     .slide2-left {
-        color:white;
+        color: white;
         box-shadow: 3px 3px 15px #909090;
         position: absolute;
         width: 400px;
         height: 650px;
-        background-color:rgb(180, 16, 10);;
+        background-color: rgb(180, 16, 10);
+        ;
         left: 1350px;
         z-index: 1;
         animation: lplus 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -78,7 +81,7 @@
         background-position: right;
         background-repeat: repeat-y;
     }
-    
+
     .slide1-leftenter {
         box-shadow: 3px 3px 15px #909090;
         position: absolute;
@@ -89,58 +92,59 @@
         z-index: 2;
         animation: slide-leftenter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
-    
+
     .slide2-leftenter {
-        color:white;
+        color: white;
         box-shadow: 3px 3px 15px #909090;
         position: absolute;
         width: 400px;
         height: 650px;
         left: 900px;
-        background-color:rgb(180, 16, 10);
+        background-color: rgb(180, 16, 10);
         z-index: 1;
         animation: lenter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         background-image: url("https://www.pku.edu.cn/Public/static/themes/image/bg9a.svg");
         background-position: right;
         background-repeat: repeat-y;
     }
+
     /* 盒子**************************************/
 
     #bplus1 {
         position: absolute;
         top: 0px;
     }
-    
+
     #splus1 {
         position: absolute;
         top: 0px;
     }
-    
+
     #bplus2 {
         position: absolute;
         top: 670px;
     }
-    
+
     #splus2 {
         position: absolute;
         top: 670px;
     }
-    
+
     #bplus3 {
         position: absolute;
         top: 1340px;
     }
-    
+
     #splus3 {
         position: absolute;
         top: 1340px;
     }
-    
+
     #bplus4 {
         position: absolute;
         top: 2010px;
     }
-    
+
     #splus4 {
         position: absolute;
         top: 2010px;
@@ -150,12 +154,14 @@
         position: absolute;
         top: 2680px;
     }
-    
+
     #splus5 {
         position: absolute;
         top: 2680px;
     }
+
     /*盒子内容*/
+
     .spot {
         margin: 40px 40px 20px 40px;
     }
@@ -170,8 +176,110 @@
         font-size: 18px;
     }
 
+    .comeup {
+        display: block;
+    }
+
+    .comeout {
+        display: none;
+    }
+
+    .discuss {
+        height: 615px;
+        width: 380px;
+        margin: 15px 0 20px 30px;
+        overflow: hidden;
+    }
+
+    .discuss .return-back {
+        user-select: none;
+        font-size: 20px;
+        height: 20px;
+        line-height: 20px;
+        color: white;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+
+    .discuss .discuss-container {
+        overflow: scroll;
+        width: 370px;
+        height: 520px;
+    }
+
+    .discuss .publish {
+        margin-top: 20px;
+        width: 350px;
+        height: 20px;
+    }
+
+    .discuss .publish textarea {
+        overflow: visible;
+        display: inline-block;
+        resize: none;
+        outline:none;
+        width: 75%;
+        height: 100%;
+        max-height: 17px;
+        padding: 6px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .discuss .publish .bnt {
+        cursor: pointer;
+        position: relative;
+        top: -10px;
+        display: inline-block;
+        background-color: #0179d4;
+        width: 18%;
+        height: 32px;
+        font-size: 18px;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .discuss-container::-webkit-scrollbar {
+        width: 10px;
+        height: 1px;
+    }
+
+    .discuss-container::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        box-shadow: inset 0 0 5px #9b9b9b;
+        background: #535353;
+    }
+
+    .discuss-container::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        background: #ededed;
+    }
+
+
+    .one-discuss {
+        color: white;
+        width: 90%;
+        margin: 10px 0;
+        padding: 8px;
+        border: 1px solid white;
+        border-radius: 10px;
+    }
+
+    .one-discuss .time {
+        font-size: 13px;
+        line-height: 16px;
+        margin-bottom: 6px;
+        margin-top: 2px;
+    }
+
+    .one-discuss .wenzi {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
     /* 向右划动效**************************************************** */
-    
+
     @keyframes slide-rightplus {
         0% {
             transform: translateX(0);
@@ -182,7 +290,7 @@
             opacity: 1;
         }
     }
-    
+
     @keyframes plus {
         0% {
             transform: translateX(0);
@@ -193,8 +301,9 @@
             opacity: 1;
         }
     }
+
     /* 向左划出动效**************************************************** */
-    
+
     @keyframes slide-leftplus {
         0% {
             transform: translateX(0);
@@ -205,7 +314,7 @@
             opacity: 1;
         }
     }
-    
+
     @keyframes lplus {
         0% {
             transform: translateX(0);
@@ -216,8 +325,9 @@
             opacity: 1;
         }
     }
+
     /* 向右划入动效**************************************************** */
-    
+
     @keyframes slide-rightenter {
         0% {
             transform: translateX(0);
@@ -228,7 +338,7 @@
             opacity: 0;
         }
     }
-    
+
     @keyframes enter {
         0% {
             transform: translateX(0);
@@ -239,8 +349,9 @@
             opacity: 0;
         }
     }
+
     /* 向左划入动效**************************************************** */
-    
+
     @keyframes slide-leftenter {
         0% {
             transform: translateX(0);
@@ -251,7 +362,7 @@
             opacity: 0;
         }
     }
-    
+
     @keyframes lenter {
         0% {
             transform: translateX(0);
@@ -263,11 +374,10 @@
         }
     }
 
-    .com1{
+    .com1 {
         visibility: hidden;
     }
 
-    .com2{
+    .com2 {
         visibility: hidden;
     }
-    

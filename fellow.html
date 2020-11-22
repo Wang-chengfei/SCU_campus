@@ -12,24 +12,133 @@
 	<link rel="stylesheet" href="./css/swiper.css">
 </head>
 
+<style>
+
+.slide2-right {
+        color:white;
+        box-shadow: 3px 3px 15px #909090;
+        position: absolute;
+        width: 400px;
+        height: 650px;
+        background-color: rgb(180, 16, 10);
+        left: 1350px;
+        z-index: 1;
+        animation: plus 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        background-image: url("https://www.pku.edu.cn/Public/static/themes/image/bg9a.svg");
+        background-position: right;
+        background-repeat: repeat-y;
+    }
+
+	@keyframes plus {
+        0% {
+            transform: translateX(0);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(-450px);
+            opacity: 1;
+        }
+    }
+
+.slide2-rightenter {
+        color:white;
+        box-shadow: 3px 3px 15px #909090;
+        position: absolute;
+        width: 400px;
+        height: 650px;
+        background-color:rgb(180, 16, 10);;
+        left: 50px;
+        z-index: 1;
+        animation: enter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        background-image: url("https://www.pku.edu.cn/Public/static/themes/image/bg9a.svg");
+        background-position: right;
+        background-repeat: repeat-y;
+	}
+	
+	@keyframes enter {
+        0% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        100% {
+            transform: translateX(-450px);
+            opacity: 0;
+        }
+	}
+	
+	.slide2-leftenter {
+        color:white;
+        box-shadow: 3px 3px 15px #909090;
+        position: absolute;
+        width: 400px;
+        height: 650px;
+        left: 900px;
+        background-color:rgb(180, 16, 10);
+        z-index: 1;
+        animation: lenter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        background-image: url("https://www.pku.edu.cn/Public/static/themes/image/bg9a.svg");
+        background-position: right;
+        background-repeat: repeat-y;
+	}
+	
+	@keyframes lenter {
+        0% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        100% {
+            transform: translateX(450px);
+            opacity: 0;
+        }
+    }
+
+	.slide2-left {
+        color:white;
+        box-shadow: 3px 3px 15px #909090;
+        position: absolute;
+        width: 400px;
+        height: 650px;
+        background-color:rgb(180, 16, 10);;
+        left: -400px;
+        z-index: 1;
+        animation: lplus 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        background-image: url("https://www.pku.edu.cn/Public/static/themes/image/bg9a.svg");
+        background-position: right;
+        background-repeat: repeat-y;
+	}
+	
+	@keyframes lplus {
+        0% {
+            transform: translateX(0);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(450px);
+            opacity: 1;
+        }
+    }
+
+</style>
+
+<script src="./js/axios.js"></script>
 <body>
 
 	<!-- 导航栏 -->
 	<div id="nav1" class="nav-out">
-		<span class="com"><a href="./jiangan.html">江安校区</a></span>
-		<span class="com"><a href="./wangjiang.html">望江校区</a></span>
-		<span class="com"><a href="./huaxi.html">华西校区</a></span>
-		<span class="com selected"><a href="javascript:;">杰出校友</a></span>
-		<span class="com"><a href="./history.html">川大校史</a></span>
+		<span class="com"><a href="./jiangan.html" class="super-link center">江安校区</a></span>
+		<span class="com"><a href="./wangjiang.html" class="super-link center">望江校区</a></span>
+		<span class="com"><a href="./huaxi.html" class="super-link center">华西校区</a></span>
+		<span class="com selected"><a href="javascript:;" class="super-link center">杰出校友</a></span>
+		<span class="com"><a href="./history.html" class="super-link center">川大校史</a></span>
 		<a href="./index.html"><img src="./img/logo.png" alt="" class="belowimg"></a>
 	</div>
 
 	<div id="nav2" class="comnav">
-		<span class="com"><a href="./jiangan.html">江安校区</a></span>
-		<span class="com"><a href="./wangjiang.html">望江校区</a></span>
-		<span class="com"><a href="./huaxi.html">华西校区</a></span>
-		<span class="com selected"><a href="javascript:;">杰出校友</a></span>
-		<span class="com"><a href="./history.html">川大校史</a></span>
+		<span class="com"><a href="./jiangan.html" class="super-link center">江安校区</a></span>
+		<span class="com"><a href="./wangjiang.html" class="super-link center">望江校区</a></span>
+		<span class="com"><a href="./huaxi.html" class="super-link center">华西校区</a></span>
+		<span class="com selected"><a href="javascript:;" class="super-link center">杰出校友</a></span>
+		<span class="com"><a href="./history.html" class="super-link center">川大校史</a></span>
 		<a href="./index.html"><img src="./img/logo.png" alt="" class="belowimg"></a>
 	</div>
 
@@ -48,11 +157,26 @@
 	<div class='big-swiper'>
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
-				<div class="swiper-slide"><img src="./img/fellow/bg1.jpg" alt=""></div>
-				<div class="swiper-slide"><img src="./img/fellow/bg2.jpg" alt=""></div>
-				<div class="swiper-slide"><img src="./img/fellow/bg3.jpg" alt=""></div>
+				<div class="swiper-slide">
+					<img src="./img/fellow/bg1.jpg" alt="">
+					<div class="w2">理想不抛弃苦心追求的人,只要不停止追求,你们就会沐浴在理想的光辉之中。 —— 巴金
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="./img/fellow/bg2.jpg" alt="">
+					<div class="w1">岷峨挺秀，锦水含章。巍巍学府，德渥群芳
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="./img/fellow/bg3.jpg" alt="">
+					<div class="w1">百余年来，学校先后汇聚了历史学家顾颉刚、文学家李劼人、美学家朱光潜、物理学家吴大猷、植物学家方文培、卫生学家陈志潜、数学家柯召等大师。历史上，吴玉章、张澜曾执掌校务，共和国开国元勋朱德、共和国主席杨尚昆、文坛巨匠郭沫若、人民作家巴金、一代英烈江竹筠（江姐）等曾在川大求学。
+					</div>
+				</div>
 			</div>
 			<div class="swiper-pagination"></div>
+		</div>
+		<div class="godown">
+			<div class="jian"><img src="./img/jian_red.png" alt=""></div>
 		</div>
 	</div>
 
@@ -69,11 +193,11 @@
 				</div>
 			</div>
 			<div id="splus1" class="com2 slide2-leftenter">
-				<div class="spot">
+				<div class="spot comeup">
 					<div class="title">巴金</div>
 					<div class="content">
-						&emsp;&emsp;朱德（1886年12月1日-1976年7月6日），字玉阶，原名朱代珍，曾用名朱建德，伟大的马克思主义者，伟大的无产阶级革命家、政治家、军事家，中国人民解放军的主要缔造者之一，中华人民共和国的开国元勋，是以毛泽东同志为核心的党的第一代中央领导集体的重要成员<br>
-						&emsp;&emsp;建国初期，兼任中共中央纪律检查委员会书记，为加强执政党的建设，维护党的组织纪律，克服党内各种不良倾向，保持党的优良作风，进行了大量卓有成效的工作。他还多次出国访问、会见外国领导人，增进了中国人民和各国人民的友谊。
+						&emsp;&emsp;巴金（1904年11月25日—2005年10月17日），本名李尧棠，字芾甘，笔名除巴金外，还有王文慧、欧阳镜蓉、黄树辉、余一等，1904年11月25日出生于四川省成都市，中国当代作家。<br>
+						&emsp;&emsp;1921年4月1日，第一篇文章《怎样建设真正自由平等的社会》发表在《半月》刊第17号刊载上。1929年，第一次以“巴金”的笔名在《小说月报》发表长篇小说《灭亡》，引起文坛的关注。1933年1月，长篇小说《雨》出版；5月，长篇小说《家》出版。1954年9月15日—29日，参加第一届全国人民代表大会。1960年4月，散文集《赞歌集》出版；同年，当选为全国文联副主席。“文化大革命”期间，受到冲击。1983年起，任全国政协副主席，中国作家协会主席。1990年，获得苏联人民友谊勋章；同年获第一届福冈亚洲文化奖特别奖。2005年10月17日，因病在上海逝世 。
 					</div>
 					<div class="like">
 						<img class="like_img" src='http://wcfun.top/images/aixin0.png' alt="">
@@ -81,6 +205,15 @@
 							<div class="like_number">0</div>&nbsp;点赞
 						</div>
 						<div class="comment">评论&nbsp;></div>
+					</div>
+				</div>
+				<div class="discuss comeout">
+					<div class="return-back">返回</div>
+					<div class="discuss-container">
+					</div>
+					<div class="publish">
+						<textarea placeholder="发表评论"></textarea>
+						<div class="bnt">发表</div>
 					</div>
 				</div>
 			</div>
@@ -94,7 +227,7 @@
 				</div>
 			</div>
 			<div id="splus2" class="com2">
-				<div class="spot">
+				<div class="spot comeup">
 					<div class="title">郭沫若</div>
 					<div class="content">
 						&emsp;&emsp;郭沫若（1892年11月16日—1978年6月12日），原名郭开贞，字鼎堂，号尚武。中国现代作家、历史学家、考古学家。<br>
@@ -108,6 +241,15 @@
 						<div state="0" class="comment">评论&nbsp;></div>
 					</div>
 				</div>
+				<div class="discuss comeout">
+					<div class="return-back">返回</div>
+					<div class="discuss-container">
+					</div>
+					<div class="publish">
+						<textarea placeholder="发表评论"></textarea>
+						<div class="bnt">发表</div>
+					</div>
+				</div>
 			</div>
 
 			<div id="bplus3" class="com1">
@@ -119,7 +261,7 @@
 				</div>
 			</div>
 			<div id="splus3" class="com2">
-				<div class="spot">
+				<div class="spot comeup">
 					<div class="title">江姐</div>
 					<div class="content">
 						&emsp;&emsp;江竹筠（1920年8月20日——1949年11月14日），四川省自贡市大山铺镇江家湾人，中国共产党地下时期重庆地区组织的重要人物，为中国共产党追认的女烈士。<br>
@@ -134,6 +276,15 @@
 						<div state="0" class="comment">评论&nbsp;></div>
 					</div>
 				</div>
+				<div class="discuss comeout">
+					<div class="return-back">返回</div>
+					<div class="discuss-container">
+					</div>
+					<div class="publish">
+						<textarea placeholder="发表评论"></textarea>
+						<div class="bnt">发表</div>
+					</div>
+				</div>
 			</div>
 
 			<div id="bplus4" class="com1">
@@ -145,7 +296,7 @@
 				</div>
 			</div>
 			<div id="splus4" class="com2">
-				<div class="spot">
+				<div class="spot comeup">
 					<div class="title">熊复</div>
 					<div class="content">
 						&emsp;&emsp;熊复（1915-1995
@@ -159,6 +310,15 @@
 						<div state="0" class="comment">评论&nbsp;></div>
 					</div>
 				</div>
+				<div class="discuss comeout">
+					<div class="return-back">返回</div>
+					<div class="discuss-container">
+					</div>
+					<div class="publish">
+						<textarea placeholder="发表评论"></textarea>
+						<div class="bnt">发表</div>
+					</div>
+				</div>
 			</div>
 
 			<div id="bplus5" class="com1">
@@ -170,7 +330,7 @@
 				</div>
 			</div>
 			<div id="splus5" class="com2">
-				<div class="spot">
+				<div class="spot comeup">
 					<div class="title">朱德</div>
 					<div class="content">
 						&emsp;&emsp;朱德（1886年12月1日-1976年7月6日），字玉阶，原名朱代珍，曾用名朱建德，伟大的马克思主义者，伟大的无产阶级革命家、政治家、军事家，中国人民解放军的主要缔造者之一，中华人民共和国的开国元勋，是以毛泽东同志为核心的党的第一代中央领导集体的重要成员<br>
@@ -182,6 +342,15 @@
 							<div class="like_number">0</div>&nbsp;点赞
 						</div>
 						<div state="0" class="comment">评论&nbsp;></div>
+					</div>
+				</div>
+				<div class="discuss comeout">
+					<div class="return-back">返回</div>
+					<div class="discuss-container">
+					</div>
+					<div class="publish">
+						<textarea placeholder="发表评论"></textarea>
+						<div class="bnt">发表</div>
 					</div>
 				</div>
 			</div>
@@ -199,14 +368,17 @@
 		</div>
 		<div class="link">
 			<div class="link-title">学校网站</div>
-			<div class="link-detail"><a href="http://jwc.scu.edu.cn/">教务处</a></div>
-			<div class="link-detail"><a href="http://scufd.scu.edu.cn/">财务处</a></div>
-			<div class="link-detail"><a href="http://xsc.scu.edu.cn/WEBSITE/XG">学工部</a></div>
+			<div class="link-detail"><a href="http://jwc.scu.edu.cn/">四川大学教务处</a></div>
+			<div class="link-detail"><a href="http://scufd.scu.edu.cn/">四川大学财务处</a></div>
+			<div class="link-detail"><a href="http://xsc.scu.edu.cn/WEBSITE/XG">四川大学学工部</a></div>
 		</div>
 	</div>
 
 	<!-- 返回顶部 -->
-	<div class="return-top">返回顶部</div>
+	<div class="return-top">
+		<div class="return-top-img"><img src="./img/jian1_red.png" alt=""></div>
+		<div class="return-top-text">返回顶部</div>
+	</div>
 
 	<script src="./js/campus.js"></script>
 	<script src="./js/swiper-bundle.min.js"></script>
