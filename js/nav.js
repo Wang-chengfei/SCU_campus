@@ -248,4 +248,61 @@ go_down.addEventListener("mouseout", function () {
     go_down.children[0].src = './img/jian_red.png'
 })
 
+//音乐播放
+var music_list = ['./music/SCU_student.mp3', './music/school_music.mp3', './music/chengdu.m4a']
+var music_photo = document.querySelectorAll(".music-photo")
+var music_now = 0
+var music = document.querySelector(".music audio")
+var music_control = document.querySelectorAll(".music-control")
+var music_prev = document.querySelectorAll(".music-prev")
+var music_next = document.querySelectorAll(".music-next")
+var music_flag = 1
+//播放与暂停
+for (let i = 0; i < 2; i++) {
+    music_control[i].addEventListener("click", function () {
+        if (music_flag) {
+            music_flag = 0
+            music_control[0].children[0].src = './music/zanting.png'
+            music_control[1].children[0].src = './music/zanting.png'
+            music_photo[0].className = 'music-photo rotating'
+            music_photo[1].className = 'music-photo rotating'
+            music_photo[0].style.animationPlayState = 'running'
+            music_photo[1].style.animationPlayState = 'running'
+            music.play()
+        }
+        else {
+            music_flag = 1
+            music_control[0].children[0].src = './music/bofang.png'
+            music_control[1].children[0].src = './music/bofang.png'
+            music_photo[0].style.animationPlayState = 'paused'
+            music_photo[1].style.animationPlayState = 'paused'
+            music.pause()
+        }
+    })
+}
+//上一首歌
+for (let i = 0; i < 2; i++) {
+    music_prev[i].addEventListener("click", function () {
+        music_now--
+        if (music_now == -1) music_now = music_list.length - 1
+        music.src = music_list[music_now]
+        music.play()
+    })
+}
+//下一首歌
+for (let i = 0; i < 2; i++) {
+    music_next[i].addEventListener("click", function () {
+        music_now++
+        if (music_now == music_list.length) music_now = 0
+        music.src = music_list[music_now]
+        music.play()
+    })
+}
+//自动播放下一首歌曲
 
+music.addEventListener("ended", function () {
+    music_now++
+    if (music_now == music_list.length) music_now = 0
+    music.src = music_list[music_now]
+    music.play()
+})

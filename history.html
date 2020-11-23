@@ -13,10 +13,6 @@
 </head>
 
 <style>
-	body {
-		overflow-y: visible;
-	}
-
 	.big {
 		width: 950px;
 		height: 2000px;
@@ -58,19 +54,16 @@
 	.name1 {
 		left: 950px;
 		top: 0px;
-
 	}
 
 	.name2 {
 		left: 950px;
 		top: 455px;
-
 	}
 
 	.name3 {
 		left: 950px;
 		top: 930px;
-
 	}
 
 	.cam {
@@ -78,27 +71,27 @@
 		margin-block-end: 1em;
 		margin-inline-start: 0px;
 		margin-inline-end: 0px;
-		padding-top: 55px;
-		text-align: center;
-		font-size: 16px;
-		line-height: 1.6;
+		padding: 55px 50px;
+		text-align: left;
+		font-size: 20px;
+		line-height: 36px;
 	}
 
 	.cam1 {
 		height: 400px;
-		width: 100%;
+		width: 90%;
 		border-bottom: 1px solid #e0e0e0;
 	}
 
 	.cam2 {
 		height: 400px;
-		width: 100%;
+		width: 90%;
 		border-bottom: 1px solid #e0e0e0;
 	}
 
 	.cam3 {
 		height: 1200px;
-		width: 100%;
+		width: 90%;
 	}
 
 	.table {
@@ -109,11 +102,11 @@
 	}
 
 	.footer {
-		top: 2200px;
+		top: 2400px;
 	}
 
 	.return-top {
-		top: 2380px;
+		top: 2580px;
 	}
 
 	.img {
@@ -162,18 +155,19 @@
 	}
 
 	#sidenav .mm {
+		color: white;
 		background-color: rgb(180, 16, 10);
 	}
 
 	#sidenav .mm:hover {
 		background-color: rgb(180, 16, 10) !important;
-		color: white;
+		color: white !important;
 
 	}
 
 	#sidenav .nn:hover {
 		background-color: rgb(180, 16, 10) !important;
-		color: white;
+		color: white !important;
 	}
 </style>
 
@@ -189,6 +183,13 @@
 		<span class="com"><a href="./fellow.html" class="super-link center">杰出校友</a></span>
 		<span class="com selected"><a href="javascript:;" class="super-link center">川大校史</a></span>
 		<a href="./index.html"><img src="./img/logo.png" alt="" class="belowimg"></a>
+		<div class="music">
+			<audio src="./music/SCU_student.mp3" preload="auto"></audio>
+			<div class="music-photo"><img src="./music/music_logo.jpg" alt=""></div>
+			<div class="music-prev"><img src="./music/prev.png" alt=""></div>
+			<div class="music-control"><img src="./music/bofang.png" alt=""></div>
+			<div class="music-next"><img src="./music/next.png" alt=""></div>
+		</div>
 	</div>
 
 	<div id="nav2" class="comnav">
@@ -198,6 +199,12 @@
 		<span class="com"><a href="./fellow.html" class="super-link center">杰出校友</a></span>
 		<span class="com selected"><a href=".javascript:;" class="super-link center">川大校史</a></span>
 		<a href="./index.html"><img src="./img/logo.png" alt="" class="belowimg"></a>
+		<div class="music" id="musi">
+			<div class="music-photo"><img src="./music/music_logo.jpg" alt=""></div>
+			<div class="music-prev"><img src="./music/prev.png" alt=""></div>
+			<div class="music-control"><img src="./music/bofang.png" alt=""></div>
+			<div class="music-next"><img src="./music/next.png" alt=""></div>
+		</div>
 	</div>
 
 
@@ -212,9 +219,21 @@
 	<div class='big-swiper'>
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
-				<div class="swiper-slide"><img src="./img/history/bg1.jpg" alt=""></div>
-				<div class="swiper-slide"><img src="./img/history/bg2.jpg" alt=""></div>
-				<div class="swiper-slide"><img src="./img/history/bg3.jpg" alt=""></div>
+				<div class="swiper-slide">
+					<div class="w2">四川大学由原四川大学、原成都科技大学、原华西医科大学三所全国重点大学经过两次合并而成。
+					</div>
+					<img src="./img/history/bg1.jpg" alt="">
+				</div>
+				<div class="swiper-slide">
+					<div class="w1">原四川大学起始于1896年四川总督鹿传霖奉光绪特旨创办的四川中西学堂，是西南地区最早的近代高等学校；原成都科技大学是新中国院系调整时组建的第一批多科型工科院校。
+					</div>
+					<img src="./img/history/bg2.jpg" alt="">
+				</div>
+				<div class="swiper-slide">
+					<div class="w2">原华西医科大学源于1910年由西方基督教会组织在成都创办的华西协合大学，是西南地区最早的西式大学和中国最早培养研究生的大学之一。
+					</div>
+					<img src="./img/history/bg3.jpg" alt="">
+				</div>
 			</div>
 			<div class="swiper-pagination"></div>
 		</div>
@@ -237,29 +256,21 @@
 				<div class="name name2">江安</div>
 				<div class="name name3">华西</div>
 				<div class="cam1 cam">
-					四川大学江安校区始建于2002年5月，位于成都市双流航空港经济开发区，地处文星镇与白家镇之间。<br>
-					从东门到望江校区约12.5公里，距双流国际机场3公里、双流城区5公里。<br>
-					校区周边环绕着大件路、黄河路、川大路、长城路等四条主要道路，全长约6.4公里。<br>
-					校区总占地3641亩，其中教学、学生生活区3000余亩，教师住宅区240余亩，待征地400亩。<br>
-					在江安校区内有一座目前中国高校最长的步行桥（418米）——长桥。
-
+					&emsp;&emsp;四川大学由原四川大学、原成都科技大学、原华西医科大学三所全国重点大学经过两次合并而成。原四川大学起始于1896年四川总督鹿传霖奉光绪特旨创办的四川中西学堂，是西南地区最早的近代高等学校；原成都科技大学是新中国院系调整时组建的第一批多科型工科院校；原1994年，原四川大学和原成都科技大学合并为四川联合大学，1998年更名为四川大学，2000年，四川大学与原华西医科大学合并，组建了新的四川大学。<br>
+					&emsp;&emsp;四川大学望江校区是原四川大学与原成都科技大学的所在地。总占地3000余亩，主要为四川大学大三、大四及硕、博士研究生同学学习的地方，是四川大学的校本部。望江校区位于成都市一环路上，分设东西南北四个门，交通方便，地理位置优越。作为最早的川大所在地，望江校区历经百年风雨，巴山灵秀，咸聚于此，蜀地彦才，聚汇于斯，校园内历史文化底蕴厚重，是读书治学的理想园地。大三学子搬到望江校区之后，大家都有一种“所谓大学当如是”的感觉。
 				</div>
 				<div class="cam2 cam">
-					四川大学由原四川大学、原成都科技大学、原华西医科大学三所全国重点大学经过两次合并而成。<br>
-					原四川大学起始于1896年四川总督鹿传霖奉光绪特旨创办的四川中西学堂，是西南地区最早的近代高等学校；<br>
-					原成都科技大学是新中国院系调整时组建的第一批多科型工科院校；<br>
-					原1994年，原四川大学和原成都科技大学合并为四川联合大学，1998年更名为四川大学， <br>
-					2000年，四川大学与原华西医科大学合并，组建了新的四川大学。<br>
+					&emsp;&emsp;四川大学江安校区始建于2002年5月，位于成都市双流航空港经济开发区，地处文星镇与白家镇之间。从东门到望江校区约12.5公里，距双流国际机场3公里、双流城区5公里。校区周边环绕着大件路、黄河路、川大路、长城路等四条主要道路，全长约6.4公里。校区总占地3641亩，其中教学、学生生活区3000余亩，教师住宅区240余亩，待征地400亩。在江安校区内有一座目前中国高校最长的步行桥（418米）——长桥。<br>
+					&emsp;&emsp;江安校区是环境生态化、景观园林化、校园信息化的新型大学校园。校区总实行功能分区，将教学、实验、图书、管理类建筑集中在一条全长2.2公里、宽24米的环道以内，成为校区的腹地。教学区的东西两侧设有学生生活区，教工生活区位于川大路南的沿河地段，与校园仅一路之隔。<br>
 				</div>
 				<div class="cam3 cam">
-					1905年，英、美、加三国的五个基督教会决议在中国西部创办一所"规模宏大、科学完备"的高等学府，地址定在四川政治文化中心成都。随即在城南购置土地，建筑校舍。这里土地平旷，北傍锦江，风景清雅，由于华西协合大学的兴建，便有了"华西坝"的称谓。<br><br>
-					1910年3月11日，华西协合大学举行了开学典礼，初设文理教育三科。Joseph
-					Beech（美）出任校长。Beech在四川省当局和国民政府募得大洋万元（建校后在各方共募得资金400多万美元。学校采用当时牛津和多伦多大学的办学模式，目标是建成一所规模宏大科学完备的高等学府；华西协合大学的教师大多来自英国剑桥、牛津，加拿大多伦多，美国哈佛、耶鲁等院校，如莫尔思、林则、唐茂森、米玉士、吉士道、安德生、苏道璞、刘延龄等。学校也聘请前清优贡、举人、进士、翰林等作为国学教员，如成都著名的"五老七贤"，设立文学院、理学院、医牙学院，大学管理以"协合"为原则，管理体制仿牛津、剑桥，课程设置按哈佛体系。<br><br>
-					1912年，在加拿大，美国，英国分别举办了华大学舍建筑设计大赛，英国建筑大师弗烈特·荣杜易设计了现属于四川省文物保护单位的华西坝建筑群。<br><br>
-					1933年9月23日，四川省教育厅转发了教育部指令："私立华西协合大学，应准予立案“，华大获得国民政府批准的正式办学资格，学校教育主权归属中国人掌握，张凌高任校长。设文，理，医牙三学院，成为医牙为主文理并重的综合性大学。<br><br>
-					抗日战争胜利后，从北平和华东迁来华西坝的各大学陆续迁回，五大学联办落下帷幕。私立华西协合大学新办和恢复了有关专业，成立了自然博物馆、大学医院，探索了医、教结合及文、理、医、牙医学相互渗透等问题，在调整中开始了新的征程。<br><br>
-					11951年10月6日，四川省人民政府正式收回私立华西协合大学，学校更名为华西大学，刘承钊出任校长。按照党和国家的统一部署，在知识分子中开展了思想改造运动，经过院系调整，实现了从私立综合性大学到社会主义新型多科性医科大学的转变。<br><br>
-					2000年9月，华西医科大学与四川大学正式合并，组建新的四川大学，华西医科大学正式更名为四川大学华西医学中心，校址更名为四川大学华西校区。
+					&emsp;&emsp;1905年，英、美、加三国的五个基督教会决议在中国西部创办一所"规模宏大、科学完备"的高等学府，地址定在四川政治文化中心成都。随即在城南购置土地，建筑校舍。这里土地平旷，北傍锦江，风景清雅，由于华西协合大学的兴建，便有了"华西坝"的称谓。<br>
+					&emsp;&emsp;1910年3月11日，华西协合大学举行了开学典礼，初设文理教育三科。JosephBeech（美）出任校长。Beech在四川省当局和国民政府募得大洋万元（建校后在各方共募得资金400多万美元。学校采用当时牛津和多伦多大学的办学模式，目标是建成一所规模宏大科学完备的高等学府；华西协合大学的教师大多来自英国剑桥、牛津，加拿大多伦多，美国哈佛、耶鲁等院校，如莫尔思、林则、唐茂森、米玉士、吉士道、安德生、苏道璞、刘延龄等。学校也聘请前清优贡、举人、进士、翰林等作为国学教员，如成都著名的"五老七贤"，设立文学院、理学院、医牙学院，大学管理以"协合"为原则，管理体制仿牛津、剑桥，课程设置按哈佛体系。<br>
+					&emsp;&emsp;1912年，在加拿大，美国，英国分别举办了华大学舍建筑设计大赛，英国建筑大师弗烈特·荣杜易设计了现属于四川省文物保护单位的华西坝建筑群。<br>
+					&emsp;&emsp;1933年9月23日，四川省教育厅转发了教育部指令："私立华西协合大学，应准予立案“，华大获得国民政府批准的正式办学资格，学校教育主权归属中国人掌握，张凌高任校长。设文，理，医牙三学院，成为医牙为主文理并重的综合性大学。<br>
+					&emsp;&emsp;抗日战争胜利后，从北平和华东迁来华西坝的各大学陆续迁回，五大学联办落下帷幕。私立华西协合大学新办和恢复了有关专业，成立了自然博物馆、大学医院，探索了医、教结合及文、理、医、牙医学相互渗透等问题，在调整中开始了新的征程。<br>
+					&emsp;&emsp;11951年10月6日，四川省人民政府正式收回私立华西协合大学，学校更名为华西大学，刘承钊出任校长。按照党和国家的统一部署，在知识分子中开展了思想改造运动，经过院系调整，实现了从私立综合性大学到社会主义新型多科性医科大学的转变。<br>
+					&emsp;&emsp;2000年9月，华西医科大学与四川大学正式合并，组建新的四川大学，华西医科大学正式更名为四川大学华西医学中心，校址更名为四川大学华西校区。
 				</div>
 			</div>
 			<div class="table">
@@ -295,7 +306,6 @@
 	<!-- <script src="./js/campus.js"></script> -->
 	<script src="./js/swiper-bundle.min.js"></script>
 	<script src="./js/swiper.js"></script>
-	<script src="./js/nav.js"></script>
 	<script>
 		var mm = document.querySelector(".mm");
 		var nn = document.querySelector(".nn");
@@ -349,6 +359,158 @@
 		go_down.addEventListener("mouseout", function () {
 			go_down.children[0].src = './img/jian_red.png'
 		})
+
+		var nav = document.querySelector("#nav1");
+		var rnav = document.querySelector("#nav2");
+		var c = document.querySelector(".big");
+		var b = 0;
+		var d = 0;
+		var side_nav = document.querySelector(".side-nav")
+
+		//上方导航栏动画
+		document.addEventListener("scroll", function () {
+			if (window.pageYOffset > 0) {
+				rnav.className = "rnav-out";
+				nav.className = "nav-enter";
+				b = 1;
+				if (d == 0) {
+					d = 1
+					side_nav.className = "side-nav side-nav-enter"
+					setTimeout(function () {
+						side_nav.className = "side-nav side-nav-right"
+					}, 800)
+				}
+			} else {
+				if (b > 0) {
+					rnav.className = "rnav-enter";
+					nav.className = "nav-out";
+					d = 0
+					side_nav.className = "side-nav side-nav-right side-nav-leave"
+					setTimeout(function () {
+						side_nav.className = "side-nav"
+					}, 800)
+				}
+			}
+		})
+
+
+		/*向上滑动效果*/
+		var bigBox = document.querySelector(".bigBox")
+		document.addEventListener('scroll', function() {
+			let temp = bigBox.className
+			var top = window.pageYOffset
+			if (top > 0) {
+				bigBox.className = "bigBox up"
+			}
+			if (top == 0) {
+				bigBox.className = "bigBox dowm"
+			}
+			if (temp != bigBox.className) {
+				document.body.style.overflowY = 'hidden'
+				setTimeout(function () {
+					document.body.style.overflowY = 'visible'
+				}, 800)
+			}
+		})
+
+		//页面刷新后返回顶部
+		window.onbeforeunload = function () {
+			document.documentElement.scrollTop = 0;  //ie下
+			document.body.scrollTop = 0;  //非ie
+		}
+
+		//返回顶部
+		var footer_img = document.querySelector(".return-top-img img")
+		var footer_nav = document.querySelector(".return-top")
+		footer_nav.addEventListener("click", function () {
+			window.scrollTo({
+				top: 0,
+				behavior: "smooth"
+			});
+		})
+		footer_nav.addEventListener('mouseover', function () {
+			footer_img.src = './img/jian1_white.png'
+		})
+		footer_nav.addEventListener('mouseout', function () {
+			footer_img.src = './img/jian1_red.png'
+		})
+
+		//点击向下
+		var go_down = document.querySelector(".jian")
+		go_down.addEventListener("click", function () {
+			window.scrollTo({
+				top: 113,
+				behavior: "smooth"
+			});
+		})
+
+		go_down.addEventListener("mouseover", function () {
+			go_down.children[0].src = './img/jian_white.png'
+		})
+
+		go_down.addEventListener("mouseout", function () {
+			go_down.children[0].src = './img/jian_red.png'
+		})
+
+		//音乐播放
+		var music_list = ['./music/SCU_student.mp3', './music/school_music.mp3', './music/chengdu.m4a']
+		var music_photo = document.querySelectorAll(".music-photo")
+		var music_now = 0
+		var music = document.querySelector(".music audio")
+		var music_control = document.querySelectorAll(".music-control")
+		var music_prev = document.querySelectorAll(".music-prev")
+		var music_next = document.querySelectorAll(".music-next")
+		var music_flag = 1
+		//播放与暂停
+		for (let i = 0; i < 2; i++) {
+			music_control[i].addEventListener("click", function () {
+				if (music_flag) {
+					music_flag = 0
+					music_control[0].children[0].src = './music/zanting.png'
+					music_control[1].children[0].src = './music/zanting.png'
+					music_photo[0].className = 'music-photo rotating'
+					music_photo[1].className = 'music-photo rotating'
+					music_photo[0].style.animationPlayState = 'running'
+					music_photo[1].style.animationPlayState = 'running'
+					music.play()
+				}
+				else {
+					music_flag = 1
+					music_control[0].children[0].src = './music/bofang.png'
+					music_control[1].children[0].src = './music/bofang.png'
+					music_photo[0].style.animationPlayState = 'paused'
+					music_photo[1].style.animationPlayState = 'paused'
+					music.pause()
+				}
+			})
+		}
+		//上一首歌
+		for (let i = 0; i < 2; i++) {
+			music_prev[i].addEventListener("click", function () {
+				music_now--
+				if (music_now == -1) music_now = music_list.length - 1
+				music.src = music_list[music_now]
+				music.play()
+			})
+		}
+		//下一首歌
+		for (let i = 0; i < 2; i++) {
+			music_next[i].addEventListener("click", function () {
+				music_now++
+				if (music_now == music_list.length) music_now = 0
+				music.src = music_list[music_now]
+				music.play()
+			})
+		}
+		//自动播放下一首歌曲
+
+		music.addEventListener("ended", function () {
+			music_now++
+			if (music_now == music_list.length) music_now = 0
+			music.src = music_list[music_now]
+			music.play()
+		})
+
 	</script>
 
 </body>

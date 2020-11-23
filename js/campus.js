@@ -19,7 +19,7 @@ document.addEventListener("scroll", function () {
 			}
 		}
 
-
+		//侧边栏随页面滚动变色
 		if (window.pageYOffset >= 631 * i - 180) {
 			for (let j = 0; j < nav_lis.length; j++) {
 				nav_lis[j].className = 'side-nav-slide'
@@ -31,11 +31,19 @@ document.addEventListener("scroll", function () {
 		if (window.pageYOffset < c.offsetTop - 600 + i * 670 && window.pageYOffset >= c.offsetTop - 1050 + i * 670 && a[i] > 0) {
 			a[i] = 0;
 			if (i % 2 == 1) {
-				Bcom[i].className = "slide1-rightenter";
-				Scom[i].className = "slide2-rightenter";
+				setTimeout(function () {
+					if (window.pageYOffset < c.offsetTop - 600 + i * 670) {
+						Bcom[i].className = "slide1-rightenter";
+						Scom[i].className = "slide2-rightenter";
+					}
+				}, 1000)
 			} else {
-				Bcom[i].className = "slide1-leftenter";
-				Scom[i].className = "slide2-leftenter";
+				setTimeout(function () {
+					if (window.pageYOffset < c.offsetTop - 600 + i * 670) {
+						Bcom[i].className = "slide1-leftenter";
+						Scom[i].className = "slide2-leftenter";
+					}
+				}, 1000)
 			}
 		}
 	}
@@ -45,10 +53,10 @@ document.addEventListener("scroll", function () {
 //侧边导航栏点击事件
 for (let i = 0; i < nav_lis.length; i++) {
 	nav_lis[i].addEventListener("click", function () {
-		window.scrollTo({ 
-			top: 631 * i + 113, 
-			behavior: "smooth" 
-		});		
+		window.scrollTo({
+			top: 631 * i + 113,
+			behavior: "smooth"
+		});
 		for (let j = 0; j < nav_lis.length; j++) {
 			nav_lis[j].className = 'side-nav-slide'
 		}
