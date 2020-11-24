@@ -22,6 +22,7 @@
         z-index: 1;
         animation: plus 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         background-image: url("../img/diwen.svg");
+        /* filter: blur(2px); */
         background-position: right;
         background-repeat: repeat-y;
     }
@@ -193,9 +194,11 @@
 
     .discuss .return-back {
         user-select: none;
-        font-size: 20px;
+        font-size: 24px;
+        font-weight: 500;
+        text-shadow: 6px 6px 10px red;
         height: 20px;
-        line-height: 20px;
+        line-height: 24px;
         color: white;
         cursor: pointer;
         margin-bottom: 20px;
@@ -259,11 +262,11 @@
 
 
     .one-discuss {
-        overflow: scroll;
+        overflow: hidden;
         color: white;
         width: 90%;
-        margin: 10px 0;
-        padding: 8px;
+        margin: 15px 0;
+        padding: 8px 8px 10px 12px;
         border: 1px solid white;
         border-radius: 10px;
     }

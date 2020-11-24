@@ -169,25 +169,27 @@ var textarea = document.querySelectorAll(".publish textarea")
 for (let i = 0; i < bnt.length; i++) {
     bnt[i].addEventListener("click", function () {
         let text = textarea[i].value
-        textarea[i].value = ''
-        let curTime = new Date().getTime()
-        let one_discuss = document.createElement("div")
-        let time = document.createElement("div")
-        let wenzi = document.createElement("div")
-        one_discuss.className = 'one-discuss'
-        time.className = 'time'
-        time.innerHTML = dataFormat(curTime)
-        wenzi.className = 'wenzi'
-        wenzi.innerHTML = text
-        one_discuss.appendChild(time)
-        one_discuss.appendChild(wenzi)
-        discuss_container[i].appendChild(one_discuss)
-        axios.post('http://muzi.fun:8765/campus/comment/insert', {
-            partId: partId,
-            subPartIndex: i + 1,
-            commentDate: curTime,
-            commentString: text
-        })
+        if (text != '') {
+            textarea[i].value = ''
+            let curTime = new Date().getTime()
+            let one_discuss = document.createElement("div")
+            let time = document.createElement("div")
+            let wenzi = document.createElement("div")
+            one_discuss.className = 'one-discuss'
+            time.className = 'time'
+            time.innerHTML = dataFormat(curTime)
+            wenzi.className = 'wenzi'
+            wenzi.innerHTML = text
+            one_discuss.appendChild(time)
+            one_discuss.appendChild(wenzi)
+            discuss_container[i].appendChild(one_discuss)
+            axios.post('http://muzi.fun:8765/campus/comment/insert', {
+                partId: partId,
+                subPartIndex: i + 1,
+                commentDate: curTime,
+                commentString: text
+            })
+        }
     })
 }
 

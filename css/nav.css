@@ -116,7 +116,7 @@ body {
 }
 
 .music .music-photo img {
-    box-shadow: 1px 1px 7px  #909090;
+    box-shadow: 1px 1px 6px  #909090;
     height: 59px;
     width: 59px;
     border-radius: 50%;
@@ -287,12 +287,13 @@ body {
     margin-left: 60px;
     width: 40px;
     cursor: pointer;
+    user-select: none;
 }
 
 .like .like_num, .like .comment {
     position: absolute;
     font-size: 20px;
-    top: 18px;
+    top: 17px;
     right: 225px;
 }
 
@@ -301,9 +302,13 @@ body {
 }
 
 .like .comment {
-    right: 30px;
+    right: 90px;
+    top: 13px;
     cursor: pointer;
     user-select: none;
+    font-size: 24px;
+    font-weight: 500;
+    text-shadow: 6px 6px 10px red;
 }
 
 /*侧边导航栏*/
