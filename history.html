@@ -137,6 +137,7 @@
 	}
 
 	.music .music-photo img {
+		box-shadow: 1px 1px 7px #909090;
 		height: 59px;
 		width: 59px;
 		border-radius: 50%;
@@ -573,7 +574,7 @@
 	}
 
 	.slideout {
-		animation: out 0.8s cubic-bezier(0.250, 0.780, 0.450, 0.940) both;
+		animation: out 1.5s cubic-bezier(0.250, 0.780, 0.450, 0.940) both;
 	}
 
 	@keyframes out {
@@ -584,7 +585,7 @@
 		}
 
 		100% {
-			transform: translateX(10px);
+			transform: translateX(15px);
 			opacity: 1;
 		}
 	}
@@ -770,7 +771,7 @@
 
 		document.addEventListener("scroll", function () {
 			for (let i = 0; i < img.length; i++) {
-				if (window.pageYOffset >= c.offsetTop - 600 + i * 400) {
+				if (window.pageYOffset >= c.offsetTop - 600 + i * 500) {
 					f[i] = 1
 					img[i].className = "img slideout";
 				}
@@ -930,10 +931,10 @@
 				music.src = music_list[music_now]
 				music_photo[0].children[0].src = img_list[music_now]
 				music_photo[1].children[0].src = img_list[music_now]
+				music_photo[0].className = 'music-photo'
+				music_photo[1].className = 'music-photo'
 				if (flag) {
 					music.play()
-					music_photo[0].className = 'music-photo'
-					music_photo[1].className = 'music-photo'
 					setTimeout(function () {
 						music_photo[0].className = 'music-photo rotating'
 						music_photo[1].className = 'music-photo rotating'
@@ -941,7 +942,6 @@
 				}
 			})
 		}
-		
 		//下一首歌
 		for (let i = 0; i < 2; i++) {
 			music_next[i].addEventListener("click", function () {
@@ -952,10 +952,10 @@
 				music.src = music_list[music_now]
 				music_photo[0].children[0].src = img_list[music_now]
 				music_photo[1].children[0].src = img_list[music_now]
+				music_photo[0].className = 'music-photo'
+				music_photo[1].className = 'music-photo'
 				if (flag) {
 					music.play()
-					music_photo[0].className = 'music-photo'
-					music_photo[1].className = 'music-photo'
 					setTimeout(function () {
 						music_photo[0].className = 'music-photo rotating'
 						music_photo[1].className = 'music-photo rotating'

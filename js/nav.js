@@ -292,10 +292,10 @@ for (let i = 0; i < 2; i++) {
         music.src = music_list[music_now]
         music_photo[0].children[0].src = img_list[music_now]
         music_photo[1].children[0].src = img_list[music_now]
+        music_photo[0].className = 'music-photo'
+        music_photo[1].className = 'music-photo'
         if (flag) {
             music.play()
-            music_photo[0].className = 'music-photo'
-            music_photo[1].className = 'music-photo'
             setTimeout(function () {
                 music_photo[0].className = 'music-photo rotating'
                 music_photo[1].className = 'music-photo rotating'
@@ -313,10 +313,10 @@ for (let i = 0; i < 2; i++) {
         music.src = music_list[music_now]
         music_photo[0].children[0].src = img_list[music_now]
         music_photo[1].children[0].src = img_list[music_now]
+        music_photo[0].className = 'music-photo'
+        music_photo[1].className = 'music-photo'
         if (flag) {
             music.play()
-            music_photo[0].className = 'music-photo'
-            music_photo[1].className = 'music-photo'
             setTimeout(function () {
                 music_photo[0].className = 'music-photo rotating'
                 music_photo[1].className = 'music-photo rotating'
