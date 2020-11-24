@@ -6,14 +6,457 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>川大校史</title>
 	<link rel="icon" href="./img/badge.ico" type="image/x-icon">
-	<link rel="stylesheet" href="./css/nav.css">
-	<link rel="stylesheet" href="./css/campus.css">
 	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
 	<link rel="stylesheet" href="./css/swiper.css">
 </head>
 
 <style>
+	/* nav.css */
+
+	* {
+		margin: 0;
+		padding: 0;
+		text-align: none;
+	}
+
+	body {
+		zoom: 0.941;
+		overflow-x: hidden;
+		background-color: rgb(238, 235, 234);
+	}
+
+	.comnav {
+		position: fixed;
+		top: -90px;
+		left: 0px;
+	}
+
+	/*不透明导航栏*/
+
+	.rnav-out {
+		position: fixed;
+		width: 100%;
+		height: 90px;
+		top: -90px;
+		left: 0px;
+		z-index: 999;
+		background-color: rgb(255, 255, 255);
+		animation: slide-out 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+		box-shadow: 2px 2px 10px #909090;
+	}
+
+	.rnav-enter {
+		position: fixed;
+		width: 100%;
+		height: 90px;
+		top: 0px;
+		left: 0px;
+		z-index: 999;
+		background-color: rgb(255, 255, 255);
+		animation: slide-enter 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	}
+
+	#nav2 a {
+		text-decoration: none;
+		color: black;
+	}
+
+	#nav2 .selected a {
+		color: rgb(180, 16, 10);
+		;
+	}
+
+	/*透明导航栏*/
+
+	.nav-out {
+		position: fixed;
+		width: 100%;
+		height: 90px;
+		top: -90px;
+		left: 0px;
+		z-index: 999;
+		background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.001));
+		animation: slide-out 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	}
+
+	.nav-enter {
+		position: fixed;
+		width: 100%;
+		height: 90px;
+		top: 0px;
+		left: 0px;
+		z-index: 999;
+		background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.001));
+		animation: slide-enter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	}
+
+	.com {
+		position: relative;
+		left: 30px;
+		display: inline-block;
+		height: 90px;
+		font-size: 20px;
+		line-height: 106px;
+		margin-left: 50px;
+	}
+
+	.music {
+		z-index: 1001;
+		position: relative;
+		display: inline-block;
+		height: 100%;
+		width: 300px;
+		top: 33px;
+		left: 250px;
+	}
+
+	#musi {
+		height: 0;
+	}
+
+	.music .music-photo {
+		position: relative;
+		top: -9px;
+		display: inline-block;
+		height: 60px;
+		width: 60px;
+	}
+
+	.rotating {
+		animation: rotate 10s linear infinite;
+	}
+
+	@keyframes rotate {
+		from {
+			transform: rotate(0deg)
+		}
+
+		to {
+			transform: rotate(360deg)
+		}
+	}
+
+	.music .music-photo img {
+		height: 59px;
+		width: 59px;
+		border-radius: 50%;
+	}
+
+	.music .music-control,
+	.music .music-prev,
+	.music .music-next {
+		z-index: 1001;
+		position: relative;
+		top: -15px;
+		cursor: pointer;
+		margin-left: 20px;
+		display: inline-block;
+		height: 45px;
+		width: 45px;
+	}
+
+	.music .music-prev {
+		margin-left: 40px;
+	}
+
+	.music .music-control img,
+	.music .music-prev img,
+	.music .music-next img {
+		position: relative;
+		top: 0;
+		left: 0;
+		z-index: 1001;
+		height: 100%;
+		width: 100%;
+	}
+
+	span:first-child {
+		margin-left: 300px;
+	}
+
+	/*动态下划线效果*/
+
+	.super-link {
+		position: relative;
+		text-decoration: none;
+	}
+
+	.super-link::after {
+		content: '';
+		width: 100%;
+		height: 2.5px;
+		position: absolute;
+		top: 125%;
+		left: 0;
+		background-color: rgb(180, 16, 10);
+		transform: scale(0);
+		transition: all 0.5s;
+	}
+
+	.super-link:hover::after {
+		transform: scale(1);
+	}
+
+	.center::after {
+		transform-origin: center;
+	}
+
+	#nav1 .selected a {
+		color: rgb(180, 16, 10);
+	}
+
+	#nav1 a {
+		text-decoration: none;
+		color: white;
+	}
+
+	.belowimg {
+		position: fixed;
+		left: 50px;
+		top: -29px;
+		height: 165px;
+		cursor: pointer;
+	}
+
+	@keyframes slide-out {
+		0% {
+			transform: translateY(0);
+			opacity: 0;
+		}
+
+		100% {
+			transform: translateY(70px);
+			opacity: 1;
+		}
+	}
+
+	@keyframes slide-enter {
+		0% {
+			transform: translateY(0);
+			opacity: 1;
+		}
+
+		100% {
+			transform: translateY(-70px);
+			opacity: 0;
+		}
+	}
+
+	.up {
+		animation: up 0.8s cubic-bezier(0.250, 0.780, 0.450, 0.940) both;
+	}
+
+	.dowm {
+		top: 0px;
+		animation: dowm 0.8s cubic-bezier(0.250, 0.780, 0.450, 0.940) both;
+	}
+
+	::-webkit-scrollbar {
+		width: 0;
+	}
+
+	@keyframes up {
+		100% {
+			transform: translateY(-800px);
+			opacity: 1;
+		}
+	}
+
+	@keyframes dowm {
+		100% {
+			transform: translateY(800px);
+			opacity: 1;
+		}
+	}
+
+	/*侧边导航栏*/
+
+	.side-nav {
+		user-select: none;
+		position: fixed;
+		top: 160px;
+		right: -60px;
+		width: 50px;
+		z-index: 1000;
+		text-align: center;
+		font-size: 15px;
+		border: 2px solid rgb(180, 16, 10);
+		border-radius: 10px;
+		background-color: rgb(248, 245, 244);
+	}
+
+	.side-nav-right {
+		right: 25px;
+	}
+
+	.side-nav-slide {
+		list-style: none;
+		position: relative;
+		right: 1px;
+		top: -1px;
+		margin-right: 2px;
+		padding: 10px 0 10px 0;
+		width: 52px;
+		height: 42px;
+		border-bottom: 2px solid rgb(180, 16, 10);
+		cursor: pointer;
+	}
+
+	.side-nav li:first-child {
+		border-top-right-radius: 10px;
+		border-top-left-radius: 10px;
+	}
+
+	.side-nav li:last-child {
+		border: none;
+		margin-bottom: -2px;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+
+	.side-nav-select {
+		background-color: rgb(180, 16, 10);
+		;
+		color: white;
+	}
+
+	.side-nav-slide:hover {
+		background-color: rgb(180, 16, 10);
+		;
+		color: white;
+	}
+
+	/*侧边导航栏动画*/
+
+	.side-nav-enter {
+		animation: side-nav-enter1 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940)
+	}
+
+	.side-nav-leave {
+		animation: side-nav-leave1 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940)
+	}
+
+	@keyframes side-nav-enter1 {
+		0% {
+			transform: translateX(0);
+			opacity: 0;
+		}
+
+		100% {
+			transform: translateX(-85px);
+			opacity: 1;
+		}
+	}
+
+	@keyframes side-nav-leave1 {
+		0% {
+			transform: translateX(0);
+			opacity: 1;
+		}
+
+		100% {
+			transform: translateX(85px);
+			opacity: 0;
+		}
+	}
+
+	/*底边栏*/
+
+	.footer {
+		position: absolute;
+		top: 2350px;
+		width: 100%;
+		height: 180px;
+		background-color: rgba(61, 61, 61);
+		z-index: 2;
+	}
+
+	.footer .footer-logo {
+		width: 400px;
+		display: inline-block;
+		margin: 35px 0 0 60px;
+	}
+
+	.footer .address,
+	.footer .link {
+		margin-left: 70px;
+		margin-top: -30px;
+		display: inline-block;
+		height: 100%;
+		width: 630px;
+		color: #999999;
+		font-size: 16px;
+		line-height: 28px;
+	}
+
+	.footer .link {
+		width: 150px;
+	}
+
+	.footer .address .address-title,
+	.footer .link .link-title {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+
+	.footer .link-detail a {
+		text-decoration: none;
+		color: #999999;
+	}
+
+	.return-top {
+		cursor: pointer;
+		z-index: 3;
+		position: absolute;
+		top: 2530px;
+		width: 100%;
+		height: 100px;
+		background-color: white;
+	}
+
+	.return-top-img {
+		width: 100%;
+		height: 40px;
+	}
+
+	.return-top-img img {
+		position: relative;
+		top: 0;
+		left: 788px;
+		height: 130%;
+		margin: 0 auto;
+	}
+
+	.return-top-text {
+		width: 100%;
+		height: 60px;
+		line-height: 60px;
+		text-align: center;
+		font-size: 25px;
+	}
+
+	.return-top:hover {
+		background-color: #3d3d3d;
+		color: white;
+	}
+
+	.bigBox {
+		padding-top: 210px;
+		position: absolute;
+		width: 100%;
+		height: 2420px;
+		background-color: rgb(238, 235, 234);
+		z-index: 1;
+		background-image: url("./img/bg1.png");
+		background-repeat: repeat-y;
+		background-position: right;
+	}
+
+	/* nav.css */
+
 	.big {
+		position: relative;
+		margin: 20px auto;
 		width: 950px;
 		height: 2000px;
 		margin: 20px 100px;
@@ -58,12 +501,12 @@
 
 	.name2 {
 		left: 950px;
-		top: 455px;
+		top: 510px;
 	}
 
 	.name3 {
 		left: 950px;
-		top: 930px;
+		top: 1040px;
 	}
 
 	.cam {
@@ -101,14 +544,6 @@
 		left: 0px;
 	}
 
-	.footer {
-		top: 2400px;
-	}
-
-	.return-top {
-		top: 2580px;
-	}
-
 	.img {
 		opacity: 0;
 		position: absolute;
@@ -126,15 +561,15 @@
 	}
 
 	#img2 {
-		top: 600px;
+		top: 610px;
 	}
 
 	#img3 {
-		top: 1000px;
+		top: 1150px;
 	}
 
 	#img4 {
-		top: 1400px
+		top: 1550px
 	}
 
 	.slideout {
@@ -184,7 +619,7 @@
 		<span class="com selected"><a href="javascript:;" class="super-link center">川大校史</a></span>
 		<a href="./index.html"><img src="./img/logo.png" alt="" class="belowimg"></a>
 		<div class="music">
-			<audio src="./music/SCU_student.mp3" preload="auto"></audio>
+			<audio src="./music/school_music.mp3" preload="auto"></audio>
 			<div class="music-photo"><img src="./music/music_logo.jpg" alt=""></div>
 			<div class="music-prev"><img src="./music/prev.png" alt=""></div>
 			<div class="music-control"><img src="./music/bofang.png" alt=""></div>
@@ -303,7 +738,6 @@
 	</div>
 
 
-	<!-- <script src="./js/campus.js"></script> -->
 	<script src="./js/swiper-bundle.min.js"></script>
 	<script src="./js/swiper.js"></script>
 	<script>
@@ -336,10 +770,9 @@
 
 		document.addEventListener("scroll", function () {
 			for (let i = 0; i < img.length; i++) {
-				if (window.pageYOffset >= c.offsetTop - 600 + i * 500) {
+				if (window.pageYOffset >= c.offsetTop - 600 + i * 400) {
 					f[i] = 1
 					img[i].className = "img slideout";
-
 				}
 			}
 		})
@@ -396,7 +829,7 @@
 
 		/*向上滑动效果*/
 		var bigBox = document.querySelector(".bigBox")
-		document.addEventListener('scroll', function() {
+		document.addEventListener('scroll', function () {
 			let temp = bigBox.className
 			var top = window.pageYOffset
 			if (top > 0) {
@@ -452,8 +885,11 @@
 			go_down.children[0].src = './img/jian_red.png'
 		})
 
+
+
 		//音乐播放
-		var music_list = ['./music/SCU_student.mp3', './music/school_music.mp3', './music/chengdu.m4a']
+		var music_list = ['./music/school_music.mp3', './music/SCU_student.mp3', './music/chengdu.m4a']
+		var img_list = ['./music/music_logo.jpg', './music/music_logo1.png', './music/music_logo2.jpg']
 		var music_photo = document.querySelectorAll(".music-photo")
 		var music_now = 0
 		var music = document.querySelector(".music audio")
@@ -487,19 +923,44 @@
 		//上一首歌
 		for (let i = 0; i < 2; i++) {
 			music_prev[i].addEventListener("click", function () {
+				let flag = 1
+				if (music.paused) flag = 0
 				music_now--
 				if (music_now == -1) music_now = music_list.length - 1
 				music.src = music_list[music_now]
-				music.play()
+				music_photo[0].children[0].src = img_list[music_now]
+				music_photo[1].children[0].src = img_list[music_now]
+				if (flag) {
+					music.play()
+					music_photo[0].className = 'music-photo'
+					music_photo[1].className = 'music-photo'
+					setTimeout(function () {
+						music_photo[0].className = 'music-photo rotating'
+						music_photo[1].className = 'music-photo rotating'
+					}, 1500)
+				}
 			})
 		}
+		
 		//下一首歌
 		for (let i = 0; i < 2; i++) {
 			music_next[i].addEventListener("click", function () {
+				let flag = 1
+				if (music.paused) flag = 0
 				music_now++
 				if (music_now == music_list.length) music_now = 0
 				music.src = music_list[music_now]
-				music.play()
+				music_photo[0].children[0].src = img_list[music_now]
+				music_photo[1].children[0].src = img_list[music_now]
+				if (flag) {
+					music.play()
+					music_photo[0].className = 'music-photo'
+					music_photo[1].className = 'music-photo'
+					setTimeout(function () {
+						music_photo[0].className = 'music-photo rotating'
+						music_photo[1].className = 'music-photo rotating'
+					}, 1500)
+				}
 			})
 		}
 		//自动播放下一首歌曲
@@ -509,6 +970,14 @@
 			if (music_now == music_list.length) music_now = 0
 			music.src = music_list[music_now]
 			music.play()
+			music_photo[0].children[0].src = img_list[music_now]
+			music_photo[1].children[0].src = img_list[music_now]
+			music_photo[0].className = 'music-photo'
+			music_photo[1].className = 'music-photo'
+			setTimeout(function () {
+				music_photo[0].className = 'music-photo rotating'
+				music_photo[1].className = 'music-photo rotating'
+			}, 1500)
 		})
 
 	</script>

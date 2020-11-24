@@ -248,8 +248,10 @@ go_down.addEventListener("mouseout", function () {
     go_down.children[0].src = './img/jian_red.png'
 })
 
+
 //音乐播放
-var music_list = ['./music/SCU_student.mp3', './music/school_music.mp3', './music/chengdu.m4a']
+var music_list = ['./music/school_music.mp3', './music/SCU_student.mp3', './music/chengdu.m4a']
+var img_list = ['./music/music_logo.jpg', './music/music_logo1.png', './music/music_logo2.jpg']
 var music_photo = document.querySelectorAll(".music-photo")
 var music_now = 0
 var music = document.querySelector(".music audio")
@@ -283,19 +285,43 @@ for (let i = 0; i < 2; i++) {
 //上一首歌
 for (let i = 0; i < 2; i++) {
     music_prev[i].addEventListener("click", function () {
+        let flag = 1
+        if (music.paused) flag = 0
         music_now--
         if (music_now == -1) music_now = music_list.length - 1
         music.src = music_list[music_now]
-        music.play()
+        music_photo[0].children[0].src = img_list[music_now]
+        music_photo[1].children[0].src = img_list[music_now]
+        if (flag) {
+            music.play()
+            music_photo[0].className = 'music-photo'
+            music_photo[1].className = 'music-photo'
+            setTimeout(function () {
+                music_photo[0].className = 'music-photo rotating'
+                music_photo[1].className = 'music-photo rotating'
+            }, 1500)
+        }
     })
 }
 //下一首歌
 for (let i = 0; i < 2; i++) {
     music_next[i].addEventListener("click", function () {
+        let flag = 1
+        if (music.paused) flag = 0
         music_now++
         if (music_now == music_list.length) music_now = 0
         music.src = music_list[music_now]
-        music.play()
+        music_photo[0].children[0].src = img_list[music_now]
+        music_photo[1].children[0].src = img_list[music_now]
+        if (flag) {
+            music.play()
+            music_photo[0].className = 'music-photo'
+            music_photo[1].className = 'music-photo'
+            setTimeout(function () {
+                music_photo[0].className = 'music-photo rotating'
+                music_photo[1].className = 'music-photo rotating'
+            }, 1500)
+        }
     })
 }
 //自动播放下一首歌曲
@@ -305,4 +331,12 @@ music.addEventListener("ended", function () {
     if (music_now == music_list.length) music_now = 0
     music.src = music_list[music_now]
     music.play()
+    music_photo[0].children[0].src = img_list[music_now]
+    music_photo[1].children[0].src = img_list[music_now]
+    music_photo[0].className = 'music-photo'
+    music_photo[1].className = 'music-photo'
+    setTimeout(function () {
+        music_photo[0].className = 'music-photo rotating'
+        music_photo[1].className = 'music-photo rotating'
+    }, 1500)
 })
