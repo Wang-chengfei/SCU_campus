@@ -12,6 +12,7 @@
             background-repeat: no-repeat;
             background-size: 100% 100%;
             background-color: #eeebea;
+            overflow: hidden;
         }
 
         * {
@@ -20,7 +21,7 @@
             text-align: none;
         }
 
-        a {
+        .big a {
             text-decoration: none;
         }
 
@@ -28,20 +29,20 @@
             position: absolute;
             /* overflow: hidden; */
             width: 200px;
-            height: 540px;
-            top: 0px;
+            height: 520px;
+
         }
 
         /* .com:hover {
             box-shadow:3px 3px 16px #909090;
         } */
 
-        img {
+        .com img {
             box-shadow: 2px 2px 10px #909090;
             transition: transform 0.9s;
         }
 
-        img:hover {
+        .com img:hover {
             box-shadow: 4px 4px 20px #909090;
             transform: scale(1.1, 1.1);
         }
@@ -58,7 +59,7 @@
             left: 82px;
             height: 400px;
             width: 40px;
-            font-size: 30px;
+            font-size: 32px;
             line-height: 50px;
             font-weight: bold;
             color: white;
@@ -74,30 +75,31 @@
         }
 
         .jian {
-            top: -100px;
+            top: -30px;
             left: 0px;
             animation: up1 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         }
 
         .wang {
-            top: -50px;
+            top: 20px;
             left: 240px;
             animation: up2 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         }
 
         .hua {
+            top: 70px;
             left: 480px;
             animation: dis 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         }
 
         .jie {
-            top: 50px;
+            top: 120px;
             left: 720px;
             animation: down1 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         }
 
         .chuan {
-            top: 100px;
+            top: 170px;
             left: 960px;
             animation: down2 2.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         }
@@ -163,10 +165,38 @@
         ::-webkit-scrollbar {
             display: none;
         }
+
+        /* 标语 */
+        .slogan {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 300px;
+        }
+        .slogan img {
+            position: relative;
+            top: -60px;
+            margin-left: 300px;
+            height: 260px;
+            vertical-align:middle;
+        }
+        .slogan .wenzi {
+            position: relative;
+            top: -49px;
+            margin-left: 34px;
+            display: inline-block;
+            font-size: 42px;
+            font-weight: 600;
+            font-family: "Arial",sans-serif;
+        }
     </style>
 </head>
 
 <body>
+    <div class="slogan">
+        <img src="./img/logo.png" alt="">
+        <div class="wenzi">川 越 精 彩 , 大 有 可 为 ！</div>
+    </div>
     <div class="big">
         <div class="com jian"><a href="./jiangan.html">
                 <span>江安校区</span>
