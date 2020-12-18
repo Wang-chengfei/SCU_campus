@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="./css/campus.css">
 	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
 	<link rel="stylesheet" href="./css/swiper.css">
+	<link rel="stylesheet" href="./css/responsive.css">
 </head>
 
 <script src="./js/axios.js"></script>
@@ -18,33 +19,39 @@
 
 	<!-- 导航栏 -->
 	<div id="nav1" class="nav-out">
-		<span class="com selected"><a href="javascript:;" class="super-link center">江安校区</a></span>
-		<span class="com"><a href="./wangjiang.html" class="super-link center">望江校区</a></span>
-		<span class="com"><a href="./huaxi.html" class="super-link center">华西校区</a></span>
-		<span class="com"><a href="./fellow.html" class="super-link center">杰出校友</a></span>
-		<span class="com"><a href="./history.html" class="super-link center">川大校史</a></span>
-		<a href="./index.html"><img src="./img/logo.png" alt="" class="belowimg"></a>
-		<div class="music">
-			<div class="music-photo"><img src="./music/music_logo.jpg" alt=""></div>
-			<div class="music-prev"><img src="./music/prev.png" alt=""></div>
-			<div class="music-control"><img src="./music/bofang.png" alt=""></div>
-			<div class="music-next"><img src="./music/next.png" alt=""></div>
+		<div class="rnav">
+			<span class="com selected"><a href="javascript:;" class="super-link center">江安校区</a></span>
+			<span class="com"><a href="./wangjiang.html" class="super-link center">望江校区</a></span>
+			<span class="com"><a href="./huaxi.html" class="super-link center">华西校区</a></span>
+			<span class="com"><a href="./fellow.html" class="super-link center">杰出校友</a></span>
+			<span class="com"><a href="./history.html" class="super-link center">川大校史</a></span>
+			<a href="./index.html"><img src="./img/logo.png" alt="" class="belowimg"></a>
+			<div class="music">
+				<div class="music-photo"><img src="./music/music_logo.jpg" alt=""></div>
+				<div class="music-prev"><img src="./music/prev.png" alt=""></div>
+				<div class="music-control"><img src="./music/bofang.png" alt=""></div>
+				<div class="music-next"><img src="./music/next.png" alt=""></div>
+			</div>
+			<div class="toManage"><a href="./manage.html">管理</a></div>
 		</div>
 	</div>
 
 	<div id="nav2" class="comnav">
-		<span class="com selected"><a href="javascript:;" class="super-link center">江安校区</a></span>
-		<span class="com"><a href="./wangjiang.html" class="super-link center">望江校区</a></span>
-		<span class="com"><a href="./huaxi.html" class="super-link center">华西校区</a></span>
-		<span class="com"><a href="./fellow.html" class="super-link center">杰出校友</a></span>
-		<span class="com"><a href="./history.html" class="super-link center">川大校史</a></span>
-		<a href="./index.html"><img src="./img/logo.png" alt="" class="belowimg"></a>
-		<div class="music" id="musi">
-			<div class="music-photo"><img src="./music/music_logo.jpg" alt=""></div>
-			<audio src="./music/school_music.mp3" preload="auto"></audio>
-			<div class="music-prev"><img src="./music/prev.png" alt=""></div>
-			<div class="music-control"><img src="./music/bofang.png" alt=""></div>
-			<div class="music-next"><img src="./music/next.png" alt=""></div>
+		<div class="rnav">
+			<span class="com selected"><a href="javascript:;" class="super-link center">江安校区</a></span>
+			<span class="com"><a href="./wangjiang.html" class="super-link center">望江校区</a></span>
+			<span class="com"><a href="./huaxi.html" class="super-link center">华西校区</a></span>
+			<span class="com"><a href="./fellow.html" class="super-link center">杰出校友</a></span>
+			<span class="com"><a href="./history.html" class="super-link center">川大校史</a></span>
+			<a href="./index.html"><img src="./img/logo.png" alt="" class="belowimg"></a>
+			<div class="music" id="musi">
+				<div class="music-photo"><img src="./music/music_logo.jpg" alt=""></div>
+				<audio src="./music/school_music.mp3" preload="auto"></audio>
+				<div class="music-prev"><img src="./music/prev.png" alt=""></div>
+				<div class="music-control"><img src="./music/bofang.png" alt=""></div>
+				<div class="music-next"><img src="./music/next.png" alt=""></div>
+			</div>
+			<div class="toManage"><a href="./manage.html">管理</a></div>
 		</div>
 	</div>
 
@@ -64,7 +71,7 @@
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">
-					<div class="w2">四川大学江安校区为川大的本科教育基地，主要为四川大学大一、大二同学学习的地方，校区总占地3000亩，另有教师住宅区240余亩。校区地处成都市双流航空港经济开发区。
+					<div class="w1">四川大学江安校区为川大的本科教育基地，主要为四川大学大一、大二同学学习的地方，校区总占地3000亩，另有教师住宅区240余亩。校区地处成都市双流航空港经济开发区。
 					</div>
 					<img src="./img/jiangan/bg1.jpg" alt="">
 				</div>
@@ -86,7 +93,7 @@
 	</div>
 
 	<!-- 具体介绍 -->
-	<div class="bigBox">
+	<div class="bigBox dowm">
 		<div class="big">
 			<!-- 具体景点 -->
 			<div id="bplus1" class="com1 slide1-leftenter">
@@ -113,205 +120,209 @@
 						<div class="like_num">
 							<div class="like_number">0</div>&nbsp;点赞
 						</div>
-						<div class="comment">评&thinsp;论</div>
+						<div class="comment">评&thinsp;论 ></div>
 					</div>
 				</div>
 				<div class="discuss comeout">
-					<div class="return-back">返&thinsp;回</div>
-					<div class="discuss-container">
-					</div>
-					<div class="publish">
-						<textarea placeholder="发表评论"></textarea>
-						<div class="bnt">发表</div>
+					<div class="return-back">
+						< 返&thinsp;回</div>
+							<div class="discuss-container">
+							</div>
+							<div class="publish">
+								<textarea placeholder="发表评论"></textarea>
+								<div class="bnt">发表</div>
+							</div>
 					</div>
 				</div>
-			</div>
 
-			<div id="bplus2" class="com1">
-				<div class="small-swiper">
-					<div class="swiper-container">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide"><img src="./img/jiangan/spot2_1.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="./img/jiangan/spot2_2.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="./img/jiangan/spot2_3.jpg" alt=""></div>
+				<div id="bplus2" class="com1">
+					<div class="small-swiper">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><img src="./img/jiangan/spot2_1.jpg" alt=""></div>
+								<div class="swiper-slide"><img src="./img/jiangan/spot2_2.jpg" alt=""></div>
+								<div class="swiper-slide"><img src="./img/jiangan/spot2_3.jpg" alt=""></div>
+							</div>
+							<div class="swiper-pagination"></div>
 						</div>
-						<div class="swiper-pagination"></div>
 					</div>
 				</div>
-			</div>
-			<div id="splus2" class="com2">
-				<div class="spot comeup">
-					<div class="title">文化长廊</div>
-					<div class="content">
-						&emsp;&emsp;当您走进四川大学江安校区的东大门，在近一千米长的景观水道两侧，七十多幅日历造型的雕塑作品群会立刻映入您的眼帘。这些雕塑作品大气精致，韵意无穷，艺术化地呈现了四川大学自成立以来的风雨历程和辉煌成就。这就是2006年金秋落成的四川大学历史文化长廊。<br>
-						&emsp;&emsp;四川大学历史文化长廊主要分为源头活水、治校方略、群贤毕至、勇立潮头和春华秋实等五个部分，已经成为见证悠久的发展历史、彰显一流的办学成就、传承深厚的文化底蕴和展现辉煌的远景蓝图的标志性景观。<br>
-						&emsp;&emsp;今天，当人们驻足于景观水道两侧，徜徉于栩栩如生的历史人物和历史场景中，无一不会感受到世纪名校的人文底蕴，感动于百年不绝的科学薪火，感怀于前贤多士的殷殷情怀；更能真切地感受到四川大学深厚的人文底蕴。
-					</div>
-					<div class="like">
-						<img class="like_img" src='http://wcfun.top/images/aixin0.png' alt="">
-						<div class="like_num">
-							<div class="like_number">0</div>&nbsp;点赞
+				<div id="splus2" class="com2">
+					<div class="spot comeup">
+						<div class="title">文化长廊</div>
+						<div class="content">
+							&emsp;&emsp;当您走进四川大学江安校区的东大门，在近一千米长的景观水道两侧，七十多幅日历造型的雕塑作品群会立刻映入您的眼帘。这些雕塑作品大气精致，韵意无穷，艺术化地呈现了四川大学自成立以来的风雨历程和辉煌成就。这就是2006年金秋落成的四川大学历史文化长廊。<br>
+							&emsp;&emsp;今天，当人们驻足于景观水道两侧，徜徉于栩栩如生的历史人物和历史场景中，无一不会感受到世纪名校的人文底蕴，感动于百年不绝的科学薪火，感怀于前贤多士的殷殷情怀；更能真切地感受到四川大学深厚的人文底蕴。
 						</div>
-						<div class="comment">评&thinsp;论</div>
-					</div>
-				</div>
-				<div class="discuss comeout">
-					<div class="return-back">返&thinsp;回</div>
-					<div class="discuss-container">
-					</div>
-					<div class="publish">
-						<textarea placeholder="发表评论"></textarea>
-						<div class="bnt">发表</div>
-					</div>
-				</div>
-			</div>
-
-			<div id="bplus3" class="com1">
-				<div class="small-swiper">
-					<div class="swiper-container">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide"><img src="./img/jiangan/spot3_1.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="./img/jiangan/spot3_2.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="./img/jiangan/spot3_3.jpg" alt=""></div>
+						<div class="like">
+							<img class="like_img" src='http://wcfun.top/images/aixin0.png' alt="">
+							<div class="like_num">
+								<div class="like_number">0</div>&nbsp;点赞
+							</div>
+							<div class="comment">评&thinsp;论 ></div>
 						</div>
-						<div class="swiper-pagination"></div>
 					</div>
-				</div>
-			</div>
-			<div id="splus3" class="com2">
-				<div class="spot comeup">
-					<div class="title">不高山</div>
-					<div class="content">
-						&emsp;&emsp;“不高山”位于川大江安校区西北角的一个小丘，江安河以一道优美的曲线划过此处，据说由校内明远湖修建时挖出的湖泥积成。不高山是江安校区的标志景点之一。山不在高，有仙则名。这座山真的只是个小丘，无名地藏在川大，命名者以“不高”名之，或许正是以此寓“求学者”，要追求山的稳重，而不是自高自大。不高山附近的河，名为“不深河”，有“水不在深，有龙则灵”之意。不去讲究山水的风光如何，仅其独特的名字，就够让人回味了。
-					</div>
-					<div class="like">
-						<img class="like_img" src='http://wcfun.top/images/aixin0.png' alt="">
-						<div class="like_num">
-							<div class="like_number">0</div>&nbsp;点赞
+					<div class="discuss comeout">
+						<div class="return-back">
+							< 返&thinsp;回</div>
+								<div class="discuss-container">
+								</div>
+								<div class="publish">
+									<textarea placeholder="发表评论"></textarea>
+									<div class="bnt">发表</div>
+								</div>
 						</div>
-						<div class="comment">评&thinsp;论</div>
 					</div>
-				</div>
-				<div class="discuss comeout">
-					<div class="return-back">返&thinsp;回</div>
-					<div class="discuss-container">
-					</div>
-					<div class="publish">
-						<textarea placeholder="发表评论"></textarea>
-						<div class="bnt">发表</div>
-					</div>
-				</div>
-			</div>
 
-			<div id="bplus4" class="com1">
-				<div class="small-swiper">
-					<div class="swiper-container">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide"><img src="./img/jiangan/spot4_1.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="./img/jiangan/spot4_2.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="./img/jiangan/spot4_3.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="./img/jiangan/spot4_4.jpg" alt=""></div>
+					<div id="bplus3" class="com1">
+						<div class="small-swiper">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide"><img src="./img/jiangan/spot3_1.jpg" alt=""></div>
+									<div class="swiper-slide"><img src="./img/jiangan/spot3_2.jpg" alt=""></div>
+									<div class="swiper-slide"><img src="./img/jiangan/spot3_3.jpg" alt=""></div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
 						</div>
-						<div class="swiper-pagination"></div>
 					</div>
-				</div>
-			</div>
-			<div id="splus4" class="com2">
-				<div class="spot comeup">
-					<div class="title">长桥</div>
-					<div class="content">
-						&emsp;&emsp;江安校区内，一座目前中国高校最长的步行桥（418米）——长桥，横跨江安河和明远湖上，连接着知识广场和青春广场。<br>
-						&emsp;&emsp;在四川大学江安校区，流传着关于“建环小哥”和“文新靓女”的故事。并未真实发生却略带凄美的爱情化作江安长桥上的100个英文字母，长久地镌刻在人们的记忆里。其中寄托情感的信物正是著名的十四行诗《当你老了》。当年男主威廉·巴特勒·叶芝这样描写第一次见到女主茅德·冈的情形：“她伫立窗畔，身旁盛开着一大团苹果花；她光彩夺目，仿佛自身就是洒满了阳光的花瓣。”或许，这正好可以用来表达对绝美的江安河畔的“一见钟情”，对绝美的四川大学的“相知相许”。“江安长桥”故事中“建环小哥”纯真的爱情一如他的执着和坚守，将永远成为关于四川大学“美丽的谈资”。
-					</div>
-					<div class="like">
-						<img class="like_img" src='http://wcfun.top/images/aixin0.png' alt="">
-						<div class="like_num">
-							<div class="like_number">0</div>&nbsp;点赞
+					<div id="splus3" class="com2">
+						<div class="spot comeup">
+							<div class="title">不高山</div>
+							<div class="content">
+								&emsp;&emsp;“不高山”位于川大江安校区西北角的一个小丘，江安河以一道优美的曲线划过此处，据说由校内明远湖修建时挖出的湖泥积成。不高山是江安校区的标志景点之一。山不在高，有仙则名。这座山真的只是个小丘，无名地藏在川大，命名者以“不高”名之，或许正是以此寓“求学者”，要追求山的稳重，而不是自高自大。不高山附近的河，名为“不深河”，有“水不在深，有龙则灵”之意。不去讲究山水的风光如何，仅其独特的名字，就够让人回味了。
+							</div>
+							<div class="like">
+								<img class="like_img" src='http://wcfun.top/images/aixin0.png' alt="">
+								<div class="like_num">
+									<div class="like_number">0</div>&nbsp;点赞
+								</div>
+								<div class="comment">评&thinsp;论 ></div>
+							</div>
 						</div>
-						<div class="comment">评&thinsp;论</div>
-					</div>
-				</div>
-				<div class="discuss comeout">
-					<div class="return-back">返&thinsp;回</div>
-					<div class="discuss-container">
-						
-					</div>
-					<div class="publish">
-						<textarea placeholder="发表评论"></textarea>
-						<div class="bnt">发表</div>
-					</div>
-				</div>
-			</div>
-
-			<div id="bplus5" class="com1 slide1-leftenter">
-				<div class="small-swiper">
-					<div class="swiper-container">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide"><img src="./img/jiangan/spot5_1.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="./img/jiangan/spot5_2.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="./img/jiangan/spot5_3.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="./img/jiangan/spot5_4.jpg" alt=""></div>
+						<div class="discuss comeout">
+							<div class="return-back">
+								< 返&thinsp;回</div>
+									<div class="discuss-container">
+									</div>
+									<div class="publish">
+										<textarea placeholder="发表评论"></textarea>
+										<div class="bnt">发表</div>
+									</div>
+							</div>
 						</div>
-						<div class="swiper-pagination"></div>
-					</div>
-				</div>
-			</div>
-			<div id="splus5" class="com2 slide2-leftenter">
-				<div class="spot comeup">
-					<div class="title">明远湖</div>
-					<div class="content">
-						&emsp;&emsp;美哉明远！渌水荡漾，秋波相连。菡萏轻舞，水光潋滟。喜洛水之女神，惊蓬莱之散仙。无洞庭之淼茫，有天池之浩然。银汉横而有畔，水波兴而无边，辉映日月，浩含云天。春秋过而有意，乾坤藏而无言。乃有川流入海，海纳百川，桃李天下，豪杰千万。镜游子之白发，照佳人之朱颜。至若翠竹舞韵，杨柳弄烟。秋月徘徊，春风缠绵。白鹭群飞，蛟龙独潜。日升之湖东，月落之西园。风起于山侧，云生于水端。晨有疏星之晦明，暮有晚霞之绚烂。繁花笑波，芳草依岸。聚华夏之奇才，汇巴蜀之俊彦。
-					</div>
-					<div class="like">
-						<img class="like_img" src='http://wcfun.top/images/aixin0.png' alt="">
-						<div class="like_num">
-							<div class="like_number">0</div>&nbsp;点赞
+
+						<div id="bplus4" class="com1">
+							<div class="small-swiper">
+								<div class="swiper-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide"><img src="./img/jiangan/spot4_1.jpg" alt=""></div>
+										<div class="swiper-slide"><img src="./img/jiangan/spot4_2.jpg" alt=""></div>
+										<div class="swiper-slide"><img src="./img/jiangan/spot4_3.jpg" alt=""></div>
+										<div class="swiper-slide"><img src="./img/jiangan/spot4_4.jpg" alt=""></div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+							</div>
 						</div>
-						<div class="comment">评&thinsp;论</div>
-					</div>
-				</div>
-				<div class="discuss comeout">
-					<div class="return-back">返&thinsp;回</div>
-					<div class="discuss-container">
-					</div>
-					<div class="publish">
-						<textarea placeholder="发表评论"></textarea>
-						<div class="bnt">发表</div>
-					</div>
-				</div>
-			</div>
+						<div id="splus4" class="com2">
+							<div class="spot comeup">
+								<div class="title">长桥</div>
+								<div class="content">
+									&emsp;&emsp;江安校区内，一座目前中国高校最长的步行桥（418米）——长桥，横跨江安河和明远湖上，连接着知识广场和青春广场。<br>
+									&emsp;&emsp;在四川大学江安校区，流传着关于“建环小哥”和“文新靓女”的故事。并未真实发生却略带凄美的爱情化作江安长桥上的100个英文字母，长久地镌刻在人们的记忆里。其中寄托情感的信物正是著名的十四行诗《当你老了》。当年男主威廉·巴特勒·叶芝这样描写第一次见到女主茅德·冈的情形：“她伫立窗畔，身旁盛开着一大团苹果花；她光彩夺目，仿佛自身就是洒满了阳光的花瓣。”或许，这正好可以用来表达对绝美的江安河畔的“一见钟情”，对绝美的四川大学的“相知相许”。“江安长桥”故事中“建环小哥”纯真的爱情一如他的执着和坚守，将永远成为关于四川大学“美丽的谈资”。
+								</div>
+								<div class="like">
+									<img class="like_img" src='http://wcfun.top/images/aixin0.png' alt="">
+									<div class="like_num">
+										<div class="like_number">0</div>&nbsp;点赞
+									</div>
+									<div class="comment">评&thinsp;论 ></div>
+								</div>
+							</div>
+							<div class="discuss comeout">
+								<div class="return-back">
+									< 返&thinsp;回</div>
+										<div class="discuss-container">
 
-		</div>
-	</div>
+										</div>
+										<div class="publish">
+											<textarea placeholder="发表评论"></textarea>
+											<div class="bnt">发表</div>
+										</div>
+								</div>
+							</div>
 
-	<!-- 底边栏 -->
-	<div class="footer">
-		<div class="footer-logo"><img src="./img/footer-logo.png" alt=""></div>
-		<div class="address">
-			<div class="address-title">&nbsp;学校地址</div>
-			<div class="address-detail">（江安校区）成都市双流县川大路 川大行政楼一楼 邮编：610207</div>
-			<div class="address-detail">（望江校区）成都市一环路南一段24号 川大行政楼219、220办公室 邮编：610065</div>
-			<div class="address-detail">（华西校区）成都市人民南路三段17号 华西行政楼232 邮编：610041</div>
-		</div>
-		<div class="link">
-			<div class="link-title">学校网站</div>
-			<div class="link-detail"><a href="http://jwc.scu.edu.cn/">四川大学教务处</a></div>
-			<div class="link-detail"><a href="http://scufd.scu.edu.cn/">四川大学财务处</a></div>
-			<div class="link-detail"><a href="http://xsc.scu.edu.cn/WEBSITE/XG">四川大学学工部</a></div>
-		</div>
-	</div>
+							<div id="bplus5" class="com1 slide1-leftenter">
+								<div class="small-swiper">
+									<div class="swiper-container">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="./img/jiangan/spot5_1.jpg" alt=""></div>
+											<div class="swiper-slide"><img src="./img/jiangan/spot5_2.jpg" alt=""></div>
+											<div class="swiper-slide"><img src="./img/jiangan/spot5_3.jpg" alt=""></div>
+											<div class="swiper-slide"><img src="./img/jiangan/spot5_4.jpg" alt=""></div>
+										</div>
+										<div class="swiper-pagination"></div>
+									</div>
+								</div>
+							</div>
+							<div id="splus5" class="com2 slide2-leftenter">
+								<div class="spot comeup">
+									<div class="title">明远湖</div>
+									<div class="content">
+										&emsp;&emsp;美哉明远！渌水荡漾，秋波相连。菡萏轻舞，水光潋滟。喜洛水之女神，惊蓬莱之散仙。无洞庭之淼茫，有天池之浩然。银汉横而有畔，水波兴而无边，辉映日月，浩含云天。春秋过而有意，乾坤藏而无言。乃有川流入海，海纳百川，桃李天下，豪杰千万。镜游子之白发，照佳人之朱颜。至若翠竹舞韵，杨柳弄烟。秋月徘徊，春风缠绵。白鹭群飞，蛟龙独潜。日升之湖东，月落之西园。风起于山侧，云生于水端。晨有疏星之晦明，暮有晚霞之绚烂。繁花笑波，芳草依岸。聚华夏之奇才，汇巴蜀之俊彦。
+									</div>
+									<div class="like">
+										<img class="like_img" src='http://wcfun.top/images/aixin0.png' alt="">
+										<div class="like_num">
+											<div class="like_number">0</div>&nbsp;点赞
+										</div>
+										<div class="comment">评&thinsp;论 ></div>
+									</div>
+								</div>
+								<div class="discuss comeout">
+									<div class="return-back">
+										< 返&thinsp;回</div>
+											<div class="discuss-container">
+											</div>
+											<div class="publish">
+												<textarea placeholder="发表评论"></textarea>
+												<div class="bnt">发表</div>
+											</div>
+									</div>
+								</div>
 
-	<!-- 返回顶部 -->
-	<div class="return-top">
-		<div class="return-top-img"><img src="./img/jian1_red.png" alt=""></div>
-		<div class="return-top-text">返回顶部</div>
-	</div>
+							</div>
+						</div>
+
+						<!-- 底边栏 -->
+						<div class="footer">
+							<div class="footer-logo"><img src="./img/footer-logo.png" alt=""></div>
+							<div class="address">
+								<div class="address-title">&nbsp;学校地址</div>
+								<div class="address-detail">（江安校区）成都市双流县川大路 川大行政楼一楼 邮编：610207</div>
+								<div class="address-detail">（望江校区）成都市一环路南一段24号 川大行政楼219、220办公室 邮编：610065</div>
+								<div class="address-detail">（华西校区）成都市人民南路三段17号 华西行政楼232 邮编：610041</div>
+							</div>
+							<div class="link">
+								<div class="link-title">学校网站</div>
+								<div class="link-detail"><a href="http://jwc.scu.edu.cn/">四川大学教务处</a></div>
+								<div class="link-detail"><a href="http://scufd.scu.edu.cn/">四川大学财务处</a></div>
+								<div class="link-detail"><a href="http://xsc.scu.edu.cn/WEBSITE/XG">四川大学学工部</a></div>
+							</div>
+						</div>
+
+						<!-- 返回顶部 -->
+						<div class="return-top">
+							<div class="return-top-img"><img src="./img/jian1_red.png" alt=""></div>
+							<div class="return-top-text">返回顶部</div>
+						</div>
 
 
-	<script src="./js/nav.js"></script>
-	<script src="./js/campus.js"></script>
-	<script src="./js/swiper-bundle.min.js"></script>
-	<script src="./js/swiper.js"></script>
+						<script src="./js/nav.js"></script>
+						<script src="./js/campus.js"></script>
+						<script src="./js/swiper-bundle.min.js"></script>
+						<script src="./js/swiper.js"></script>
 
 </body>
 

@@ -12,9 +12,6 @@ html, body {
 
 .big-swiper .swiper-container {
     position: fixed;
-}
-
-.big-swiper .swiper-container {
     width: 100%;
     height: 100%;
 }
@@ -22,69 +19,74 @@ html, body {
 .big-swiper .swiper-slide img {
     width: 100%;
     height: 100%;
-    border-bottom: 0.5px solid rgb(30, 2, 97);
+    border-bottom: .03125rem solid rgb(30, 2, 97);
 }
 
-
 /*大轮播图按钮*/
-.big-swiper .swiper-pagination-bullet {
 
-    width: 16px;
-    height: 16px;
+.big-swiper .swiper-pagination-bullet {
+    position: relative;
+    right: 39rem;
+    top: 0.1rem;
+    width: 1rem;
+    height: 1rem;
     opacity: 1;
-    border: 2px solid rgba(255, 255, 255, 0.6);
+    border: .125rem solid rgba(255, 255, 255, 0.6);
     background: rgba(0, 0, 0, 0.1);
 }
 
 /*大轮播图按钮选中样式*/
+
 .big-swiper .swiper-pagination-bullet-active {
     background: rgba(0, 0, 0, 0.95);
 }
 
 .big-swiper .swiper-pagination {
     position: relative;
-    left: 640px;
-    top: -88px;
+    left: 80rem;
+    top: -5.5rem;
 }
 
 .small-swiper .swiper-pagination {
     position: relative;
-    left: 340px;
-    top: -40px;
+    left: 21.25rem;
+    top: -2.5rem;
 }
 
 /*小轮播图按钮*/
+
 .small-swiper .swiper-pagination-bullet {
-    width: 14px;
-    height: 14px;
+    width: .875rem;
+    height: .875rem;
     opacity: 1;
-    border: 1.5px solid rgba(255, 255, 255, 0.6);
+    border: .09375rem solid rgba(255, 255, 255, 0.6);
     background: rgba(0, 0, 0, 0.1);
 }
 
 /*小轮播图按钮选中样式*/
+
 .small-swiper .swiper-pagination-bullet-active {
     background: rgba(0, 0, 0, 0.95);
 }
 
 .small-swiper .swiper-container {
-    width: 900px;
-    height: 650px;
+    width: 56.25rem;
+    height: 40.625rem;
 }
 
 .small-swiper .swiper-slide img {
-    width: 900px;
-    height: 650px;
+    width: 56.25rem;
+    height: 40.625rem;
 }
 
-
 /*大轮播图上向下滑动提示样式*/
+
 .godown {
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 70px;
+    height: 4.375rem;
     background: -webkit-linear-gradient( top, rgba(0, 0, 0, 0.001), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.65));
     z-index: 2;
 }
@@ -92,14 +94,14 @@ html, body {
 .godown .jian {
     cursor: pointer;
     position: relative;
-    height: 60px;
-    width: 60px;
-    margin: 11px auto;
+    height: 3.75rem;
+    width: 3.75rem;
+    margin: .6875rem auto;
     animation: godown1 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite;
 }
 
 .godown .jian:hover {
-    animation-play-state:paused;
+    animation-play-state: paused;
 }
 
 .godown .jian img {
@@ -112,49 +114,47 @@ html, body {
         opacity: 0;
         transform: translateY(0);
     }
-
     100% {
         opacity: 1;
-        transform: translateY(10px);
+        transform: translateY(.625rem);
     }
 }
 
-
-.w1{
+.w1 {
     position: absolute;
-    left:50px;
-    top:600px;
+    left: 3.5rem;
+    top: 40rem;
     color: white;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: 'Courier New', Courier, monospace;
     font-style: italic;
-    height: 100px;
-    width: 600px;
+    height: 6.25rem;
+    width: 37.5rem;
 }
 
-.w2{
+.w2 {
     position: absolute;
-    left:950px;
-    top:600px;
+    right: 3.5rem;
+    top: 40rem;
     color: white;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: 'Courier New', Courier, monospace;
     font-style: italic;
-    height: 100px;
-    width: 600px;
+    height: 6.25rem;
+    width: 37.5rem;
 }
 
-.w3{
+.w3 {
     position: absolute;
-    left:1050px;
-    top:600px;
+    right: 3.125rem;
+    top: 37.5rem;
     color: white;
     font-weight: bold;
-    font-size: 34px;
+    font-size: 2.125rem;
     font-family: 'Courier New', Courier, monospace;
     font-style: italic;
-    height: 100px;
-    width: 600px;
+    height: 6.25rem;
+    width: 37.5rem;
 }

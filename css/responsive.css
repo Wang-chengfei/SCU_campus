@@ -1,0 +1,149 @@
+@media screen and (max-width: 3000px) {
+    html {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 3100px) {
+    html {
+        font-size: 31px;
+    }
+}
+
+@media screen and (max-width: 2700px) {
+    html {
+        font-size: 27px;
+    }
+}
+
+@media screen and (max-width: 2600px) {
+    html {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 2500px) {
+    html {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 2400px) {
+    html {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 2300px) {
+    html {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 2200px) {
+    html {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 2100px) {
+    html {
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1900px) {
+    html {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    html {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    html {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    html {
+        font-size: 7px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 6px;
+    }
+}
+
+body {
+    zoom: 0.935;
+    overflow-x: hidden;
+    background-color: rgb(238, 235, 234);
+}

@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="./css/campus.css">
 	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
 	<link rel="stylesheet" href="./css/swiper.css">
+	<link rel="stylesheet" href="./css/responsive.css">
 </head>
 
 <script src="./js/axios.js"></script>
@@ -17,33 +18,39 @@
 <body>
 	<!-- 导航栏 -->
 	<div id="nav1" class="nav-out">
-		<span class="com"><a href="./jiangan.html" class="super-link center">江安校区</a></span>
-		<span class="com"><a href="./wangjiang.html" class="super-link center">望江校区</a></span>
-		<span class="com selected"><a href="javascript:;" class="super-link center">华西校区</a></span>
-		<span class="com"><a href="./fellow.html" class="super-link center">杰出校友</a></span>
-		<span class="com"><a href="./history.html" class="super-link center">川大校史</a></span>
-		<a href="./index.html"><img src="./img/logo.png" alt="" class="belowimg"></a>
-		<div class="music">
-			<div class="music-photo"><img src="./music/music_logo.jpg" alt=""></div>
-			<div class="music-prev"><img src="./music/prev.png" alt=""></div>
-			<div class="music-control"><img src="./music/bofang.png" alt=""></div>
-			<div class="music-next"><img src="./music/next.png" alt=""></div>
+		<div class="rnav">
+			<span class="com"><a href="./jiangan.html" class="super-link center">江安校区</a></span>
+			<span class="com"><a href="./wangjiang.html" class="super-link center">望江校区</a></span>
+			<span class="com selected"><a href="javascript:;" class="super-link center">华西校区</a></span>
+			<span class="com"><a href="./fellow.html" class="super-link center">杰出校友</a></span>
+			<span class="com"><a href="./history.html" class="super-link center">川大校史</a></span>
+			<a href="./index.html"><img src="./img/logo.png" alt="" class="belowimg"></a>
+			<div class="music">
+				<div class="music-photo"><img src="./music/music_logo.jpg" alt=""></div>
+				<div class="music-prev"><img src="./music/prev.png" alt=""></div>
+				<div class="music-control"><img src="./music/bofang.png" alt=""></div>
+				<div class="music-next"><img src="./music/next.png" alt=""></div>
+			</div>
+			<div class="toManage"><a href="./manage.html">管理</a></div>
 		</div>
 	</div>
 
 	<div id="nav2" class="comnav">
-		<span class="com"><a href="./jiangan.html" class="super-link center">江安校区</a></span>
-		<span class="com"><a href="./wangjiang.html" class="super-link center">望江校区</a></span>
-		<span class="com selected"><a href="javascript:;" class="super-link center">华西校区</a></span>
-		<span class="com"><a href="./fellow.html" class="super-link center">杰出校友</a></span>
-		<span class="com"><a href="./history.html" class="super-link center">川大校史</a></span>
-		<a href="./index.html"><img src="./img/logo.png" alt="" class="belowimg"></a>
-		<div class="music" id="musi">
-			<audio src="./music/school_music.mp3" preload="auto"></audio>
-			<div class="music-photo"><img src="./music/music_logo.jpg" alt=""></div>
-			<div class="music-prev"><img src="./music/prev.png" alt=""></div>
-			<div class="music-control"><img src="./music/bofang.png" alt=""></div>
-			<div class="music-next"><img src="./music/next.png" alt=""></div>
+		<div class="rnav">
+			<span class="com"><a href="./jiangan.html" class="super-link center">江安校区</a></span>
+			<span class="com"><a href="./wangjiang.html" class="super-link center">望江校区</a></span>
+			<span class="com selected"><a href="javascript:;" class="super-link center">华西校区</a></span>
+			<span class="com"><a href="./fellow.html" class="super-link center">杰出校友</a></span>
+			<span class="com"><a href="./history.html" class="super-link center">川大校史</a></span>
+			<a href="./index.html"><img src="./img/logo.png" alt="" class="belowimg"></a>
+			<div class="music" id="musi">
+				<audio src="./music/school_music.mp3" preload="auto"></audio>
+				<div class="music-photo"><img src="./music/music_logo.jpg" alt=""></div>
+				<div class="music-prev"><img src="./music/prev.png" alt=""></div>
+				<div class="music-control"><img src="./music/bofang.png" alt=""></div>
+				<div class="music-next"><img src="./music/next.png" alt=""></div>
+			</div>
+			<div class="toManage"><a href="./manage.html">管理</a></div>
 		</div>
 	</div>
 
@@ -83,7 +90,7 @@
 	</ul>
 
 	<!-- 具体介绍 -->
-	<div class="bigBox">
+	<div class="bigBox dowm">
 		<div class="big">
 			<!-- 具体景点 -->
 			<div id="bplus1" class="com1 slide1-leftenter">
@@ -110,212 +117,214 @@
 						<div class="like_num">
 							<div class="like_number">0</div>&nbsp;点赞
 						</div>
-						<div class="comment">评&thinsp;论</div>
+						<div class="comment">评&thinsp;论 ></div>
 					</div>
 				</div>
 				<div class="discuss comeout">
-					<div class="return-back">返&thinsp;回</div>
-					<div class="discuss-container">
-					</div>
-					<div class="publish">
-						<textarea placeholder="发表评论"></textarea>
-						<div class="bnt">发表</div>
+					<div class="return-back">
+						< 返&thinsp;回</div>
+							<div class="discuss-container">
+							</div>
+							<div class="publish">
+								<textarea placeholder="发表评论"></textarea>
+								<div class="bnt">发表</div>
+							</div>
 					</div>
 				</div>
-			</div>
 
-			<div id="bplus2" class="com1">
-				<div class="small-swiper">
-					<div class="swiper-container">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide"><img src="./img/huaxi/spot2_1.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="./img/huaxi/spot2_2.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="./img/huaxi/spot2_3.jpg" alt=""></div>
+				<div id="bplus2" class="com1">
+					<div class="small-swiper">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><img src="./img/huaxi/spot2_1.jpg" alt=""></div>
+								<div class="swiper-slide"><img src="./img/huaxi/spot2_2.jpg" alt=""></div>
+								<div class="swiper-slide"><img src="./img/huaxi/spot2_3.jpg" alt=""></div>
+							</div>
+							<div class="swiper-pagination"></div>
 						</div>
-						<div class="swiper-pagination"></div>
 					</div>
 				</div>
-			</div>
-			<div id="splus2" class="com2">
-				<div class="spot comeup">
-					<div class="title">钟楼</div>
-					<div class="content">
-						&emsp;&emsp;华西钟楼位于四川大学华西校区，于1926年竣工，由美国纽约亚克门·柯里斯医生所捐建。它既是华西坝建筑群标志，也是成都市的地标之一。
-						有人评价说，华西钟楼是天府之国的地标，是成都永不磨灭的文化符号。
-						华西校区校园以钟楼为原点，向南向北延伸为中轴线，主要建筑皆在东西方铺开。青砖，墨瓦，歇山式大屋顶，对称的布局，具有中国民俗风味的花卉鸟兽饰物。
-					</div>
-					<div class="like">
-						<img class="like_img" src='http://wcfun.top/images/aixin0.png' alt="">
-						<div class="like_num">
-							<div class="like_number">0</div>&nbsp;点赞
+				<div id="splus2" class="com2">
+					<div class="spot comeup">
+						<div class="title">钟楼</div>
+						<div class="content">
+							&emsp;&emsp;华西钟楼位于四川大学华西校区，于1926年竣工，由美国纽约亚克门·柯里斯医生所捐建。它既是华西坝建筑群标志，也是成都市的地标之一。
+							有人评价说，华西钟楼是天府之国的地标，是成都永不磨灭的文化符号。
+							华西校区校园以钟楼为原点，向南向北延伸为中轴线，主要建筑皆在东西方铺开。青砖，墨瓦，歇山式大屋顶，对称的布局，具有中国民俗风味的花卉鸟兽饰物。
 						</div>
-						<div class="comment">评&thinsp;论</div>
-					</div>
-				</div>
-				<div class="discuss comeout">
-					<div class="return-back">返&thinsp;回</div>
-					<div class="discuss-container">
-					</div>
-					<div class="publish">
-						<textarea placeholder="发表评论"></textarea>
-						<div class="bnt">发表</div>
-					</div>
-				</div>
-			</div>
-
-			<div id="bplus3" class="com1">
-				<div class="small-swiper">
-					<div class="swiper-container">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide"><img src="./img/huaxi/spot3_1.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="./img/huaxi/spot3_2.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="./img/huaxi/spot3_3.jpg" alt=""></div>
+						<div class="like">
+							<img class="like_img" src='http://wcfun.top/images/aixin0.png' alt="">
+							<div class="like_num">
+								<div class="like_number">0</div>&nbsp;点赞
+							</div>
+							<div class="comment">评&thinsp;论 ></div>
 						</div>
-						<div class="swiper-pagination"></div>
 					</div>
-				</div>
-			</div>
-			<div id="splus3" class="com2">
-				<div class="spot comeup">
-					<div class="title">建筑</div>
-					<div class="content">
-						&emsp;&emsp;拱门、青砖、黑瓦、红墙……西式的拱形窗户结合中式的额枋，
-						一砖一瓦无不透出一种历经沧桑的古朴幽雅。走在四川大学华西校区，
-						你总能看见这些典雅而独特的建筑。四川大学近代建筑群，由数十幢中西合璧的建筑组成，
-						被称为“建筑史上的奇观”。这里的大小楼群，数十年容颜未改，生动地展示着这座百年校园的绝代风华。
-
-						走近它们，可以领略民国时期三合院落和中西合璧优秀建筑的风貌，
-						可以找到陈寅恪、周太玄、吕叔湘等一批文化大师抗战时期在成都的历史痕迹，
-						追忆大师们的成都岁月，触摸成都文化的厚度。
-
-					</div>
-					<div class="like">
-						<img class="like_img" src='http://wcfun.top/images/aixin0.png' alt="">
-						<div class="like_num">
-							<div class="like_number">0</div>&nbsp;点赞
+					<div class="discuss comeout">
+						<div class="return-back">
+							< 返&thinsp;回</div>
+								<div class="discuss-container">
+								</div>
+								<div class="publish">
+									<textarea placeholder="发表评论"></textarea>
+									<div class="bnt">发表</div>
+								</div>
 						</div>
-						<div class="comment">评&thinsp;论</div>
 					</div>
-				</div>
-				<div class="discuss comeout">
-					<div class="return-back">返&thinsp;回</div>
-					<div class="discuss-container">
-					</div>
-					<div class="publish">
-						<textarea placeholder="发表评论"></textarea>
-						<div class="bnt">发表</div>
-					</div>
-				</div>
-			</div>
 
-			<div id="bplus4" class="com1">
-				<div class="small-swiper">
-					<div class="swiper-container">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide"><img src="./img/huaxi/spot4_1.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="./img/huaxi/spot4_2.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="./img/huaxi/spot4_3.jpg" alt=""></div>
+					<div id="bplus3" class="com1">
+						<div class="small-swiper">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide"><img src="./img/huaxi/spot3_1.jpg" alt=""></div>
+									<div class="swiper-slide"><img src="./img/huaxi/spot3_2.jpg" alt=""></div>
+									<div class="swiper-slide"><img src="./img/huaxi/spot3_3.jpg" alt=""></div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
 						</div>
-						<div class="swiper-pagination"></div>
 					</div>
-				</div>
-			</div>
-			<div id="splus4" class="com2">
-				<div class="spot comeup">
-					<div class="title">东大门</div>
-					<div class="content">
-						&emsp;&emsp;华西校区东大门是四川大学华西校区的标志性建筑之一，它是原华西医科大学时期留下的建筑。它建造古典，优雅，具有浓厚的中华传统文化气息。
-					</div>
-					<div class="like">
-						<img class="like_img" src='http://wcfun.top/images/aixin0.png' alt="">
-						<div class="like_num">
-							<div class="like_number">0</div>&nbsp;点赞
+					<div id="splus3" class="com2">
+						<div class="spot comeup">
+							<div class="title">建筑</div>
+							<div class="content">
+								&emsp;&emsp;拱门、青砖、黑瓦、红墙……西式的拱形窗户结合中式的额枋，
+								一砖一瓦无不透出一种历经沧桑的古朴幽雅。走在四川大学华西校区，
+								你总能看见这些典雅而独特的建筑。四川大学近代建筑群，由数十幢中西合璧的建筑组成，
+								被称为“建筑史上的奇观”。这里的大小楼群，数十年容颜未改，生动地展示着这座百年校园的绝代风华。
+
+								走近它们，可以领略民国时期三合院落和中西合璧优秀建筑的风貌，
+								可以找到陈寅恪、周太玄、吕叔湘等一批文化大师抗战时期在成都的历史痕迹，
+								追忆大师们的成都岁月，触摸成都文化的厚度。
+
+							</div>
+							<div class="like">
+								<img class="like_img" src='http://wcfun.top/images/aixin0.png' alt="">
+								<div class="like_num">
+									<div class="like_number">0</div>&nbsp;点赞
+								</div>
+								<div class="comment">评&thinsp;论 ></div>
+							</div>
 						</div>
-						<div class="comment">评&thinsp;论</div>
-					</div>
-				</div>
-				<div class="discuss comeout">
-					<div class="return-back">返&thinsp;回</div>
-					<div class="discuss-container">
-					</div>
-					<div class="publish">
-						<textarea placeholder="发表评论"></textarea>
-						<div class="bnt">发表</div>
-					</div>
-				</div>
-			</div>
-
-			<div id="bplus5" class="com1 slide1-leftenter">
-				<div class="small-swiper">
-					<div class="swiper-container">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide"><img src="./img/huaxi/spot5_1.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="./img/huaxi/spot5_2.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="./img/huaxi/spot5_3.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="./img/huaxi/spot5_4.jpg" alt=""></div>
+						<div class="discuss comeout">
+							<div class="return-back">
+								< 返&thinsp;回</div>
+									<div class="discuss-container">
+									</div>
+									<div class="publish">
+										<textarea placeholder="发表评论"></textarea>
+										<div class="bnt">发表</div>
+									</div>
+							</div>
 						</div>
-						<div class="swiper-pagination"></div>
-					</div>
-				</div>
-			</div>
-			<div id="splus5" class="com2 slide2-leftenter">
-				<div class="spot comeup">
-					<div class="title">荷花池</div>
-					<div class="content">
-						&emsp;&emsp;校园内的荷花池每年盛开以及枯萎的时候都会聚集一大批摄影爱好者，一个个拿着很专业的器材进行拍摄。枯萎的荷叶上很容易吸引鸟儿前往嬉戏打闹，这样的荷花池别有一番风味。
-					</div>
-					<div class="like">
-						<img class="like_img" src='http://wcfun.top/images/aixin0.png' alt="">
-						<div class="like_num">
-							<div class="like_number">0</div>&nbsp;点赞
+
+						<div id="bplus4" class="com1">
+							<div class="small-swiper">
+								<div class="swiper-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide"><img src="./img/huaxi/spot4_1.jpg" alt=""></div>
+										<div class="swiper-slide"><img src="./img/huaxi/spot4_2.jpg" alt=""></div>
+										<div class="swiper-slide"><img src="./img/huaxi/spot4_3.jpg" alt=""></div>
+									</div>
+									<div class="swiper-pagination"></div>
+								</div>
+							</div>
 						</div>
-						<div class="comment">评&thinsp;论</div>
-						<script>
+						<div id="splus4" class="com2">
+							<div class="spot comeup">
+								<div class="title">东大门</div>
+								<div class="content">
+									&emsp;&emsp;华西校区东大门是四川大学华西校区的标志性建筑之一，它是原华西医科大学时期留下的建筑。它建造古典，优雅，具有浓厚的中华传统文化气息。
+								</div>
+								<div class="like">
+									<img class="like_img" src='http://wcfun.top/images/aixin0.png' alt="">
+									<div class="like_num">
+										<div class="like_number">0</div>&nbsp;点赞
+									</div>
+									<div class="comment">评&thinsp;论 ></div>
+								</div>
+							</div>
+							<div class="discuss comeout">
+								<div class="return-back">
+									< 返&thinsp;回</div>
+										<div class="discuss-container">
+										</div>
+										<div class="publish">
+											<textarea placeholder="发表评论"></textarea>
+											<div class="bnt">发表</div>
+										</div>
+								</div>
+							</div>
 
-						</script>
-					</div>
-				</div>
-				<div class="discuss comeout">
-					<div class="return-back">返&thinsp;回</div>
-					<div class="discuss-container">
-					</div>
-					<div class="publish">
-						<textarea placeholder="发表评论"></textarea>
-						<div class="bnt">发表</div>
-					</div>
-				</div>
-			</div>
+							<div id="bplus5" class="com1 slide1-leftenter">
+								<div class="small-swiper">
+									<div class="swiper-container">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="./img/huaxi/spot5_1.jpg" alt=""></div>
+											<div class="swiper-slide"><img src="./img/huaxi/spot5_2.jpg" alt=""></div>
+											<div class="swiper-slide"><img src="./img/huaxi/spot5_3.jpg" alt=""></div>
+											<div class="swiper-slide"><img src="./img/huaxi/spot5_4.jpg" alt=""></div>
+										</div>
+										<div class="swiper-pagination"></div>
+									</div>
+								</div>
+							</div>
+							<div id="splus5" class="com2 slide2-leftenter">
+								<div class="spot comeup">
+									<div class="title">荷花池</div>
+									<div class="content">
+										&emsp;&emsp;校园内的荷花池每年盛开以及枯萎的时候都会聚集一大批摄影爱好者，一个个拿着很专业的器材进行拍摄。枯萎的荷叶上很容易吸引鸟儿前往嬉戏打闹，这样的荷花池别有一番风味。
+									</div>
+									<div class="like">
+										<img class="like_img" src='http://wcfun.top/images/aixin0.png' alt="">
+										<div class="like_num">
+											<div class="like_number">0</div>&nbsp;点赞
+										</div>
+										<div class="comment">评&thinsp;论 ></div>
+									</div>
+								</div>
+								<div class="discuss comeout">
+									<div class="return-back">
+										< 返&thinsp;回</div>
+											<div class="discuss-container">
+											</div>
+											<div class="publish">
+												<textarea placeholder="发表评论"></textarea>
+												<div class="bnt">发表</div>
+											</div>
+									</div>
+								</div>
 
-		</div>
-	</div>
+							</div>
+						</div>
 
-	<!-- 底边栏 -->
-	<div class="footer">
-		<div class="footer-logo"><img src="./img/footer-logo.png" alt=""></div>
-		<div class="address">
-			<div class="address-title">&nbsp;学校地址</div>
-			<div class="address-detail">（江安校区）成都市双流县川大路 川大行政楼一楼 邮编：610207</div>
-			<div class="address-detail">（望江校区）成都市一环路南一段24号 川大行政楼219、220办公室 邮编：610065</div>
-			<div class="address-detail">（华西校区）成都市人民南路三段17号 华西行政楼232 邮编：610041</div>
-		</div>
-		<div class="link">
-			<div class="link-title">学校网站</div>
-			<div class="link-detail"><a href="http://jwc.scu.edu.cn/">四川大学教务处</a></div>
-			<div class="link-detail"><a href="http://scufd.scu.edu.cn/">四川大学财务处</a></div>
-			<div class="link-detail"><a href="http://xsc.scu.edu.cn/WEBSITE/XG">四川大学学工部</a></div>
-		</div>
-	</div>
+						<!-- 底边栏 -->
+						<div class="footer">
+							<div class="footer-logo"><img src="./img/footer-logo.png" alt=""></div>
+							<div class="address">
+								<div class="address-title">&nbsp;学校地址</div>
+								<div class="address-detail">（江安校区）成都市双流县川大路 川大行政楼一楼 邮编：610207</div>
+								<div class="address-detail">（望江校区）成都市一环路南一段24号 川大行政楼219、220办公室 邮编：610065</div>
+								<div class="address-detail">（华西校区）成都市人民南路三段17号 华西行政楼232 邮编：610041</div>
+							</div>
+							<div class="link">
+								<div class="link-title">学校网站</div>
+								<div class="link-detail"><a href="http://jwc.scu.edu.cn/">四川大学教务处</a></div>
+								<div class="link-detail"><a href="http://scufd.scu.edu.cn/">四川大学财务处</a></div>
+								<div class="link-detail"><a href="http://xsc.scu.edu.cn/WEBSITE/XG">四川大学学工部</a></div>
+							</div>
+						</div>
 
-	<!-- 返回顶部 -->
-	<div class="return-top">
-		<div class="return-top-img"><img src="./img/jian1_red.png" alt=""></div>
-		<div class="return-top-text">返回顶部</div>
-	</div>
+						<!-- 返回顶部 -->
+						<div class="return-top">
+							<div class="return-top-img"><img src="./img/jian1_red.png" alt=""></div>
+							<div class="return-top-text">返回顶部</div>
+						</div>
 
-	<script src="./js/campus.js"></script>
-	<script src="./js/swiper-bundle.min.js"></script>
-	<script src="./js/swiper.js"></script>
-	<script src="./js/nav.js"></script>
+						<script src="./js/campus.js"></script>
+						<script src="./js/swiper-bundle.min.js"></script>
+						<script src="./js/swiper.js"></script>
+						<script src="./js/nav.js"></script>
 </body>
 
 </html>

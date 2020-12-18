@@ -1,52 +1,52 @@
     /*向右划通用样式*/
 
     .slide1-right {
-        box-shadow: 0px 3px 15px #909090;
+        box-shadow: 0rem .1875rem .9375rem #909090;
         position: absolute;
-        width: 900px;
-        height: 650px;
+        width: 56.25rem;
+        height: 40.625rem;
         background-color: black;
-        left: -900px;
+        left: -56.25rem;
         z-index: 2;
         animation: slide-rightplus 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
 
     .slide2-right {
         color: white;
-        box-shadow: 3px 3px 15px #909090;
+        box-shadow: .1875rem .1875rem .9375rem #909090;
         position: absolute;
-        width: 400px;
-        height: 650px;
+        width: 25rem;
+        height: 40.625rem;
         background-color: rgb(180, 16, 10);
-        left: -400px;
+        left: -25rem;
         z-index: 1;
         animation: plus 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         background-image: url("../img/diwen.svg");
-        /* filter: blur(2px); */
+
         background-position: right;
         background-repeat: repeat-y;
     }
 
     .slide1-rightenter {
-        box-shadow: 3px 3px 15px #909090;
+        box-shadow: .1875rem .1875rem .9375rem #909090;
         position: absolute;
-        width: 900px;
-        height: 650px;
+        width: 56.25rem;
+        height: 40.625rem;
         background-color: black;
-        left: 450px;
+        left: 28.125rem;
         z-index: 2;
         animation: slide-rightenter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
 
     .slide2-rightenter {
         color: white;
-        box-shadow: 3px 3px 15px #909090;
+        box-shadow: .1875rem .1875rem .9375rem #909090;
         position: absolute;
-        width: 400px;
-        height: 650px;
+        width: 25rem;
+        height: 40.625rem;
         background-color: rgb(180, 16, 10);
         ;
-        left: 50px;
+        left: 3.125rem;
         z-index: 1;
         animation: enter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         background-image: url("../img/diwen.svg");
@@ -57,25 +57,25 @@
     /*向左划通用样式*/
 
     .slide1-left {
-        box-shadow: 3px 3px 15px #909090;
+        box-shadow: .1875rem .1875rem .9375rem #909090;
         position: absolute;
-        width: 900px;
-        height: 650px;
+        width: 56.25rem;
+        height: 40.625rem;
         background-color: black;
-        left: 1350px;
+        left: 84.375rem;
         z-index: 2;
         animation: slide-leftplus 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
 
     .slide2-left {
         color: white;
-        box-shadow: 3px 3px 15px #909090;
+        box-shadow: .1875rem .1875rem .9375rem #909090;
         position: absolute;
-        width: 400px;
-        height: 650px;
+        width: 25rem;
+        height: 40.625rem;
         background-color: rgb(180, 16, 10);
         ;
-        left: 1350px;
+        left: 84.375rem;
         z-index: 1;
         animation: lplus 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         background-image: url("../img/diwen.svg");
@@ -84,23 +84,23 @@
     }
 
     .slide1-leftenter {
-        box-shadow: 3px 3px 15px #909090;
+        box-shadow: .1875rem .1875rem .9375rem #909090;
         position: absolute;
-        width: 900px;
-        height: 650px;
+        width: 56.25rem;
+        height: 40.625rem;
         background-color: black;
-        left: 0px;
+        left: 0;
         z-index: 2;
         animation: slide-leftenter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
 
     .slide2-leftenter {
         color: white;
-        box-shadow: 3px 3px 15px #909090;
+        box-shadow: .1875rem .1875rem .9375rem #909090;
         position: absolute;
-        width: 400px;
-        height: 650px;
-        left: 900px;
+        width: 25rem;
+        height: 40.625rem;
+        left: 56.25rem;
         background-color: rgb(180, 16, 10);
         z-index: 1;
         animation: lenter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -113,68 +113,71 @@
 
     #bplus1 {
         position: absolute;
-        top: 0px;
+        top: 0rem;
     }
 
     #splus1 {
         position: absolute;
-        top: 0px;
+        top: 0;
     }
 
     #bplus2 {
         position: absolute;
-        top: 670px;
+        top: 41.875rem;
     }
 
     #splus2 {
         position: absolute;
-        top: 670px;
+        top: 41.875rem;
     }
 
     #bplus3 {
         position: absolute;
-        top: 1340px;
+        top: 83.75rem;
     }
 
     #splus3 {
         position: absolute;
-        top: 1340px;
+        top: 83.75rem;
     }
 
     #bplus4 {
         position: absolute;
-        top: 2010px;
+        top: 125.625rem;
     }
 
     #splus4 {
         position: absolute;
-        top: 2010px;
+        top: 125.625rem;
     }
 
     #bplus5 {
         position: absolute;
-        top: 2680px;
+        top: 167.5rem;
     }
 
     #splus5 {
         position: absolute;
-        top: 2680px;
+        top: 167.5rem;
     }
 
     /*盒子内容*/
 
     .spot {
-        margin: 40px 40px 20px 40px;
+        margin: 2.5rem 2.5rem 1.25rem 2.5rem;
     }
 
     .title {
-        font-size: 30px;
+        font-size: 1.9rem;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
+        text-shadow: 0.2rem 0.2rem 1rem red;
     }
 
     .content {
-        font-size: 18px;
+        text-align: left;
+        font-size: 1.125rem;
+        font-family: 'SimSun';
     }
 
     .comeup {
@@ -186,34 +189,36 @@
     }
 
     .discuss {
-        height: 615px;
-        width: 380px;
-        margin: 15px 0 20px 30px;
+        height: 38.4375rem;
+        width: 23.75rem;
+        margin: .9375rem 0 1.25rem 1.875rem;
         overflow: hidden;
     }
 
     .discuss .return-back {
         user-select: none;
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 500;
-        text-shadow: 6px 6px 10px red;
-        height: 20px;
-        line-height: 24px;
+        text-shadow: .375rem .375rem .625rem red;
+        height: 1.25rem;
+        line-height: 1.5rem;
         color: white;
         cursor: pointer;
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
     }
 
     .discuss .discuss-container {
+        font-family: 'SimSun';
+        text-align: left;
         overflow: scroll;
-        width: 370px;
-        height: 520px;
+        width: 23.125rem;
+        height: 32.5rem;
     }
 
     .discuss .publish {
-        margin-top: 20px;
-        width: 350px;
-        height: 20px;
+        margin-top: 1.25rem;
+        width: 21.875rem;
+        height: 1.25rem;
     }
 
     .discuss .publish textarea {
@@ -223,40 +228,40 @@
         outline:none;
         width: 75%;
         height: 100%;
-        max-height: 17px;
-        padding: 6px;
-        font-size: 16px;
-        line-height: 20px;
+        max-height: 1.0625rem;
+        padding: .375rem;
+        font-size: 1rem;
+        line-height: 1.25rem;
     }
 
     .discuss .publish .bnt {
         cursor: pointer;
         position: relative;
-        top: -9px;
+        top: -0.5625rem;
         display: inline-block;
         background-color: #0179d4;
         width: 17%;
-        height: 30px;
-        font-size: 18px;
+        height: 1.875rem;
+        font-size: 1.125rem;
         text-align: center;
-        line-height: 30px;
+        line-height: 1.875rem;
         user-select: none;
     }
 
     .discuss-container::-webkit-scrollbar {
-        width: 10px;
-        height: 1px;
+        width: .625rem;
+        height: .0625rem;
     }
 
     .discuss-container::-webkit-scrollbar-thumb {
-        border-radius: 10px;
-        box-shadow: inset 0 0 5px #9b9b9b;
+        border-radius: .625rem;
+        box-shadow: inset 0 0 .3125rem #9b9b9b;
         background: #535353;
     }
 
     .discuss-container::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
-        border-radius: 10px;
+        box-shadow: inset 0 0 .3125rem rgba(0, 0, 0, 0.2);
+        border-radius: .625rem;
         background: #ededed;
     }
 
@@ -265,22 +270,22 @@
         overflow: hidden;
         color: white;
         width: 90%;
-        margin: 15px 0;
-        padding: 8px 8px 10px 12px;
-        border: 1px solid white;
-        border-radius: 10px;
+        margin: .9375rem 0;
+        padding: .5rem .5rem .625rem .75rem;
+        border: .0625rem solid white;
+        border-radius: .625rem;
     }
 
     .one-discuss .time {
-        font-size: 13px;
-        line-height: 16px;
-        margin-bottom: 6px;
-        margin-top: 2px;
+        font-size: .8125rem;
+        line-height: 1rem;
+        margin-bottom: .375rem;
+        margin-top: .125rem;
     }
 
     .one-discuss .wenzi {
-        font-size: 18px;
-        line-height: 22px;
+        font-size: 1.125rem;
+        line-height: 1.375rem;
     }
 
     /*向右划动效*/
@@ -291,7 +296,7 @@
             opacity: 0;
         }
         100% {
-            transform: translateX(900px);
+            transform: translateX(56.25rem);
             opacity: 1;
         }
     }
@@ -302,7 +307,7 @@
             opacity: 0;
         }
         100% {
-            transform: translateX(1300px);
+            transform: translateX(81.25rem);
             opacity: 1;
         }
     }
@@ -315,7 +320,7 @@
             opacity: 0;
         }
         100% {
-            transform: translateX(-900px);
+            transform: translateX(-56.25rem);
             opacity: 1;
         }
     }
@@ -326,7 +331,7 @@
             opacity: 0;
         }
         100% {
-            transform: translateX(-1300px);
+            transform: translateX(-81.25rem);
             opacity: 1;
         }
     }
@@ -339,7 +344,7 @@
             opacity: 1;
         }
         100% {
-            transform: translateX(900px);
+            transform: translateX(56.25rem);
             opacity: 0;
         }
     }
@@ -350,7 +355,7 @@
             opacity: 1;
         }
         100% {
-            transform: translateX(1300px);
+            transform: translateX(81.25rem);
             opacity: 0;
         }
     }
@@ -363,7 +368,7 @@
             opacity: 1;
         }
         100% {
-            transform: translateX(-900px);
+            transform: translateX(-56.25rem);
             opacity: 0;
         }
     }
@@ -374,7 +379,7 @@
             opacity: 1;
         }
         100% {
-            transform: translateX(-1300px);
+            transform: translateX(-81.25rem);
             opacity: 0;
         }
     }

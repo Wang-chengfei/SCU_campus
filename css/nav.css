@@ -1,13 +1,7 @@
-body {
-    zoom: 0.941;
-    overflow-x: hidden;
-    background-color: rgb(238, 235, 234);
-}
-
 .comnav {
     position: fixed;
-    top: -90px;
-    left: 0px;
+    top: -5.625rem;
+    left: 0rem;
 }
 
 /*不透明导航栏*/
@@ -15,21 +9,21 @@ body {
 .rnav-out {
     position: fixed;
     width: 100%;
-    height: 90px;
-    top: -90px;
-    left: 0px;
+    height: 5.625rem;
+    top: -5.625rem;
+    left: 0rem;
     z-index: 999;
     background-color: rgb(255, 255, 255);
     animation: slide-out 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    box-shadow: 2px 2px 10px #909090;
+    box-shadow: .125rem .125rem .625rem #909090;
 }
 
 .rnav-enter {
     position: fixed;
     width: 100%;
-    height: 90px;
-    top: 0px;
-    left: 0px;
+    height: 5.625rem;
+    top: -1.25rem;
+    left: 0;
     z-index: 999;
     background-color: rgb(255, 255, 255);
     animation: slide-enter 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -50,9 +44,9 @@ body {
 .nav-out {
     position: fixed;
     width: 100%;
-    height: 90px;
-    top: -90px;
-    left: 0px;
+    height: 5.625rem;
+    top: -5.625rem;
+    left: 0;
     z-index: 999;
     background: -webkit-linear-gradient( top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.001));
     animation: slide-out 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -61,9 +55,9 @@ body {
 .nav-enter {
     position: fixed;
     width: 100%;
-    height: 90px;
-    top: 0px;
-    left: 0px;
+    height: 5.625rem;
+    top: -1.25rem;
+    left: 0;
     z-index: 999;
     background: -webkit-linear-gradient( top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.001));
     animation: slide-enter 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -71,12 +65,12 @@ body {
 
 .com {
     position: relative;
-    left: 30px;
+    left: 1.875rem;
     display: inline-block;
-    height: 90px;
-    font-size: 20px;
-    line-height: 106px;
-    margin-left: 50px;
+    height: 5.625rem;
+    font-size: 1.25rem;
+    line-height: 6.625rem;
+    margin-left: 3.125rem;
     user-select: none;
 }
 
@@ -85,9 +79,9 @@ body {
     position: relative;
     display: inline-block;
     height: 100%;
-    width: 300px;
-    top: 33px;
-    left: 250px;
+    width: 18.75rem;
+    top: 2.0625rem;
+    left: 15.625rem;
 }
 
 #musi {
@@ -96,14 +90,14 @@ body {
 
 .music .music-photo {
     position: relative;
-    top: -9px;
+    top: -0.5625rem;
     display: inline-block;
-    height: 60px;
-    width: 60px;
+    height: 3.75rem;
+    width: 3.75rem;
 }
 
 .rotating {
-    animation: rotate 10s linear infinite;
+    animation: rotate 16s linear infinite;
 }
 
 @keyframes rotate {
@@ -116,25 +110,25 @@ body {
 }
 
 .music .music-photo img {
-    box-shadow: 1px 1px 6px #909090;
-    height: 59px;
-    width: 59px;
+    box-shadow: .0625rem .0625rem .375rem #909090;
+    height: 3.6875rem;
+    width: 3.6875rem;
     border-radius: 50%;
 }
 
 .music .music-control, .music .music-prev, .music .music-next {
     z-index: 1001;
     position: relative;
-    top: -15px;
+    top: -0.9375rem;
     cursor: pointer;
-    margin-left: 20px;
+    margin-left: 1.25rem;
     display: inline-block;
-    height: 45px;
-    width: 45px;
+    height: 2.8125rem;
+    width: 2.8125rem;
 }
 
 .music .music-prev {
-    margin-left: 40px;
+    margin-left: 2.5rem;
 }
 
 .music .music-control img, .music .music-prev img, .music .music-next img {
@@ -147,7 +141,7 @@ body {
 }
 
 span:first-child {
-    margin-left: 300px;
+    margin-left: 18.75rem;
 }
 
 /*动态下划线效果*/
@@ -160,7 +154,7 @@ span:first-child {
 .super-link::after {
     content: '';
     width: 100%;
-    height: 2.5px;
+    height: .15625rem;
     position: absolute;
     top: 125%;
     left: 0;
@@ -186,6 +180,10 @@ span:first-child {
     color: white;
 }
 
+.rnav {
+    width: 100rem;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -194,16 +192,16 @@ span:first-child {
 
 .big {
     position: relative;
-    width: 1350px;
-    height: 3700px;
-    margin: 20px auto;
+    width: 84.375rem;
+    height: 231.25rem;
+    margin: 1.25rem auto;
 }
 
 .belowimg {
     position: fixed;
-    left: 50px;
-    top: -29px;
-    height: 165px;
+    left: 3.125rem;
+    top: -1.8125rem;
+    height: 10.3125rem;
     cursor: pointer;
 }
 
@@ -213,7 +211,7 @@ span:first-child {
         opacity: 0;
     }
     100% {
-        transform: translateY(70px);
+        transform: translateY(4.375rem);
         opacity: 1;
     }
 }
@@ -224,52 +222,36 @@ span:first-child {
         opacity: 1;
     }
     100% {
-        transform: translateY(-70px);
+        transform: translateY(-4.375rem);
         opacity: 0;
     }
 }
 
 .bigBox {
-    padding-top: 210px;
+    padding-top: 13.125rem;
     position: absolute;
     width: 100%;
     background-color: rgb(238, 235, 234);
     z-index: 1;
     overflow: auto;
     background-image: url("../img/bg1.png");
-    background-repeat: repeat-y;
-    background-position: right;
+    background-position: center;
 }
 
 .up {
-    animation: up 0.8s cubic-bezier(0.5, 0.11, 0.25, 1) both;
+    top: 0;
+    transition-duration: 0.8s;
+    transition-timing-function: cubic-bezier(0.5, 0.14, 0.2, 1);
 }
 
 .dowm {
-    top: 0px;
-    animation: dowm 0.8s cubic-bezier(0.5, 0.11, 0.25, 1) both;
+    top: 100%;
+    transition-duration: 0.8s;
+    transition-timing-function: cubic-bezier(0.5, 0.14, 0.2, 1);
 }
 
 ::-webkit-scrollbar {
     width: 0;
-}
-
-body {
-    overflow-y: scroll;
-}
-
-@keyframes up {
-    100% {
-        transform: translateY(-800px);
-        opacity: 1;
-    }
-}
-
-@keyframes dowm {
-    100% {
-        transform: translateY(800px);
-        opacity: 1;
-    }
 }
 
 /*点赞*/
@@ -279,22 +261,22 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 65px;
+    height: 4.0625rem;
 }
 
 .like img {
-    margin-top: 11px;
-    margin-left: 60px;
-    width: 40px;
+    margin-top: .6875rem;
+    margin-left: 3.75rem;
+    width: 2.5rem;
     cursor: pointer;
     user-select: none;
 }
 
 .like .like_num, .like .comment {
     position: absolute;
-    font-size: 20px;
-    top: 17px;
-    right: 225px;
+    font-size: 1.25rem;
+    top: 1.0625rem;
+    right: 14.0625rem;
 }
 
 .like .like_number {
@@ -302,13 +284,13 @@ body {
 }
 
 .like .comment {
-    right: 90px;
-    top: 13px;
+    right: 5rem;
+    top: .8125rem;
     cursor: pointer;
     user-select: none;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500;
-    text-shadow: 6px 6px 10px red;
+    text-shadow: .375rem .375rem .625rem red;
 }
 
 /*侧边导航栏*/
@@ -316,56 +298,55 @@ body {
 .side-nav {
     user-select: none;
     position: fixed;
-    top: 160px;
-    right: -60px;
-    width: 50px;
+    top: 10rem;
+    right: -3.75rem;
+    width: 3.125rem;
     z-index: 1000;
     text-align: center;
-    font-size: 15px;
-    border: 2px solid rgb(180, 16, 10);
-    border-radius: 10px;
+    font-size: .9375rem;
+    border: .125rem solid rgb(180, 16, 10);
+    border-radius: .625rem;
     background-color: rgb(248, 245, 244);
 }
 
 .side-nav-right {
-    right: 25px;
+    right: 1.5625rem;
 }
 
 .side-nav-slide {
     list-style: none;
     position: relative;
-    right: 1px;
-    top: -1px;
-    margin-right: 2px;
-    padding: 10px 0 10px 0;
-    width: 52px;
-    height: 42px;
-    border-bottom: 2px solid rgb(180, 16, 10);
-    ;
+    right: .0625rem;
+    top: -0.0625rem;
+    margin-right: .125rem;
+    padding: .625rem 0 .625rem 0;
+    width: 3.25rem;
+    height: 2.625rem;
+    border-bottom: .125rem solid rgb(180, 16, 10);
     cursor: pointer;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
 }
 
 .side-nav li:first-child {
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    border-top-right-radius: .625rem;
+    border-top-left-radius: .625rem;
 }
 
 .side-nav li:last-child {
     border: none;
-    margin-bottom: -2px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    margin-bottom: -0.125rem;
+    border-bottom-right-radius: .625rem;
+    border-bottom-left-radius: .625rem;
 }
 
 .side-nav-select {
     background-color: rgb(180, 16, 10);
-    ;
     color: white;
 }
 
 .side-nav-slide:hover {
     background-color: rgb(180, 16, 10);
-    ;
     color: white;
 }
 
@@ -385,7 +366,7 @@ body {
         opacity: 0;
     }
     100% {
-        transform: translateX(-85px);
+        transform: translateX(-5.3125rem);
         opacity: 1;
     }
 }
@@ -396,7 +377,7 @@ body {
         opacity: 1;
     }
     100% {
-        transform: translateX(85px);
+        transform: translateX(5.3125rem);
         opacity: 0;
     }
 }
@@ -404,38 +385,39 @@ body {
 /*底边栏*/
 
 .footer {
+    min-width: 1500px;
     position: absolute;
-    top: 3700px;
+    top: 231.25rem;
     width: 100%;
-    height: 180px;
+    height: 11.25rem;
     background-color: rgba(61, 61, 61);
     z-index: 2;
 }
 
 .footer .footer-logo {
-    width: 400px;
+    width: 25rem;
     display: inline-block;
-    margin: 35px 0 0 60px;
+    margin: 2.1875rem 0 0 3.75rem;
 }
 
 .footer .address, .footer .link {
-    margin-left: 70px;
-    margin-top: -30px;
+    margin-left: 4.375rem;
+    margin-top: -1.875rem;
     display: inline-block;
     height: 100%;
-    width: 630px;
+    width: 39.375rem;
     color: #999999;
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 1rem;
+    line-height: 1.75rem;
 }
 
 .footer .link {
-    width: 150px;
+    width: 9.375rem;
 }
 
 .footer .address .address-title, .footer .link .link-title {
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 1.25rem;
+    margin-bottom: .625rem;
 }
 
 .footer .link-detail a {
@@ -447,34 +429,43 @@ body {
     cursor: pointer;
     z-index: 3;
     position: absolute;
-    top: 3880px;
+    top: 242.5rem;
     width: 100%;
-    height: 100px;
+    height: 6.25rem;
     background-color: white;
 }
 
 .return-top-img {
     width: 100%;
-    height: 40px;
+    height: 2.5rem;
 }
 
 .return-top-img img {
-    position: relative;
-    top: 0;
-    left: 788px;
     height: 130%;
-    margin: 0 auto;
+    margin: 0 50%;
+    transform: translateX(-50%);
 }
 
 .return-top-text {
     width: 100%;
-    height: 60px;
-    line-height: 60px;
+    height: 3.75rem;
+    line-height: 3.75rem;
     text-align: center;
-    font-size: 25px;
+    font-size: 1.5625rem;
 }
 
 .return-top:hover {
     background-color: #3d3d3d;
     color: white;
+}
+
+.toManage {
+    display: inline-block;
+    position: relative;
+    left: 22rem;
+    font-size: 1.2rem;
+}
+
+#nav1 .toManage a:hover, #nav2 .toManage a:hover {
+    color: rgb(180, 16, 10);
 }

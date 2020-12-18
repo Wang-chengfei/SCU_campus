@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>四川大学</title>
+    <title>川越精彩</title>
     <link rel="icon" href="./img/badge.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/responsive.css">
     <style>
         body {
             background-image: url("./img/index_bg.png");
             background-repeat: no-repeat;
-            background-size: 100% 100%;
+            background-size: 100%;
             background-color: #eeebea;
             overflow: hidden;
         }
@@ -28,22 +29,19 @@
         .com {
             position: absolute;
             /* overflow: hidden; */
-            width: 200px;
-            height: 520px;
+            width: 12.5rem;
+            height: 32.5rem;
 
         }
 
-        /* .com:hover {
-            box-shadow:3px 3px 16px #909090;
-        } */
 
         .com img {
-            box-shadow: 2px 2px 10px #909090;
-            transition: transform 0.9s;
+            box-shadow: .125rem .125rem .625rem #909090;
+            transition-duration: 0.9s;
         }
 
         .com img:hover {
-            box-shadow: 4px 4px 20px #909090;
+            box-shadow: .3rem .3rem 1.5rem #909090;
             transform: scale(1.1, 1.1);
         }
 
@@ -55,12 +53,12 @@
         .com a span {
             position: absolute;
             display: inline-block;
-            top: 154px;
-            left: 82px;
-            height: 400px;
-            width: 40px;
-            font-size: 32px;
-            line-height: 50px;
+            top: 9.625rem;
+            left: 5.125rem;
+            height: 25rem;
+            width: 2.5rem;
+            font-size: 2rem;
+            line-height: 3.125rem;
             font-weight: bold;
             color: white;
             z-index: 1;
@@ -69,38 +67,38 @@
 
         .big {
             position: relative;
-            height: 600px;
-            width: 1160px;
-            margin: 90px auto;
+            height: 37.5rem;
+            width: 72.5rem;
+            margin: 0 auto;
         }
 
         .jian {
-            top: -30px;
-            left: 0px;
+            top: -1.875rem;
+            left: 0rem;
             animation: up1 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         }
 
         .wang {
-            top: 20px;
-            left: 240px;
+            top: 1.25rem;
+            left: 15rem;
             animation: up2 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         }
 
         .hua {
-            top: 70px;
-            left: 480px;
+            top: 4.375rem;
+            left: 30rem;
             animation: dis 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         }
 
         .jie {
-            top: 120px;
-            left: 720px;
+            top: 7.5rem;
+            left: 45rem;
             animation: down1 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         }
 
         .chuan {
-            top: 170px;
-            left: 960px;
+            top: 10.625rem;
+            left: 60rem;
             animation: down2 2.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         }
 
@@ -111,7 +109,7 @@
             }
 
             100% {
-                transform: translateY(100px);
+                transform: translateY(6.25rem);
                 opacity: 1;
             }
         }
@@ -123,7 +121,7 @@
             }
 
             100% {
-                transform: translateY(50px);
+                transform: translateY(3.125rem);
                 opacity: 1;
             }
         }
@@ -135,7 +133,7 @@
             }
 
             100% {
-                transform: translateY(-50px);
+                transform: translateY(-3.125rem);
                 opacity: 1;
             }
         }
@@ -147,7 +145,7 @@
             }
 
             100% {
-                transform: translateY(-100px);
+                transform: translateY(-6.25rem);
                 opacity: 1;
             }
         }
@@ -168,26 +166,30 @@
 
         /* 标语 */
         .slogan {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 300px;
+            position: relative;
+            margin-left: 50%;
+            transform: translateX(-30.5rem);
+            width: 75rem;
+            height: 7.5rem;
+            top: -1.5rem;
         }
+
         .slogan img {
-            position: relative;
-            top: -60px;
-            margin-left: 300px;
-            height: 260px;
-            vertical-align:middle;
-        }
-        .slogan .wenzi {
-            position: relative;
-            top: -49px;
-            margin-left: 34px;
             display: inline-block;
-            font-size: 42px;
-            font-weight: 600;
-            font-family: "Arial",sans-serif;
+            /* margin-left: 18.75rem; */
+            height: 14.25rem;
+            vertical-align: middle;
+        }
+
+        .slogan .wenzi {
+            display: inline-block;
+            margin-left: 2.125rem;
+        }
+
+        .slogan .wenzi img {
+            display: inline-block;
+            /* margin-left: 18.75rem; */
+            height: 4.25rem;
         }
     </style>
 </head>
@@ -195,7 +197,7 @@
 <body>
     <div class="slogan">
         <img src="./img/logo.png" alt="">
-        <div class="wenzi">川 越 精 彩 , 大 有 可 为 ！</div>
+        <div class="wenzi"><img src="./img/index/cyjc.png" alt=""><img src="./img/index/dykw.png" alt=""></div>
     </div>
     <div class="big">
         <div class="com jian"><a href="./jiangan.html">
